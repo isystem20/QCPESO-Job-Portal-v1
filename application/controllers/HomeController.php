@@ -29,4 +29,11 @@ class HomeController extends CI_Controller {
 		$this->load->view('Dashboard');
 	}
 
+	public function Changelog() {
+
+		$this->load->view('DevelopmentChangeLog');
+
+	}
+
+
 }
