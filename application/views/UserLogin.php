@@ -2,18 +2,22 @@
 <html lang="en">
 
 <head>
-<title>Flat Able - Premium Admin Template by Phoenixcoded</title>
-
+<title>QC P.E.S.O.</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Phoenixcoded">
 <meta name="keywords" content=", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-<!-- <meta name="google-signin-client_id" content="453639693637-ba5cbmedoptto84pnj87k6cnumqls9sv.apps.googleusercontent.com"> -->
+
+<meta name="author" content="Phoenixcoded">
+
+<link rel="icon" href="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" type="image/x-icon">
+
 <meta name="google-signin-client_id" content="453639693637-8utkl362om0v1qad2jmgdbbhla6l9m5u.apps.googleusercontent.com">
 <script src="https://apis.google.com/js/platform.js" async defer></script>  
 <link rel="icon" href="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/favicon.ico" type="image/x-icon">
+
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -37,7 +41,7 @@
 <div class="login-card card-block auth-body">
 <form class="md-float-material">
 <div class="text-center">
-<img src="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/Qcpeso.png" alt="Qcpeso.png">
+<img src="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" alt="qcpeso.png" width="90">&nbsp<h4>QUEZON CITY</h4>PUBLIC EMPLOYMENT SERVICE OFFICE
 </div>
 <div class="auth-box">
 <div class="row m-b-20">
@@ -54,7 +58,9 @@
 <button class="btn btn-facebook m-b-20"><i class="icofont icofont-social-facebook"></i>Sign in with facebook</button>
 </div>
 <div class="col-md-6">
-<div class="g-signin2" data-onsuccess="onSignIn" data-width="350"></div>
+
+<div class="g-signin2" data-onsuccess="onSignIn" data-width="250"></div>
+
 </div>
 </div>
 <p class="text-inverse b-b-default text-left p-b-5">Sign in with your regular account</p>
@@ -102,47 +108,7 @@
 </section>
 
 
-<!--[if lt IE 9]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
+
 
 
 <script type="text/javascript" src="<?php echo base_url()?>themes/bower_components/jquery/dist/jquery.min.js"></script>
