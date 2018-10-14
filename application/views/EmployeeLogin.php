@@ -34,10 +34,10 @@
 
 <style>
 body{
-	 background: url(<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/QCCityHall.jpg) no-repeat center center fixed;
-	 background-size: 100% 100%;
-	 height: 100%;
-	}
+     background: url(<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/QCCityHall.jpg) no-repeat center center fixed;
+     background-size: 100% 100%;
+     height: 100%;
+    }
 </style>
 
 <body class="menu-static" background="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/bgqc.png">
@@ -62,21 +62,12 @@ body{
     <br>
     <br>
 <h2><font color ="black"><B>QUEZON CITY</h2>PUBLIC EMPLOYMENT SERVICE OFFICE</B>
+    <br>
+    <br>
+<h5>Personnel Log-In</h5>
+</div>
+</div>
 
-</div>
-</div>
-<p class="text-inverse b-b-default text-left p-b-5">Sign in easily with your social account:</p>
-<div class="row m-b-20">
-<div class="col-md-6">
-<button class="btn btn-facebook m-b-20"><i class="icofont icofont-social-facebook"></i>Sign in with facebook</button>
-</div>
-<div class="col-md-6">
-
-<div class="g-signin2" data-onsuccess="onSignIn" data-width="225"></div>
-
-</div>
-</div>
-<p class="text-inverse b-b-default text-left p-b-5">Sign in with your regular account</p>
 <div class="input-group">
 <input type="email" class="form-control" placeholder="Username">
 <span class="md-line"></span>
@@ -102,7 +93,7 @@ body{
 <div class="row m-t-5">
 <div class="col-md-12">
 <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
-<p class="text-inverse m-t-25 text-center">Don't have an account? <a href="#"> Register </a> here for free!</p>
+
 </div>
 </div>
 
@@ -174,8 +165,8 @@ function signOut() {
 }
 // $(document).ready(function(){
 
-// 	$('#connecteditsymx9io6he').text('Sign-in With G-Mail');
-// 	});
+//  $('#connecteditsymx9io6he').text('Sign-in With G-Mail');
+//  });
 </script>
 
 
