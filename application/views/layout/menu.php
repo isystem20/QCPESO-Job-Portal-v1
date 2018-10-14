@@ -178,10 +178,10 @@
                 <li class="nav-item single-item">
                     <a href="change-loges.html">
                         <i class="ti-list"></i>
-                        <span data-i18n="nav.change-loges.main">Change Loges</span>
+                        <span data-i18n="nav.change-loges.main">Change Logs</span>
                         <label class="label label-warning menu-caption">1.0</label>
                     </a>
-                </li>
+                </li>   
             </ul>
         </div>
     </div>
