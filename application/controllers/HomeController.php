@@ -23,6 +23,11 @@ class HomeController extends CI_Controller {
 		$this->load->view('UserLogin');
 	}
 
+	public function AdminEmployeeLogin() {
+		$this->load->view('EmployeeLogin');
+	}
+
+
 
 	public function Dashboard()
 	{
