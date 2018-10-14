@@ -42,7 +42,7 @@
 <div class="login-card card-block auth-body">
 <form class="md-float-material">
 <div class="text-center">
-<img src="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/logo.png" alt="logo.png">
+<img src="<?php echo base_url()?>themes/ltr/vertical-static/assets/images/auth/Qcpeso.png" alt="Qcpeso.png">
 </div>
 <div class="auth-box">
 <div class="row m-b-20">
