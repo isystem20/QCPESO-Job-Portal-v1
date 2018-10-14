@@ -67,7 +67,7 @@
                         <span data-i18n="nav.widget.main"> Masterlist</span>
                         <label class="label label-danger menu-caption">10+</label>
                     </a>
-                </li>
+                </li>     
                 <li class="nav-item">
                     <a href="#!">
                         <i class="ti-layout-grid2-alt"></i>
@@ -144,9 +144,9 @@
                         <label class="label label-danger menu-caption">New</label>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="json-forms/simple-form.html" data-i18n="nav.json-form.simple-form">Add Walk-in</a></li>
-                        <li><a href="json-forms/clubs.html" data-i18n="nav.json-form.clubs-view">View List</a></li>
-                        <li><a href="json-forms/customer-form.html" data-i18n="nav.json-form.customer-form">Job Applications</a></li>
+                        <li><a href="<?php echo base_url(); ?>applicants/add" data-i18n="nav.json-form.simple-form">Add Walk-in</a></li>
+                        <li><a href="<?php echo base_url(); ?>applicants" data-i18n="nav.json-form.clubs-view">View List</a></li>
+                        <li><a href="<?php echo base_url(); ?>job-applications" data-i18n="nav.json-form.customer-form">Job Applications</a></li>
                     </ul>
                 </li>
 
@@ -157,8 +157,8 @@
                         <label class="label label-danger menu-caption">New</label>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="json-forms/simple-form.html" data-i18n="nav.json-form.simple-form">Register New</a></li>
-                        <li><a href="json-forms/clubs.html" data-i18n="nav.json-form.clubs-view">View List</a></li>
+                        <li><a href="<?php echo base_url(); ?>employers/add" data-i18n="nav.json-form.simple-form">Register New</a></li>
+                        <li><a href="<?php echo base_url(); ?>employers" data-i18n="nav.json-form.clubs-view">View List</a></li>
                         <li><a href="json-forms/customer-form.html" data-i18n="nav.json-form.customer-form">Pending Accreditation</a></li>
                     </ul>
                 </li> 
@@ -176,7 +176,7 @@
                     <span>Extension</span>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="change-loges.html">
+                    <a href="<?php echo base_url(); ?>changelogs">
                         <i class="ti-list"></i>
                         <span data-i18n="nav.change-loges.main">Change Logs</span>
                         <label class="label label-warning menu-caption">1.0</label>
