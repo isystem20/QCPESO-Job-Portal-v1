@@ -18,7 +18,7 @@
                     <i class="ti-search"></i>
                 </a>
                 <a href="index-2.html">
-                    <img class="img-fluid" src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/logo.png" alt="Theme-Logo" />
+                    <img class="img-fluid" src="<?php echo base_url(); ?>themes/ltr/vertical-static/assets/images/qcpesologo.png" alt="Theme-Logo" />
                 </a>
                 <a class="mobile-options">
                     <i class="ti-more"></i>
