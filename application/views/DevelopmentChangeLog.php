@@ -78,7 +78,7 @@
                   <span>Management</span>
                </li>
                <li class="nav-item single-item">
-                  <a href="<?php echo base_url(); ?>index.php/HomeController/Dashboard">
+                  <a href="<?php echo base_url(); ?>HomeController/Dashboard">
                   <i class="ti-home"></i>
                   <span data-i18n="nav.dash.main"> Dashboard</span>
                   </a>
