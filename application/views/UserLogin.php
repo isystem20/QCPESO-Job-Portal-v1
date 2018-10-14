@@ -32,7 +32,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>themes/ltr/vertical-static/assets/css/color/color-1.css" id="color" />
 </head>
 <body class="menu-static">
-<section class="login p-fixed d-flex text-center bg-primary common-img-bg">
+<section class="p-fixed d-flex text-center">
 
 <div class="container-fluid">
 <div class="row">
@@ -158,6 +158,10 @@ function signOut() {
       document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://acquiretechexam.atwebpages.com/";
     });
 }
+// $(document).ready(function(){
+
+// 	$('#connecteditsymx9io6he').text('Sign-in With G-Mail');
+// 	});
 </script>
 
 
