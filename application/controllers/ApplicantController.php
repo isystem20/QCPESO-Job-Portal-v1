@@ -33,7 +33,16 @@ class ApplicantController extends CI_Controller {
 		$this->load->view('ApplicantRegistration');
 	}
 
-
+	public function ApplicantDisabilities()
+		{
+	        $this->load->view('layout/css');
+			$this->load->view('layout/top');
+			$this->load->view('layout/menu');
+			$this->load->view('layout/right');
+			$this->load->view('ApplicantDisabilities');
+			$this->load->view('layout/js');	 
+				
+		}
 }
 
 /* End of file welcome.php */
