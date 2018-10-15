@@ -15,7 +15,7 @@
                     <a href="#!"><i class="ti-layout-sidebar-left"></i>Logout</a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>HomeController/Dashboard">
+                    <a href="<?php echo base_url(); ?>dashboard">
                     <i class="ti-home"></i>
                     <span data-i18n="nav.dash.main"> Dashboard</span>
                     </a>
@@ -62,7 +62,7 @@
                 </li> -->
 
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>employees">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Masterlist</span>
                         <label class="label label-danger menu-caption">10+</label>
