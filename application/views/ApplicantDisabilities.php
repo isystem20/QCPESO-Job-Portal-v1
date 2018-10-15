@@ -36,7 +36,7 @@
                     </div>
                     <div class="card-block">
                         <div class="table-responsive dt-responsive">
-                            <button type="button" class="btn btn-primary">Add Disabled Applicant</button>
+                            <button type="button" class="btn btn-primary">Add</button>
                             <table id="dom-jqry" class="table table-striped table-bordered nowrap">
                                 <thead>
                                     <tr>
