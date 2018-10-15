@@ -32,7 +32,13 @@ class EmployerController extends CI_Controller {
 
 	public function EmployerRegistration()
 	{
+		$data = array('formwizard' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
 		$this->load->view('EmployerRegistration');
+		$this->load->view('layout/js', $data);		
 	}
 
 }

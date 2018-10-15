@@ -36,6 +36,13 @@
     <?php
     }
     ?>
+    <?php
+    if (!empty($formwizard)) { ?>
+    <link rel="stylesheet" type="text/css" href=" <?php echo base_url()?>themes/bower_components/jquery.steps/demo/css/jquery.steps.css">
+    <?php
+    }
+    ?>
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/css/color/color-1.css" id="color" />
 </head>
