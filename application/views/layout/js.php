@@ -44,6 +44,21 @@
     <?php
     }
     ?>
+
+    <?php
+    if (!empty($formwizard)) { ?>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery.steps/build/jquery.steps.js"></script>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/pages/form-validation/validate.js"></script>
+
+    <script type="text/javascript" src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/js/script.js"></script>
+    <script src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/pages/forms-wizard-validation/form-wizard.js"></script>        
+    <?php
+    }
+    ?>
+
+
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next/i18next.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
