@@ -101,7 +101,7 @@ body{
 </div>
 <div class="row m-t-5">
 <div class="col-md-12">
-<button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
+<a href="<?php echo base_url(); ?>dashboard" type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</a>
 <p class="text-inverse m-t-25 text-center">Don't have an account? <a href="#"> Register </a> here for free!</p>
 </div>
 </div>
