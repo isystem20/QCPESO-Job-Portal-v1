@@ -29,6 +29,7 @@ class EmployerController extends CI_Controller {
 		$this->load->view('layout/js');		
 		
 	}
+	
 
 	public function EmployerRegistration()
 	{
@@ -41,4 +42,5 @@ class EmployerController extends CI_Controller {
 		$this->load->view('layout/js', $data);		
 	}
 
+	
 }

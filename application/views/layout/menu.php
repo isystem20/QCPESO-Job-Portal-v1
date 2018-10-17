@@ -74,8 +74,8 @@
                         <span data-i18n="nav.basic-components.main">Overseas</span>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="menu-static.html" data-i18n="nav.page_layout.vertical.static-layout"> Conditions </a></li>
-                        <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-overlay/menu-header-fixed.html" data-i18n="nav.page_layout.vertical.header-fixed">
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Conditions </a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasDependents">
                                 Dependents </a></li>
                         <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-compact/menu-compact.html" data-i18n="nav.page_layout.vertical.compact"> Locations </a>
                         </li>
