@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
 
-
+</head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -1292,14 +1290,12 @@ Header Fixed </a></li>
 <div class="row">
 <div class="col-sm-12">
 
-<div class="card">
-<div class="card-header">
 
 
 <div class="card">
 <div class="card-header">
 <h5>Verticle Wizard</h5>
-<span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
+
 <div class="card-header-right">
 <i class="icofont icofont-rounded-down"></i>
 <i class="icofont icofont-refresh"></i>
