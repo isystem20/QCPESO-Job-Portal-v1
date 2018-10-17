@@ -54,3 +54,17 @@ $route['404_override'] = 'SiteErrorController/Error404';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['profile'] = 'Home/profile';
+
+
+$route['changelog'] = 'HomeController/Changelog';
+$route['dashboard'] = 'HomeController/Dashboard';
+$route['applicants'] = 'ApplicantController/ApplicantMasterlist';
+$route['applicants/add'] = 'ApplicantController/ApplicantRegistration';
+$route['job-applications'] = 'ApplicationController/ApplicantionMasterlist';
+$route['login'] = 'HomeController/index';
+$route['admin/login'] = 'HomeController/AdminEmployeeLogin';
+$route['employees'] = 'EmployeeController/EmployeeMasterlist';
+$route['employees/add'] = 'EmployeeController/EmployeeRegistration';
+$route['employers'] = 'EmployerController/EmployerMasterlist';
+$route['employers/add'] = 'EmployerController/EmployerRegistration';
+

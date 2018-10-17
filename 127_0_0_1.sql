@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2018 at 08:05 AM
+-- Generation Time: Oct 14, 2018 at 12:24 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -118,6 +118,62 @@ CREATE TABLE `tbl_applicants_employment_status` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_applicants_kasambahay`
+--
+
+CREATE TABLE `tbl_applicants_kasambahay` (
+  `id` int(11) NOT NULL,
+  `jobDesc` varchar(100) NOT NULL,
+  `employerName` varchar(200) NOT NULL,
+  `employerWork` varchar(100) NOT NULL,
+  `employerAddress` varchar(500) NOT NULL,
+  `salary` varchar(100) NOT NULL,
+  `stayInOut` varchar(100) NOT NULL,
+  `yearOfService` decimal(8,2) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_kasambahay_desc`
+--
+
+CREATE TABLE `tbl_applicants_kasambahay_desc` (
+  `id` int(11) NOT NULL,
+  `jobDesc` varchar(100) NOT NULL,
+  `employerName` varchar(200) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_kasambahay_history`
+--
+
+CREATE TABLE `tbl_applicants_kasambahay_history` (
+  `id` int(11) NOT NULL,
+  `employerName` varchar(100) NOT NULL,
+  `employerAddress` varchar(200) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_applicants_lang_read`
 --
 
@@ -181,6 +237,101 @@ CREATE TABLE `tbl_applicants_licenses` (
   `skillsAcquired` varchar(50) NOT NULL,
   `rating` varchar(50) NOT NULL,
   `trainingPeriod` varchar(50) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_ofw`
+--
+
+CREATE TABLE `tbl_applicants_ofw` (
+  `id` int(11) NOT NULL,
+  `dependentsIds` varchar(100) NOT NULL,
+  `locationOF` varchar(100) NOT NULL,
+  `statusOF` varchar(100) NOT NULL,
+  `repatriationReason` varchar(300) NOT NULL,
+  `isOwwaMember` tinyint(1) NOT NULL,
+  `isImmigrant` tinyint(1) NOT NULL,
+  `immigrationReason` varchar(200) NOT NULL,
+  `immigrationType` int(11) NOT NULL,
+  `yearsStayed` int(11) NOT NULL,
+  `servicesAvailed` text NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_ofw_conditions`
+--
+
+CREATE TABLE `tbl_applicants_ofw_conditions` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(300) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_ofw_dependents`
+--
+
+CREATE TABLE `tbl_applicants_ofw_dependents` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(300) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_ofw_locations`
+--
+
+CREATE TABLE `tbl_applicants_ofw_locations` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(300) NOT NULL,
+  `createdById` varchar(50) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modifiedById` varchar(50) NOT NULL,
+  `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isActive` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_applicants_ofw_work_history`
+--
+
+CREATE TABLE `tbl_applicants_ofw_work_history` (
+  `id` int(11) NOT NULL,
+  `countryName` varchar(100) NOT NULL,
+  `agencyName` varchar(200) NOT NULL,
+  `jobTitle` varchar(100) NOT NULL,
+  `duration` varchar(100) NOT NULL,
   `createdById` varchar(50) NOT NULL,
   `createdAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modifiedById` varchar(50) NOT NULL,
@@ -423,6 +574,24 @@ ALTER TABLE `tbl_applicants_employment_status`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_applicants_kasambahay`
+--
+ALTER TABLE `tbl_applicants_kasambahay`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_kasambahay_desc`
+--
+ALTER TABLE `tbl_applicants_kasambahay_desc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_kasambahay_history`
+--
+ALTER TABLE `tbl_applicants_kasambahay_history`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_applicants_lang_read`
 --
 ALTER TABLE `tbl_applicants_lang_read`
@@ -444,6 +613,36 @@ ALTER TABLE `tbl_applicants_lang_written`
 -- Indexes for table `tbl_applicants_licenses`
 --
 ALTER TABLE `tbl_applicants_licenses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_ofw`
+--
+ALTER TABLE `tbl_applicants_ofw`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_ofw_conditions`
+--
+ALTER TABLE `tbl_applicants_ofw_conditions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_ofw_dependents`
+--
+ALTER TABLE `tbl_applicants_ofw_dependents`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_ofw_locations`
+--
+ALTER TABLE `tbl_applicants_ofw_locations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_applicants_ofw_work_history`
+--
+ALTER TABLE `tbl_applicants_ofw_work_history`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -523,6 +722,24 @@ ALTER TABLE `tbl_applicants_employment_status`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `tbl_applicants_kasambahay`
+--
+ALTER TABLE `tbl_applicants_kasambahay`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_kasambahay_desc`
+--
+ALTER TABLE `tbl_applicants_kasambahay_desc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_kasambahay_history`
+--
+ALTER TABLE `tbl_applicants_kasambahay_history`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tbl_applicants_lang_read`
 --
 ALTER TABLE `tbl_applicants_lang_read`
@@ -544,6 +761,36 @@ ALTER TABLE `tbl_applicants_lang_written`
 -- AUTO_INCREMENT for table `tbl_applicants_licenses`
 --
 ALTER TABLE `tbl_applicants_licenses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_ofw`
+--
+ALTER TABLE `tbl_applicants_ofw`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_ofw_conditions`
+--
+ALTER TABLE `tbl_applicants_ofw_conditions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_ofw_dependents`
+--
+ALTER TABLE `tbl_applicants_ofw_dependents`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_ofw_locations`
+--
+ALTER TABLE `tbl_applicants_ofw_locations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_applicants_ofw_work_history`
+--
+ALTER TABLE `tbl_applicants_ofw_work_history`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --

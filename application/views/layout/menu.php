@@ -15,7 +15,7 @@
                     <a href="#!"><i class="ti-layout-sidebar-left"></i>Logout</a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>HomeController/Dashboard">
+                    <a href="<?php echo base_url(); ?>dashboard">
                     <i class="ti-home"></i>
                     <span data-i18n="nav.dash.main"> Dashboard</span>
                     </a>
@@ -62,20 +62,20 @@
                 </li> -->
 
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
                         <i class="ti-view-grid"></i>
-                        <span data-i18n="nav.widget.main"> Masterlist</span>
+                        <span data-i18n="nav.widget.main"> User Masterlist</span>
                         <label class="label label-danger menu-caption">10+</label>
                     </a>
-                </li>
+                </li>     
                 <li class="nav-item">
                     <a href="#!">
                         <i class="ti-layout-grid2-alt"></i>
                         <span data-i18n="nav.basic-components.main">Overseas</span>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="menu-static.html" data-i18n="nav.page_layout.vertical.static-layout"> Conditions </a></li>
-                        <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-overlay/menu-header-fixed.html" data-i18n="nav.page_layout.vertical.header-fixed">
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Conditions </a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasDependents">
                                 Dependents </a></li>
                         <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-compact/menu-compact.html" data-i18n="nav.page_layout.vertical.compact"> Locations </a>
                         </li>
@@ -109,15 +109,16 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>ApplicantController/ApplicantDisabilities">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Disabilities</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                  <a href="<?php echo base_url(); ?>EmployeeController/PreferredLocation">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Preferred Locations</span>
+                        <label class="label label-danger menu-caption">New</label>
                     </a>
                 </li>
                 <li class="nav-item single-item">
@@ -144,9 +145,9 @@
                         <label class="label label-danger menu-caption">New</label>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="json-forms/simple-form.html" data-i18n="nav.json-form.simple-form">Add Walk-in</a></li>
-                        <li><a href="json-forms/clubs.html" data-i18n="nav.json-form.clubs-view">View List</a></li>
-                        <li><a href="json-forms/customer-form.html" data-i18n="nav.json-form.customer-form">Job Applications</a></li>
+                        <li><a href="<?php echo base_url(); ?>applicants/add" data-i18n="nav.json-form.simple-form">Add Walk-in</a></li>
+                        <li><a href="<?php echo base_url(); ?>applicants" data-i18n="nav.json-form.clubs-view">View List</a></li>
+                        <li><a href="<?php echo base_url(); ?>job-applications" data-i18n="nav.json-form.customer-form">Job Applications</a></li>
                     </ul>
                 </li>
 
@@ -157,8 +158,8 @@
                         <label class="label label-danger menu-caption">New</label>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="json-forms/simple-form.html" data-i18n="nav.json-form.simple-form">Register New</a></li>
-                        <li><a href="json-forms/clubs.html" data-i18n="nav.json-form.clubs-view">View List</a></li>
+                        <li><a href="<?php echo base_url(); ?>employers/add" data-i18n="nav.json-form.simple-form">Register New</a></li>
+                        <li><a href="<?php echo base_url(); ?>employers" data-i18n="nav.json-form.clubs-view">View List</a></li>
                         <li><a href="json-forms/customer-form.html" data-i18n="nav.json-form.customer-form">Pending Accreditation</a></li>
                     </ul>
                 </li> 
@@ -176,12 +177,12 @@
                     <span>Extension</span>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="change-loges.html">
+                    <a href="<?php echo base_url(); ?>changelogs">
                         <i class="ti-list"></i>
-                        <span data-i18n="nav.change-loges.main">Change Loges</span>
+                        <span data-i18n="nav.change-loges.main">Change Logs</span>
                         <label class="label label-warning menu-caption">1.0</label>
                     </a>
-                </li>
+                </li>   
             </ul>
         </div>
     </div>

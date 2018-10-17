@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class HomeController extends CI_Controller {
+class AccreditationController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,25 +19,9 @@ class HomeController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function index() {
-		$this->load->view('UserLogin');
-	}
-
-	public function AdminEmployeeLogin() {
-		$this->load->view('EmployeeLogin');
-	}
-
-
-	public function Dashboard()
+	public function AccreditationRequest()
 	{
-		$this->load->view('Dashboard');
+		$this->load->view('AccreditationRequest');
 	}
-
-	public function Changelog() {
-
-		$this->load->view('DevelopmentChangeLog');
-
-	}
-
 
 }

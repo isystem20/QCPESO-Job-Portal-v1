@@ -20,7 +20,13 @@ class EmployeeController extends CI_Controller {
 	 */
 	public function EmployeeMasterlist()
 	{
+         $this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
 		$this->load->view('EmployeeMasterlist');
+		$this->load->view('layout/js');	
+		
 	}
 	
 	public function EmployeeRegistration()
@@ -28,6 +34,32 @@ class EmployeeController extends CI_Controller {
 		$this->load->view('EmployeeRegistration');
 	}
 
+	public function OverseasCondition()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('OverseasCondition');
+		$this->load->view('layout/js');		
+}
 
-
+public function OverseasDependents()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('OverseasDependents');
+		$this->load->view('layout/js');		
+}
+public function PreferredLocation()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('PreferredLocation');
+		$this->load->view('layout/js');		
+}
 }
