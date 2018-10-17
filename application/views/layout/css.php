@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/icon/icofont/css/icofont.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/pages/flag-icon/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/pages/menu-search/css/component.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/bower_components/switchery/dist/switchery.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" />
     <?php
     if (!empty($charts)) { ?>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/ltr/vertical-static/assets/pages/dashboard/horizontal-timeline/css/style.css">
@@ -36,6 +38,13 @@
     <?php
     }
     ?>
+    <?php
+    if (!empty($formwizard)) { ?>
+    <link rel="stylesheet" type="text/css" href=" <?php echo base_url()?>themes/bower_components/jquery.steps/demo/css/jquery.steps.css">
+    <?php
+    }
+    ?>
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/css/color/color-1.css" id="color" />
 </head>

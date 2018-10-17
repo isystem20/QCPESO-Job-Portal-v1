@@ -12,6 +12,17 @@
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/modernizr/modernizr.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/classie/classie.js"></script>
+
+    <?php
+    if (!empty($switches)) { ?>
+    <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/switchery/dist/switchery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/bootstrap-maxlength/src/bootstrap-maxlength.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>themes/ltr/vertical-static/assets/pages/advance-elements/swithces.js"></script>
+    <?php
+    }
+    ?>
+
     <?php
     if (!empty($charts)) { ?>
     <script src="<?php echo base_url(); ?>themes/bower_components/d3/d3.js"></script>
@@ -44,11 +55,40 @@
     <?php
     }
     ?>
+
+    <?php
+    if (!empty($formwizard)) { ?>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery.steps/build/jquery.steps.js"></script>
+    <script src=" <?php echo base_url()?>themes/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/pages/form-validation/validate.js"></script>
+
+    <script type="text/javascript" src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/js/script.js"></script>
+    <script src=" <?php echo base_url()?>themes/ltr/vertical-static/assets/pages/forms-wizard-validation/form-wizard.js"></script>        
+    <?php
+    }
+    ?>
+
+
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next/i18next.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>themes/bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+
     <script type="text/javascript" src="<?php echo base_url();?>themes/ltr/vertical-static/assets/js/script.js"></script>
+
+
+    <style type="text/css">
+        .color-picker {
+            display: none;
+        }
+        .dataTables_scrollBody {
+            max-height: 400px !important;
+        }
+        .main-body {
+            height: 400px;
+        }
+    </style>
 </body>
 
 

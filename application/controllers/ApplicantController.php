@@ -19,12 +19,13 @@ class ApplicantController extends CI_Controller {
 	 */
 	public function ApplicantMasterlist()
 	{
-        $this->load->view('layout/css');
+		$data = array('tables' => TRUE);
+        $this->load->view('layout/css', $data);
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
 		$this->load->view('ApplicantMasterlist');
-		$this->load->view('layout/js');	
+		$this->load->view('layout/js', $data);	
 			
 	}
 
@@ -33,7 +34,16 @@ class ApplicantController extends CI_Controller {
 		$this->load->view('ApplicantRegistration');
 	}
 
-
+	public function ApplicantDisabilities()
+		{
+	        $this->load->view('layout/css');
+			$this->load->view('layout/top');
+			$this->load->view('layout/menu');
+			$this->load->view('layout/right');
+			$this->load->view('ApplicantDisabilities');
+			$this->load->view('layout/js');	 
+				
+		}
 }
 
 /* End of file welcome.php */
