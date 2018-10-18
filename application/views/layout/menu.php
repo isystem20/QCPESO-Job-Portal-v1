@@ -77,7 +77,7 @@
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Conditions </a></li>
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasDependents">
                                 Dependents </a></li>
-                        <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-compact/menu-compact.html" data-i18n="nav.page_layout.vertical.compact"> Locations </a>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasLocations"> Locations </a>
                         </li>
                     </ul>
                 </li>
@@ -87,7 +87,7 @@
                         <span data-i18n="nav.basic-components.main">Kasambahay</span>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="menu-static.html" data-i18n="nav.page_layout.vertical.static-layout"> Joblist </a></li>
+                        <li><a href="<?php echo base_url(); ?>ApplicantController/KasambahayJoblist"> Joblist </a></li>
                     </ul>
                 </li>
                 <li class="nav-item single-item">
@@ -103,7 +103,7 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>ApplicantController/Certificate">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Certificates</span>
                     </a>
@@ -122,13 +122,23 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>EmployeeController/JobTitles">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Job Titles</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
+<<<<<<< HEAD
+                    <a href="<?php echo base_url(); ?>PostController/JobPost">
+                        <i class="ti-view-grid"></i>
+                        <span data-i18n="nav.widget.main"> Job Details</span>
+                    </a>
+                </li>
+                <li class="nav-item single-item">
                     <a href="widget.html">
+=======
+                   <a href="<?php echo base_url(); ?>EmployeeController/EducationalCourses">
+>>>>>>> 054f62e8d6c1e86fc2650d0af0cbdb7dffdfbc14
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Education Courses</span>
                     </a>

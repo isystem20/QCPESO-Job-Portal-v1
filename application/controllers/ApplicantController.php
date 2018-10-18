@@ -49,6 +49,27 @@ $this->load->view('layout/js');
 			$this->load->view('layout/js');	 
 				
 		}
+	public function Certificate()
+		{
+	        $this->load->view('layout/css');
+			$this->load->view('layout/top');
+			$this->load->view('layout/menu');
+			$this->load->view('layout/right');
+			$this->load->view('Certificate');
+			$this->load->view('layout/js');	 
+				
+		}
+public function KasambahayJoblist()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('KasambahayJoblist');
+		$this->load->view('layout/js');		
+		
+	}
+		
 }
 
 /* End of file welcome.php */

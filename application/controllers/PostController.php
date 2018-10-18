@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class EmployerController extends CI_Controller {
+class PostController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,29 +19,17 @@ class EmployerController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function EmployerMasterlist()
+	public function JobPost()
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
-		$this->load->view('EmployerMasterlist');
-		$this->load->view('layout/js');		
+		$this->load->view('JobPost');
+		$this->load->view('layout/js');	
 		
 	}
 	
-	
-
-	public function EmployerRegistration()
-	{
-		$data = array('formwizard' => TRUE, );
-		$this->load->view('layout/css', $data);
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
-		$this->load->view('layout/right');
-		$this->load->view('EmployerRegistration');
-		$this->load->view('layout/js', $data);		
-	}
 
 	
 }

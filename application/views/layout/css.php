@@ -12,7 +12,7 @@
     <meta name="keywords" content=", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="Phoenixcoded">
 
-    <link rel="icon" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 

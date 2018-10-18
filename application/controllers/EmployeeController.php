@@ -53,6 +53,17 @@ public function OverseasDependents()
 		$this->load->view('OverseasDependents');
 		$this->load->view('layout/js');		
 }
+
+public function OverseasLocations()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('OverseasLocations');
+		$this->load->view('layout/js');		
+}
+
 public function PreferredLocation()
 	{
 		$this->load->view('layout/css');
@@ -60,6 +71,25 @@ public function PreferredLocation()
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
 		$this->load->view('PreferredLocation');
+		$this->load->view('layout/js');		
+}
+
+public function JobTitles()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('JobTitles');
+		$this->load->view('layout/js');		
+}
+public function EducationalCourses()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('EducationalCourses');
 		$this->load->view('layout/js');		
 }
 }
