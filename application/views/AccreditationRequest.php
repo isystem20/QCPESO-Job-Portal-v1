@@ -48,6 +48,7 @@
                                                 <th>Age</th>
                                                 <th>StartDate</th>
                                                 <th>Industry Type</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -88,6 +89,7 @@
                                                 <td>20</td>
                                                 <td>1999/05/25</td>
                                                 <td>Local</td>
+                                                <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -107,6 +109,7 @@
 												<td>4</td>
 												<td>2015/05/25</td>
 												<td>Local</td>
+                                                <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -145,6 +148,7 @@
                                                 <td>20</td>
                                                 <td>1998/11/28</td>
                                                 <td>Local</td>
+                                                <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -164,6 +168,7 @@
                                                 <td>10</td>
                                                 <td>2008/12/02</td>
                                                 <td>Local</td>
+                                                <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -183,15 +188,18 @@
                                                 <td>9</td>
                                                 <td>2001/08/06</td>
                                                 <td>Local</td>
+                                                <td>Pending</td>
                                             </tr>
                                         
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
+                                           <th>#</th>
+                                                <th>Company Name</th>
+                                                <th>TIN</th>
+                                                <th>Establishment Type</th>
                                                 <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>StartDate</th>
+                                                <th>Industry Type</th>
+                                                <th>Status</th>
                                             </tr>
                                         </tfoot>
                                     </table>
