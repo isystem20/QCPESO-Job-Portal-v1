@@ -19,12 +19,16 @@ class HomeController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function index() {
+	public function UserLogin() {
+		$this->load->view('layout/css');
 		$this->load->view('UserLogin');
+		$this->load->view('layout/js');	
 	}
 
 	public function AdminEmployeeLogin() {
+		$this->load->view('layout/css');
 		$this->load->view('EmployeeLogin');
+		$this->load->view('layout/js');
 	}
 
 
