@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Applicant Disablities</h4>
+                    <h4>Certificates</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -55,7 +55,7 @@
                                     <tr>
                                         <td>Jimmy Santos</td>
                                         <td>EFFECTIVE PROJECT MANAGEMENT</td>
-                                        <td>This two-day seminar will have an understanding on what is project management, its key elements (characteristics), its importance and the roles and qualities of  an effective  project manager and team members. It will also discuss   how to design and develop accurate  project job plan that will ensure the successful delivery of the project from planning to managing of the project and the people involved (project teams) up to its implementation.  And it will also discuss   the various tools and techniques on how to control and monitor, audit and terminate projects.</td>
+                                        <td>This two-day seminar will have an understanding on what is project management.</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -70,8 +70,8 @@
                                     </tr>
                                     <tr>
                                         <td>James Harden</td>
-                                        <td>AWARENESS SEMINAR ON HAZARD ANALYSIS AND CRITICAL CONTROL POINTS (HACCP)</td>
-                                        <td>Give your company that all-important edge in the highly competitive food industry through the proper application of HACCP, an internationally recognized and accepted system that ensures the safety of food products.  Learn how to identify and assess where hazards in the food production process may occur and be able to put in place appropriate preventive control measures.</td>
+                                        <td>AWARENESS SEMINAR ON HAZARD ANALYSIS (HACCP)</td>
+                                        <td>Give your company that all-important edge in the highly competitive food industry </td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -86,7 +86,7 @@
                                     <tr>
                                         <td>Lebrown James</td>
                                         <td>IMPORT PROCEDURES & DOCUMENTATION</td>
-                                        <td>Know the up-to-date procedures and documents required in importation to enable you to release your goods on time.</td>
+                                        <td>Know the up-to-date procedures and documents required</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -101,7 +101,7 @@
                                     <tr>
                                         <td>Jeff Hardy</td>
                                         <td>ISO 9001:2015 QUALITY MANAGEMENT SYSTEM AWARENESS</td>
-                                        <td>Gain complete customer satisfaction by applying international standards for quality management. Discover how the ISO system leads to overall product quality and efficiency in service and product delivery. This introductory course provides an overview of quality management as internationally understood, and discusses the guidelines for developing a well-documented total quality system necessary for a company to be competitive.</td>
+                                        <td>Gain complete customer satisfaction by applying international standards for quality management.</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
