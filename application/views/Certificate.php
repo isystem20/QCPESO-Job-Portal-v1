@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Applicant Disablities</h4>
+                    <h4>Certificates</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -40,7 +40,8 @@
                             <table id="dom-jqry" class="table table-striped table-bordered nowrap">
                                 <thead>
                                     <tr>
-                                        <th>Applicant Name</th>
+                                        <th>Name</th>
+                                        <th>Eligibility Title</th>
                                         <th>Description</th>
                                         <th>Created By</th>
                                         <th>Created At</th>
@@ -53,7 +54,8 @@
                                 <tbody>
                                     <tr>
                                         <td>Jimmy Santos</td>
-                                        <td>vision Impairment</td>
+                                        <td>EFFECTIVE PROJECT MANAGEMENT</td>
+                                        <td>This two-day seminar will have an understanding on what is project management.</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -68,7 +70,8 @@
                                     </tr>
                                     <tr>
                                         <td>James Harden</td>
-                                        <td>deaf or hard of hearing</td>
+                                        <td>AWARENESS SEMINAR ON HAZARD ANALYSIS (HACCP)</td>
+                                        <td>Give your company that all-important edge in the highly competitive food industry </td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -82,7 +85,8 @@
                                     </tr>
                                     <tr>
                                         <td>Lebrown James</td>
-                                        <td>mental health conditions</td>
+                                        <td>IMPORT PROCEDURES & DOCUMENTATION</td>
+                                        <td>Know the up-to-date procedures and documents required</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -96,7 +100,8 @@
                                     </tr>
                                     <tr>
                                         <td>Jeff Hardy</td>
-                                        <td>intellectual disability</td>
+                                        <td>ISO 9001:2015 QUALITY MANAGEMENT SYSTEM AWARENESS</td>
+                                        <td>Gain complete customer satisfaction by applying international standards for quality management.</td>
                                         <td>Jimmy Santos</td>
                                         <td>City Hall</td>
                                         <td>Jimmy Santos</td>
@@ -108,21 +113,7 @@
                                         <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>Otis McDonalds</td>
-                                        <td>autism spectrum disorder</td>
-                                        <td>Jimmy Santos</td>
-                                        <td>City Hall</td>
-                                        <td>Jimmy Santos</td>
-                                        <td>CityHall</td>
-                                        <td>Active</td>
-                                        <td>
-                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
-                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
-                                        </td>
-                                    </tr>
-                                
+                                  
 
 
 
