@@ -22,8 +22,22 @@
 <div id="wizard">
 <section>
 <form class="wizard-form" id="verticle-wizard" action="#">
-<h3>Account Information</h3>
+
+
+<h4>Account Information</h4>
 <fieldset>
+<div class="form-group row">
+<div class="col-sm-2 col-lg-4">
+<label for="userName-2" class="block">Profile Picture: </label>
+</div>
+<div class="col-sm-8 col-lg-10">
+<form class="form-inline" method="POST" action="" enctype="multipart/form-data">
+
+            <input class="button" type="file" name="upload" id="input" accept="image/gif, image/jpeg, image/png" onchange="handleFiles(this.files)"/>
+            
+        </form>
+</div>
+</div>
 <div class="form-group row">
 <div class="col-sm-2 col-lg-4">
 <label for="userName-2" class="block">Email:</label>
@@ -59,7 +73,7 @@
 </fieldset>
 
 
-<h3> Personal Information </h3>
+<h4> Personal Information </h4>
 <fieldset>
 <div class="form-group row">
 <div class="col-sm-2 col-lg-4">
@@ -112,7 +126,7 @@
 </div>
 </div>
 </fieldset>
-<h3>Further Information</h3>
+<h4>Further Information</h4>
 <fieldset>
 <div class="form-group row">
 <div class="col-sm-2 col-lg-4">Gender:</div>
@@ -159,7 +173,7 @@
 </div>
 </div>
 </fieldset>
-<h3> Education Background</h3>
+<h4> Educational Background</h4>
 <fieldset>
 <div class="form-group row">
 <div class="col-sm-2 col-lg-4">
@@ -202,7 +216,7 @@
 </div>
 </div>
 </fieldset>
-<h3> Work Experience</h3>
+<h4> Work Experience</h4>
 <fieldset>
 <div class="form-group row">
 <div class="col-sm-2 col-lg-4">
