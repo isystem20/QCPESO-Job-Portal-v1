@@ -36,7 +36,7 @@
                     </div>
                     <div class="card-block">
                         <div class="table-responsive dt-responsive">
-                            <button type="button" class="btn btn-primary">Add</button>
+                            
                             <table id="dom-jqry" class="table table-striped table-bordered nowrap">
                                 <thead>
                                     <tr>
@@ -60,8 +60,9 @@
                                         <td>CityHall</td>
                                         <td>Active</td>
                                         <td>
-                                        <button type="button" class="btn btn-info">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
+                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     
                                     </tr>
@@ -74,8 +75,9 @@
                                         <td>CityHall</td>
                                         <td>Active</td>
                                         <td>
-                                        <button type="button" class="btn btn-info">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
+                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -87,8 +89,9 @@
                                         <td>CityHall</td>
                                         <td>Active</td>
                                         <td>
-                                        <button type="button" class="btn btn-info">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
+                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -100,8 +103,9 @@
                                         <td>CityHall</td>
                                         <td>Active</td>
                                         <td>
-                                        <button type="button" class="btn btn-info">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
+                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -113,8 +117,9 @@
                                         <td>CityHall</td>
                                         <td>Active</td>
                                         <td>
-                                        <button type="button" class="btn btn-info">Edit</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="file" class="btn btn-success btn-sm" >Add</button>
+                                        <button type="button" class="btn btn-info btn-sm">Edit</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
                                         </td>
                                     </tr>
                                 
