@@ -128,6 +128,12 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
+                    <a href="<?php echo base_url(); ?>PostController/JobPost">
+                        <i class="ti-view-grid"></i>
+                        <span data-i18n="nav.widget.main"> Job Details</span>
+                    </a>
+                </li>
+                <li class="nav-item single-item">
                     <a href="widget.html">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Education Courses</span>
