@@ -77,7 +77,7 @@
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Conditions </a></li>
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasDependents">
                                 Dependents </a></li>
-                        <li><a href="http://flatable.phoenixcoded.net/ltr/vertical-compact/menu-compact.html" data-i18n="nav.page_layout.vertical.compact"> Locations </a>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasLocations"> Locations </a>
                         </li>
                     </ul>
                 </li>
