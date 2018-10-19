@@ -87,7 +87,7 @@
                         <span data-i18n="nav.basic-components.main">Kasambahay</span>
                     </a>
                     <ul class="tree-1">
-                        <li><a href="menu-static.html" data-i18n="nav.page_layout.vertical.static-layout"> Joblist </a></li>
+                        <li><a href="<?php echo base_url(); ?>ApplicantController/KasambahayJoblist"> Joblist </a></li>
                     </ul>
                 </li>
                 <li class="nav-item single-item">
