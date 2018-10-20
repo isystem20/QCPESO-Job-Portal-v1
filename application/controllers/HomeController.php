@@ -49,5 +49,12 @@ class HomeController extends CI_Controller {
 
 	}
 
-
+	public function FrontPage()
+		{
+			$this->load->view('layout/css');
+			$this->load->view('layout/top');
+			$this->load->view('FrontPage');
+			$this->load->view('layout/js');	
+			
+		}
 }
