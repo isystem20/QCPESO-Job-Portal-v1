@@ -28,6 +28,8 @@ class PostController extends CI_Controller {
 		$this->load->view('JobPost');
 		$this->load->view('layout/js');	
 		
+
+        
 	}
 	
 
