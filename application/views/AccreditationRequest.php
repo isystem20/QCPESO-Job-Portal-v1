@@ -70,6 +70,7 @@
                                                 <td>7</td>
                                                 <td>2011/04/25</td>
                                                 <td>Local</td>
+                                                 <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -129,6 +130,7 @@
                                                 <td>22</td>
                                                 <td>1996/03/29</td>
                                                 <td>Local</td>
+                                                 <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -191,16 +193,7 @@
                                                 <td>Pending</td>
                                             </tr>
                                         
-                                            <tr>
-                                           <th>#</th>
-                                                <th>Company Name</th>
-                                                <th>TIN</th>
-                                                <th>Establishment Type</th>
-                                                <th>Age</th>
-                                                <th>StartDate</th>
-                                                <th>Industry Type</th>
-                                                <th>Status</th>
-                                            </tr>
+                                            
                                         </tfoot>
                                     </table>
                                 </div>
