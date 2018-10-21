@@ -31,6 +31,7 @@ class EmployeeController extends CI_Controller {
 	
 	public function EmployeeRegistration()
 	{
+
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
