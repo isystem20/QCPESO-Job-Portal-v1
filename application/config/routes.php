@@ -67,4 +67,4 @@ $route['employees'] = 'EmployeeController/EmployeeMasterlist';
 $route['employees/add'] = 'EmployeeController/EmployeeRegistration';
 $route['employers'] = 'EmployerController/EmployerMasterlist';
 $route['employers/add'] = 'EmployerController/EmployerRegistration';
-
+$route['jobposts/view'] = 'PostController/JobPost';

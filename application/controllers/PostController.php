@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AccreditationController extends CI_Controller {
+class PostController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,17 +19,17 @@ class AccreditationController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function AccreditationRequest()
+	public function JobPost()
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
-		$this->load->view('AccreditationRequest');
-		$this->load->view('layout/js');		
+		$this->load->view('JobPost');
+		$this->load->view('layout/js');	
 		
 	}
 	
-	
+
 	
 }

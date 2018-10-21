@@ -30,9 +30,14 @@ class ApplicantController extends CI_Controller {
 	}
 
 	public function ApplicantRegistration()
-	{
-		$this->load->view('ApplicantRegistration');
-	}
+{
+$this->load->view('layout/css');
+$this->load->view('layout/top');
+$this->load->view('layout/menu');
+$this->load->view('layout/right');
+$this->load->view('ApplicantRegistration');
+$this->load->view('layout/js');
+}
 
 	public function ApplicantDisabilities()
 		{
@@ -54,6 +59,17 @@ class ApplicantController extends CI_Controller {
 			$this->load->view('layout/js');	 
 				
 		}
+public function KasambahayJoblist()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu');
+		$this->load->view('layout/right');
+		$this->load->view('KasambahayJoblist');
+		$this->load->view('layout/js');		
+		
+	}
+		
 }
 
 /* End of file welcome.php */

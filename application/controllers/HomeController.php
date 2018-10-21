@@ -25,6 +25,12 @@ class HomeController extends CI_Controller {
 		$this->load->view('layout/js');	
 	}
 
+	public function UserLogin() {
+		$this->load->view('layout/css');
+		$this->load->view('UserLogin');
+		$this->load->view('layout/js');	
+	}
+
 	public function AdminEmployeeLogin() {
 		$this->load->view('layout/css');
 		$this->load->view('EmployeeLogin');
@@ -49,5 +55,12 @@ class HomeController extends CI_Controller {
 
 	}
 
-
+	public function FrontPage()
+		{
+			$this->load->view('layout/css');
+			$this->load->view('layout/top_navbar_frontpage');
+			$this->load->view('FrontPage');
+			$this->load->view('layout/js');	
+			
+		}
 }

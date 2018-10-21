@@ -30,6 +30,7 @@ class EmployerController extends CI_Controller {
 		
 	}
 	
+	
 
 	public function EmployerRegistration()
 	{
