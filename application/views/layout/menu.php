@@ -135,7 +135,6 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
 
                    <a href="<?php echo base_url(); ?>EmployeeController/EducationalCourses">
 
