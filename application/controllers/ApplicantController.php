@@ -31,6 +31,7 @@ class ApplicantController extends CI_Controller {
 
 	public function ApplicantRegistration()
 {
+	
 $this->load->view('layout/css');
 $this->load->view('layout/top');
 $this->load->view('layout/menu-app');
