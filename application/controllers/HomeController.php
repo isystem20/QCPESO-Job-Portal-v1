@@ -19,7 +19,7 @@ class HomeController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function UserLogin() {
+	public function index() {
 		$this->load->view('layout/css');
 		$this->load->view('UserLogin');
 		$this->load->view('layout/js');	
