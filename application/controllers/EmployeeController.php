@@ -32,12 +32,13 @@ class EmployeeController extends CI_Controller {
 	public function EmployeeRegistration()
 	{
 
-		$this->load->view('layout/css');
+		$data = array('formwizard' => TRUE, );
+		$this->load->view('layout/css', $data);
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
 		$this->load->view('EmployeeRegistration');
-		$this->load->view('layout/js');	
+		$this->load->view('layout/js', $data);	
 	}
 
 	public function OverseasCondition()
