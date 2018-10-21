@@ -40,18 +40,50 @@
 <div class="table-responsive dt-responsive">
 <table id="dom-jqry" class="table table-striped table-bordered nowrap">
 <thead>
-<form method=post action = "">
-	<input type="text" size="30" maxlength="30">&nbsp <input type="Submit" value="Search">
+	Search: &nbsp <input type="text" size="30" maxlength="30">
 </form>
 &nbsp &nbsp
 <select>
 	<option selected>Types of Job</option>
-	<option></option>
-	<option></option>
-	<option></option>
-	<option></option>
+	<option>Information Technology</option>
+	<option>Accounting</option>
+	<option>Bussiness</option>
+	<option>Management</option>
 </select>
+<br>
+<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+	<td>
+		<img src="" width="100" height="100" border="0">
+		(Company Name)
+			<br>Location/Address:</br> 
+				Job Position:<br>
+					Job Description:</br><br>
+						Contact Persons:</br>
+										</td>		
 
+</table>
+<br>
+<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+	<td>
+		<img src="" width="100" height="100" border="0">
+		(Company Name)
+			<br>Location/Address:</br> 
+				Job Position:<br>
+					Job Description:</br><br>
+						Contact Persons:</br>
+										</td>				
+</table>
+</br>
+<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+	<td>
+		<img src="" width="100" height="100" border="0">
+		(Company Name)
+			<br>Location/Address:</br> 
+				Job Position:<br>
+					Job Description:</br><br>
+						Contact Persons:</br>
+										</td>
+</table>
 </div>
 </div>
 </div>
