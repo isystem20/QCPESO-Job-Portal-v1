@@ -69,21 +69,23 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
 /* Management View */
 
 /* Log in */                            $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+    /* Dashboard */                     $route['manage'] = 'HomeController/Dashboard';
+    /* Manage */                        
+        /* User Masterlist */           $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
+        /* Manage Groups */             $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
 
 
 
-$route['manage/users-masterlist'] = 'UserController/UserMasterlist';
 
-
-    /* Transactions */
-    /* Applicants */ 
-        /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
-        /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
-        /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'ApplicationController/ApplicationMasterList';
-    /* Establishment */ 
-        /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
-        /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
-        /* Pending Accreditation */     
+        /* Transactions */
+        /* Applicants */ 
+            /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
+            /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
+            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'ApplicationController/ApplicationMasterList';
+        /* Establishment */ 
+            /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
+            /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+            /* Pending Accreditation */     
 
 
 
@@ -99,4 +101,3 @@ $route['changelog'] = 'HomeController/Changelog';
 
 /* Developers */
 
-$route['manage'] = 'HomeController/Dashboard';
