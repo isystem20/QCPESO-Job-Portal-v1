@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class UserController extends CI_Controller {
+class GroupController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,17 +20,14 @@ class UserController extends CI_Controller {
 	 */
 
 
-	public function UserMasterlist()
-	{
-		$data = array('tables' => TRUE, );
-		$this->load->view('layout/css', $data);
+	public function ManageGroups() {
+		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('pages/users/UserMasterlist');
-		$this->load->view('layout/js', $data);		
-
+		$this->load->view('ManageGroups');
+		$this->load->view('layout/js');		
 	}
 
-
+	
 }
