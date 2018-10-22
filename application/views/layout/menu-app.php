@@ -35,32 +35,32 @@
                     </ul>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>saved-jobs">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Saved Jobs</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                     <a href="<?php echo base_url(); ?>applied-jobs">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">My Applications</span>
                     </a>
                 </li>
 
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                   <a href="<?php echo base_url(); ?>job-alerts">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">My Alerts</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>askPESO">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Ask P.E.S.O.</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>account-settings">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Settings</span>
                     </a>
