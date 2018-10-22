@@ -20,7 +20,7 @@ class GroupController extends CI_Controller {
 	 */
 
 
-	public function ManageGroups() {
+	public function GroupMasterlist() {
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
