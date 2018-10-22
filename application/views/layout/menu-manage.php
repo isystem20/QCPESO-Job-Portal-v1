@@ -1,4 +1,4 @@
-
+    <div class="leftpane">
     <div class="main-menu">
         <div class="main-menu-header">
             <img class="img-40" src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/user.png" alt="User-Profile-Image">
@@ -7,6 +7,7 @@
                <span id="more-details">Capstone Team<i class="ti-angle-down"></i></span>
             </div>
         </div>
+
         <div class="main-menu-content">
             <ul class="main-navigation">
                 <li class="more-details">
@@ -200,4 +201,19 @@
                 </li>
             </ul>
         </div>
+    </div>        
     </div>
+
+
+
+<style type="text/css">
+    .leftpane {
+        width: 240px;
+        float:left;
+        left: 0px;
+        z-index: 1;
+        /*overflow: auto;*/
+        background: #2c3e50; 
+        height: 100%;
+    }
+</style>
