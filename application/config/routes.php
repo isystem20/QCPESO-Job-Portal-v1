@@ -69,15 +69,15 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
         /* User Masterlist */               $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
         /* Manage Groups */                 $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
         /* Maintenance */
-            /* Language */
-            /* Licenses */
+            /* Language */                  $route['manage/maintenance/languages'] = '';
+            /* Licenses */                  $route['manage/maintenance/licenses'] = '';
             /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/Certificate';
             /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/ApplicantDisabilities';
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
             /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
             /* Categories */                $route['manage/maintenance/applicant-categories'] = 'EmployeeController/Categories';
-        /* Reviews and Ratings */
-        /* Surveys */
+        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'EmployeeController/Categories';
+        /* Surveys */                       $route['manage/surveys'] = 'EmployeeController/Categories';
 
 
     /* TRANSACTIONS */
@@ -88,15 +88,20 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
         /* Establishment */ 
             /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
-            /* Pending Accreditation */     
-    /* REPORTS */
-        /* Applicants Masterlist */
-        /* Establishments Masterlist */
-        /* Referral Reports */
-        /* Successful Hires */
-        /* Feedbacks */
-        /* Establishment Ratings */
-        /* Survey Summary */
+            /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
+        /* Jobs */ 
+            /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
+            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobRegistration';  
+            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
+
+/* REPORTS */
+        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/AccreditationRequest'; 
+        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/AccreditationRequest'; 
+        /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/AccreditationRequest'; 
+        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'AccreditationController/AccreditationRequest'; 
+        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'AccreditationController/AccreditationRequest'; 
+        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'AccreditationController/AccreditationRequest'; 
+        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'AccreditationController/AccreditationRequest'; 
 
 
 
