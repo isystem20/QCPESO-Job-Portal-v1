@@ -40,15 +40,16 @@ $this->load->view('ApplicantRegistration');
 $this->load->view('layout/js');
 }
 
-	public function ApplicantDisabilities()
+	public function DisabilitiesMasterlist()
 		{
-	        $this->load->view('layout/css');
-			$this->load->view('layout/top');
-			$this->load->view('layout/menu-manage');
-			$this->load->view('layout/right');
-			$this->load->view('ApplicantDisabilities');
-			$this->load->view('layout/js');	 
-				
+	        $data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('DisabilitiesMasterlist');
+		$this->load->view('layout/js', $data);		
+
 		}
 	
 public function KasambahayJoblist()

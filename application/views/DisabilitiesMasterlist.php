@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Applicant Disablities</h4>
+                    <h4>Disablities Masterlist</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -13,7 +13,7 @@
                             <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
-                        <li class="breadcrumb-item"><a href="#!">Applicant Disablities</a>
+                        <li class="breadcrumb-item"><a href="#!">Disablities Masterlist</a>
                         </li>
                     </ul>
                 </div>
@@ -32,12 +32,11 @@
                         </div>
                     </div>
                     <div class="card-block">
-                        <div class="table-responsive dt-responsive">
-                            
-                            <table id="dom-jqry" class="table table-striped table-bordered nowrap">
+                        <div class="dt-responsive table-responsive">
+                            <table id="scr-vtr-dynamic" class="table table-striped table-bordered nowrap">
                                 <thead>
                                     <tr>
-                                        <th>Applicant Name</th>
+                                        <th>Name</th>
                                         <th>Description</th>
                                         <th>Created By</th>
                                         <th>Created At</th>
