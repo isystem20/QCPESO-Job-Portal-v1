@@ -68,16 +68,24 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
 
 /* Management View */
 
-/* Log in */                            $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
-    /* Dashboard */                     $route['manage'] = 'HomeController/Dashboard';
-    /* Manage */                        
-        /* User Masterlist */           $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
-        /* Manage Groups */             $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
+/* Log in */                                $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+    /* Dashboard */                         $route['manage'] = 'HomeController/Dashboard';
+    /* MANAGE */                        
+        /* User Masterlist */               $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
+        /* Manage Groups */                 $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
+        /* Maintenance */
+            /* Language */
+            /* Licenses */
+            /* Certificates */
+            /* Disabilities */
+            /* Preferred Locations */
+            /* Job titles */
+            /* Categories */
+        /* Reviews and Ratings */
+        /* Surveys */
 
 
-
-
-        /* Transactions */
+    /* TRANSACTIONS */
         /* Applicants */ 
             /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
             /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
@@ -86,7 +94,7 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
             /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
             /* Pending Accreditation */     
-
+    /* REPORTS */
 
 
 
@@ -97,7 +105,7 @@ $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
 
 
 
-$route['changelog'] = 'HomeController/Changelog';
 
 /* Developers */
+                                            $route['changelog'] = 'HomeController/Changelog';
 
