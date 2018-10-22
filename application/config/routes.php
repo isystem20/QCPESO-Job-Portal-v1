@@ -85,8 +85,8 @@ $route['translate_uri_dashes'] = FALSE;
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
             /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
             /* Categories */                $route['manage/maintenance/applicant-categories'] = 'EmployeeController/Categories';
-        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = '';
-        /* Surveys */                       $route['manage/surveys'] = '';
+        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'RnrController/ReviewAndRatings';
+        /* Surveys */                       $route['manage/surveys'] = 'SurveyController/Survey';
 
 
     /* TRANSACTIONS */
