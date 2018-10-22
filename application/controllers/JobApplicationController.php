@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ApplicationController extends CI_Controller {
+class JobApplicationController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
