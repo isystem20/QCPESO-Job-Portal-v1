@@ -42,7 +42,7 @@ class HomeController extends CI_Controller {
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('Dashboard');
 		$this->load->view('layout/js');	

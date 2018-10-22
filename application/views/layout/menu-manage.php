@@ -110,7 +110,7 @@
                     </a>
                 </li>  
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
+                    <a href="<?php echo base_url(); ?>EmployerController/EmployerMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Establishment Masterlist</span>
                     </a>
@@ -183,6 +183,19 @@
                         <li><a href="<?php echo base_url(); ?>applicants/add" data-i18n="nav.json-form.simple-form">Server and Database</a></li>
                         <li><a href="<?php echo base_url(); ?>applicants" data-i18n="nav.json-form.clubs-view">Notifications</a></li>
                        
+                        <li class="nav-item">
+                    <a href="#!">
+                        <i class="ti-layout-grid2-alt"></i>
+                        <span data-i18n="nav.basic-components.main">Overseas</span>
+                    </a>
+                    <ul class="tree-1">
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Conditions </a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasDependents">
+                                Dependents </a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasLocations"> Locations </a>
+                        </li>
+               
+
                     </ul>
                 </li>
             </ul>
