@@ -54,16 +54,11 @@ $route['404_override'] = 'SiteErrorController/Error404';
 $route['translate_uri_dashes'] = FALSE;
 
 
-/* Applicant */
+/* Applicant View */
 
 
 $route['login'] = 'HomeController/index';
 $route['profile'] = 'ApplicantController/ApplicantResume';
-
-
-
-
-
 
 
 /* Management View */
@@ -76,11 +71,11 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
         /* Maintenance */
             /* Language */
             /* Licenses */
-            /* Certificates */
-            /* Disabilities */
-            /* Preferred Locations */
-            /* Job titles */
-            /* Categories */
+            /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/Certificate';
+            /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/ApplicantDisabilities';
+            /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
+            /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
+            /* Categories */                $route['manage/maintenance/applicant-categories'] = 'EmployeeController/Categories';
         /* Reviews and Ratings */
         /* Surveys */
 
@@ -102,6 +97,9 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
         /* Feedbacks */
         /* Establishment Ratings */
         /* Survey Summary */
+
+
+
 
 
 
