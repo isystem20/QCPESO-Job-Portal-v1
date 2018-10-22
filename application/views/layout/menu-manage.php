@@ -35,7 +35,7 @@
                 </li>   
 
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
+                    <a href="<?php echo base_url(); ?>manage/user-groups">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Manage Groups</span>
                     </a>
