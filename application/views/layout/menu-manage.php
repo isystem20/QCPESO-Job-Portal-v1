@@ -16,7 +16,7 @@
                     <a href="#!"><i class="ti-layout-sidebar-left"></i>Logout</a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>dashboard">
+                    <a href="<?php echo base_url(); ?>manage">
                     <i class="ti-home"></i>
                     <span data-i18n="nav.dash.main"> Dashboard</span>
                     </a>
