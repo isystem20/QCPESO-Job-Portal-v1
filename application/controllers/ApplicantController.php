@@ -61,17 +61,7 @@ public function KasambahayJoblist()
 		$this->load->view('layout/js');		
 		
 	}
-	public function ApplicantResume()
-	{
-		$this->load->view('layout/css');
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-app');
-		$this->load->view('layout/right');
-		$this->load->view('ApplicantResume');
-		$this->load->view('layout/js');		
-		
-	}
-		
+
 		public function EditApplicantProfile()
 	{
 		$this->load->view('layout/css');
