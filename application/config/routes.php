@@ -66,27 +66,31 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
 
 
 
+/* Management View */
+
+/* Log in */                        $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
 
 
-$route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+
 $route['manage/users-masterlist'] = 'EmployeeController/EmployeeMasterlist';
 
 
-/* Transactions */
-/* Applicants */ 
-    /* Add walk-in */           $route['manage/do/applicants/add'] = 'EmployeeController/EmployeeRegistration';
-    /* View List */             $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
-    /* Job Applications */      $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
-/* Establishment */ 
-    /* Add new */               $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
-        
+    /* Transactions */
+    /* Applicants */ 
+        /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
+        /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
+        /* Job Applications */          $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+    /* Establishment */ 
+        /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
+        /* View List */       
+        /* Pending Accreditation */     
 
 
 
 
-/* Management */
+$route['manage/do/applicants/add'] = 'EmployeeController/EmployeeRegistration';
 
-$route['manage/user-groups'] = 'ApplicantController/ApplicantRegistration';
+
 
 $route['job-applications'] = 'ApplicationController/ApplicantionMasterList';
 
