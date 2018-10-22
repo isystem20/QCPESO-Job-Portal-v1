@@ -9,7 +9,7 @@
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="<?php echo base_url(); ?>">
+                            <a href="<?php echo base_url(); ?>dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>

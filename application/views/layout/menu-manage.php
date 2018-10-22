@@ -26,12 +26,17 @@
                 </li>
 
     
+                    <li class="nav-item single-item">
+                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
+                        <i class="ti-view-grid"></i>
+                        <span data-i18n="nav.widget.main"> User Masterlist</span>
+                    </a>
+                </li>   
 
                 <li class="nav-item single-item">
                     <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Manage Groups</span>
-                    
                     </a>
                 </li>    
               
@@ -47,9 +52,9 @@
                     <ul class="tree-1">
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Language </a></li> 
                         <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasLocations"> Licenses </a> </li>
-                        <li><a href="<?php echo base_url(); ?>ApplicantController/KasambahayJoblist"> Certificates </a></li>
+                        <li><a href="<?php echo base_url(); ?>ApplicantController/Certificate"> Certificates </a></li>
                         <li><a href="<?php echo base_url(); ?>ApplicantController/ApplicantDisabilities"> Disabilities </a></li>
-                        <li><a href="<?php echo base_url(); ?>ApplicantController/KasambahayJoblist"> Preferred Locations </a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/PreferredLocation"> Preferred Locations </a></li>
                         <li><a href="<?php echo base_url(); ?>EmployeeController/JobTitles"> Job Titles </a></li>
                         <li><a href="<?php echo base_url(); ?>ApplicantController/KasambahayJoblist"> Categories </a></li>
 
@@ -58,13 +63,13 @@
 
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                    <a href="<?php echo base_url(); ?>EmployerController/EmployerMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Review and Ratings</span>
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="widget.html">
+                      <a href="<?php echo base_url(); ?>EmployerController/EmployerMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Survey</span>
                     </a>
@@ -110,7 +115,7 @@
                     </a>
                 </li>  
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>EmployeController/EmployerMasterlist">
+                    <a href="<?php echo base_url(); ?>EmployerController/EmployerMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Establishment Masterlist</span>
                     </a>
@@ -122,7 +127,7 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
+                    <a href="<?php echo base_url(); ?>EmployeeController/EmployeeMasterlist">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Succesful Hires</span>
                     </a>
