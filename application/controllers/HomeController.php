@@ -40,12 +40,13 @@ class HomeController extends CI_Controller {
 
 	public function Dashboard()
 	{
-		$this->load->view('layout/css');
+		$layout = array('charts' => TRUE, );
+		$this->load->view('layout/css',$layout);
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('Dashboard');
-		$this->load->view('layout/js');	
+		$this->load->view('layout/js',$layout);	
 		
 	}
 

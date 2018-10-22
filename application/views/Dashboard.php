@@ -45,7 +45,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>100%</h5>
-											<span>Volume</span>
+											<span>Jobs</span>
 										</div>
 									</div>
 								</div>
@@ -60,7 +60,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>2000 +</h5>
-											<span>Files</span>
+											<span>Applicants</span>
 										</div>
 									</div>
 								</div>
@@ -71,7 +71,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>120</h5>
-											<span>Mails</span>
+											<span>Employers</span>
 										</div>
 									</div>
 								</div>

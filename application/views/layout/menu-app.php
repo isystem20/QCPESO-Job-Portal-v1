@@ -15,7 +15,7 @@
                     <a href="#!"><i class="ti-layout-sidebar-left"></i>Logout</a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>UserController/UserMasterlist">
+                    <a href="<?php echo base_url(); ?>ApplicantController/ApplicantResume">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Home</span>
                     </a>
