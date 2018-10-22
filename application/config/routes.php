@@ -94,7 +94,7 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
             /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobRegistration';  
             /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
 
-/* REPORTS */
+    /* REPORTS */
         /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/AccreditationRequest'; 
         /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/AccreditationRequest'; 
         /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/AccreditationRequest'; 
