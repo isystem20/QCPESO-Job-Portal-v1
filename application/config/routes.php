@@ -95,7 +95,13 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
             /* Pending Accreditation */     
     /* REPORTS */
-
+        /* Applicants Masterlist */
+        /* Establishments Masterlist */
+        /* Referral Reports */
+        /* Successful Hires */
+        /* Feedbacks */
+        /* Establishment Ratings */
+        /* Survey Summary */
 
 
 
