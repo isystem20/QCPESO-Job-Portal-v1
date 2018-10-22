@@ -57,8 +57,17 @@ $route['translate_uri_dashes'] = FALSE;
 /* Applicant View */
 
 
-$route['login'] = 'HomeController/index';
-$route['profile'] = 'ApplicantController/ApplicantResume';
+    /* Log in */                            $route['login'] = 'HomeController/index';
+    /* Home (Profile) */                    $route['profile'] = 'ApplicantController/ApplicantResume';
+    /* Search */                            $route[''] = '';
+        /* Job Details */
+    /* Saved Jobs */                        $route['saved-jobs'] = '';
+    /* My Applications */                   $route['applied-jobs'] = '';
+    /* My Alerts */                         $route['job-alerts'] = '';
+    /* Ask PESO */                          $route['askPESO'] = '';
+    /* Settings */                          $route['account-settings'] = '';
+
+                                    
 
 
 /* Management View */
@@ -76,8 +85,8 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
             /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
             /* Categories */                $route['manage/maintenance/applicant-categories'] = 'EmployeeController/Categories';
-        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'EmployeeController/Categories';
-        /* Surveys */                       $route['manage/surveys'] = 'EmployeeController/Categories';
+        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = '';
+        /* Surveys */                       $route['manage/surveys'] = '';
 
 
     /* TRANSACTIONS */
@@ -95,13 +104,13 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
             /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
 
     /* REPORTS */
-        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/AccreditationRequest'; 
-        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/AccreditationRequest'; 
-        /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/AccreditationRequest'; 
-        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'AccreditationController/AccreditationRequest'; 
-        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'AccreditationController/AccreditationRequest'; 
-        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'AccreditationController/AccreditationRequest'; 
-        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'AccreditationController/AccreditationRequest'; 
+        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/ApplicantReport'; 
+        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/EstablishmentReports'; 
+        /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/ReferralReports'; 
+        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'AccreditationController/SuccessfulHires'; 
+        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'AccreditationController/Feedbacks'; 
+        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'AccreditationController/EstablishmentRatings'; 
+        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'AccreditationController/SurverSummary'; 
 
 
 
