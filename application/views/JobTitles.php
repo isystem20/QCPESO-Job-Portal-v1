@@ -44,14 +44,15 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
-                                                 <th>Is Active</th>
+                                                <th>Last Modified By</th>
+                                                <th>Last Modified At</th>
+                                                 <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                        if ($joblist->num_rows() > 0) {
+                                            foreach ($joblist->result() as $row) { ?>
                                             <tr>
                                                 <td>
                                                     <div class="checkbox-fade fade-in-primary">
@@ -64,56 +65,28 @@
                                                     </label>
                                                     </div>
                                                 </td>
-                                                <td>Jollibee</td>
-                                                <td>Service Crew</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Manila</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                            <tr>
+                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
                                                 <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
+                                                    <?php 
+                                                    if ($row->isActive == '1') {
+                                                        echo '<label class="label label-primary">Active</label>';
+                                                    }
+                                                    else {
+                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                    }
+                                                    ?>
                                                 </td>
-                                              <td>Jollibee</td>
-                                                <td>Manager</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Manila</td>
-                                                 <td>Yes</td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                              <td>Jollibee</td>
-                                                <td>Cashier</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Manila</td>
-                                                 <td>Yes</td>
-                                            </tr>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+
+
                                   
-                                            </tr>
                                         </tbody>
                                         <tfoot>
                                            

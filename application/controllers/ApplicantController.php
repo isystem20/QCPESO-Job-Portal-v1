@@ -72,6 +72,9 @@ public function KasambahayJoblist()
 		$this->load->view('layout/js');		
 		
 	}
+
+
+
 }
 
 /* End of file welcome.php */

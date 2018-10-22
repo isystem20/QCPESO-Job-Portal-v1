@@ -77,11 +77,14 @@ public function PreferredLocation()
 
 public function JobTitles()
 	{
+		$this->load->model('JobTitleModel','joblistmodel');
+		$data['joblist'] = $this->joblistmodel->Load_JobTitle_Masterlist();
+		// print_r($data);
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('JobTitles');
+		$this->load->view('JobTitles',$data);
 		$this->load->view('layout/js');		
 }
 public function EducationalCourses()
