@@ -79,20 +79,15 @@ $route['manage/users-masterlist'] = 'EmployeeController/EmployeeMasterlist';
     /* Applicants */ 
         /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
         /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
-        /* Job Applications */          $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+        /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'ApplicationController/ApplicationMasterList';
     /* Establishment */ 
         /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
-        /* View List */       
+        /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
         /* Pending Accreditation */     
 
 
 
 
-$route['manage/do/applicants/add'] = 'EmployeeController/EmployeeRegistration';
-
-
-
-$route['job-applications'] = 'ApplicationController/ApplicantionMasterList';
 
 $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
 
