@@ -3,8 +3,8 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Jobs Search</h4>
-                    <span>Search Jobs Now</span>
+                    <h4>Browse Jobs</h4>
+                  
                 </div>
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
@@ -13,13 +13,12 @@
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">User Masterlist</a>
                         </li>
                     </ul>
                 </div>
                            
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Jobs Search</a>
+
                         </li>
                     </ul>
                 </div>

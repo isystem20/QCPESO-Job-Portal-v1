@@ -37,7 +37,7 @@ class LoggedUserController extends CI_Controller {
 			$this->load->view('layout/top');
 			$this->load->view('layout/menu-app');
 			$this->load->view('layout/right');
-			$this->load->view('SearchJobs');
+			$this->load->view('BrowseJobs');
 			$this->load->view('layout/js');	 
 				
 		}
