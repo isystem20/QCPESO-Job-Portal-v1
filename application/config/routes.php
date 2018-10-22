@@ -53,18 +53,51 @@ $route['default_controller'] = 'HomeController';
 $route['404_override'] = 'SiteErrorController/Error404';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['profile'] = 'Home/profile';
+
+/* Applicant */
+
+
+$route['login'] = 'HomeController/index';
+$route['profile'] = 'ApplicantController/ApplicantResume';
+
+
+
+
+
+
+
+
+
+$route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+$route['manage/users-masterlist'] = 'EmployeeController/EmployeeMasterlist';
+
+
+/* Transactions */
+/* Applicants */ 
+    /* Add walk-in */           $route['manage/do/applicants/add'] = 'EmployeeController/EmployeeRegistration';
+    /* View List */             $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
+    /* Job Applications */      $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+/* Establishment */ 
+    /* Add new */               $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
+        
+
+
+
+
+/* Management */
+
+$route['manage/user-groups'] = 'ApplicantController/ApplicantRegistration';
+
+$route['job-applications'] = 'ApplicationController/ApplicantionMasterList';
+
+$route['manage/do/jobs/view-list'] = 'PostController/JobPost';
+
+
+
 
 
 $route['changelog'] = 'HomeController/Changelog';
-$route['dashboard'] = 'HomeController/Dashboard';
-$route['applicants'] = 'ApplicantController/ApplicantMasterlist';
-$route['applicants/add'] = 'ApplicantController/ApplicantRegistration';
-$route['job-applications'] = 'ApplicationController/ApplicantionMasterlist';
-$route['login'] = 'HomeController/index';
-$route['admin/login'] = 'HomeController/AdminEmployeeLogin';
-$route['employees'] = 'EmployeeController/EmployeeMasterlist';
-$route['employees/add'] = 'EmployeeController/EmployeeRegistration';
-$route['employers'] = 'EmployerController/EmployerMasterlist';
-$route['employers/add'] = 'EmployerController/EmployerRegistration';
-$route['jobposts/view'] = 'PostController/JobPost';
+
+/* Developers */
+
+$route['manage'] = 'HomeController/Dashboard';
