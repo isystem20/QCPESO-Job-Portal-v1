@@ -68,11 +68,11 @@ $route['profile'] = 'ApplicantController/ApplicantResume';
 
 /* Management View */
 
-/* Log in */                        $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+/* Log in */                            $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
 
 
 
-$route['manage/users-masterlist'] = 'EmployeeController/EmployeeMasterlist';
+$route['manage/users-masterlist'] = 'UserController/UserMasterlist';
 
 
     /* Transactions */
