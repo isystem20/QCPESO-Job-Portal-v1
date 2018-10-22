@@ -31,7 +31,7 @@
                     </a>
 
                     <ul class="tree-1">
-                        <li><a href="<?php echo base_url(); ?>EmployeeController/OverseasCondition"> Job Details </a></li> 
+                        <li><a href="<?php echo base_url(); ?>PostController/JobPost"> Job Details </a></li> 
                     </ul>
                 </li>
                 <li class="nav-item single-item">

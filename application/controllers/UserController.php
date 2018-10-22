@@ -28,7 +28,7 @@ class UserController extends CI_Controller {
 		$data = array('tables' => TRUE, );
 		$this->load->view('layout/css', $data);
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('pages/users/UserMasterlist');
 		$this->load->view('layout/js', $data);		

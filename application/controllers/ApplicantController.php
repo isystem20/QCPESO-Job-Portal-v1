@@ -44,7 +44,7 @@ $this->load->view('layout/js');
 		{
 	        $this->load->view('layout/css');
 			$this->load->view('layout/top');
-			$this->load->view('layout/menu-app');
+			$this->load->view('layout/menu-manage');
 			$this->load->view('layout/right');
 			$this->load->view('ApplicantDisabilities');
 			$this->load->view('layout/js');	 
