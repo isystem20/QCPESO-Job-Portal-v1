@@ -81,7 +81,7 @@ $route['translate_uri_dashes'] = FALSE;
             /* Language */                  $route['manage/maintenance/languages'] = '';
             /* Licenses */                  $route['manage/maintenance/licenses'] = '';
             /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/CertificatesMasterlist';
-            /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/ApplicantDisabilities';
+            /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/DisabilitiesMasterlist';
             
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
             /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
