@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Applicant Disablities</h4>
+                    <h4>Certificates</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -13,16 +13,21 @@
                             <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
-                        <li class="breadcrumb-item"><a href="#!">Applicant Disablities</a>
+                        </li>
+                        
+                        <li class="breadcrumb-item"><a href="#!">Certificates Masterlist</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
- <div class="page-body">
+
+             <div class="page-body">
                 <div class="row">
                     <div class="col-sm-12">
+
                         <div class="card">
+
                             <div class="card-header">
                                 <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-ui-add"></i>Add</button>
                                 <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-edit"></i>Edit</button>
@@ -38,21 +43,22 @@
                                 <div class="dt-responsive table-responsive">
                                     <table id="scr-vtr-dynamic" class="table table-striped table-bordered nowrap">
                                         <thead>
-                                    <tr>
+                                 <tr>
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
+                                                <th>Eligibility Title</th>
                                                 <th>Last Modified By</th>
                                                 <th>Last Modified At</th>
                                                  <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                        if ($applicantdisablities->num_rows() > 0) {
-                                            foreach ($applicantdisablities->result() as $row) { ?>
-
-                                      <td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php
+                                        if ($certificate->num_rows() > 0) {
+                                            foreach ($certificate->result() as $row) { ?>
+                                            <tr>
+                                                <td>
                                                     <div class="checkbox-fade fade-in-primary">
                                                     <label>
                                                     <input type="checkbox" id="checkbox" name="Language" value="HTML">
@@ -63,9 +69,9 @@
                                                     </label>
                                                     </div>
                                                 </td>
-                                                
-                                     <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->description; ?></td>
+                                                 <td><?php echo $row->eligibilityTitle; ?></td>
                                                 <td><?php echo $row->modifiedById?></td>
                                                 <td><?php echo $row->modifiedAt?></td>
                                                 <td>
@@ -83,12 +89,12 @@
                                             }
                                         }
                                         ?>
-                               
+
+                                    </tfoot>
                             </table>
                         </div>
                     </div>
                 </div>
-
                 </tr>
                 </tfoot>
                 </table>

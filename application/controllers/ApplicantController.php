@@ -40,8 +40,9 @@ $this->load->view('ApplicantRegistration');
 $this->load->view('layout/js');
 }
 
-	public function ApplicantDisabilities()
+	public function DisabilitiesMasterlist()
 		{
+<<<<<<< HEAD
 			$this->load->model('ApplicantDisablitiesModel','applicantdisabilities');
 		$data['applicantdisablities'] = $this->applicantdisabilities->Load_ApplicantDisablitiesModel_Masterlist();
 		// print_r($data);
@@ -52,6 +53,16 @@ $this->load->view('layout/js');
 			$this->load->view('ApplicantDisabilities',$data);
 			$this->load->view('layout/js');	 
 				
+=======
+	        $data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('DisabilitiesMasterlist');
+		$this->load->view('layout/js', $data);		
+
+>>>>>>> e200200f772c799b6a113abca4bf448205ee72d8
 		}
 	
 public function KasambahayJoblist()
