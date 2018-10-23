@@ -20,9 +20,9 @@ class CertificateController extends CI_Controller {
 	 */
 
 
-	public function Certificate()
+	public function CertificatesMasterlist()
 		{
-<<<<<<< HEAD
+
 
 			$this->load->model('CertificateModel','certificatemodel');
 		$data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
@@ -30,18 +30,8 @@ class CertificateController extends CI_Controller {
 			$this->load->view('layout/top');
 			$this->load->view('layout/menu-app');
 			$this->load->view('layout/right');
-			$this->load->view('Certificate',$data);
+			$this->load->view('CertificatesMasterlist',$data);
 			$this->load->view('layout/js');	 
-=======
-	        $data = array('tables' => TRUE, );
-		$this->load->view('layout/css', $data);
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('CertificatesMasterlist');
-		$this->load->view('layout/js', $data);	
->>>>>>> e200200f772c799b6a113abca4bf448205ee72d8
-				
 		}
 
 
