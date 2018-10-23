@@ -42,11 +42,14 @@ $this->load->view('layout/js');
 
 	public function ApplicantDisabilities()
 		{
+			$this->load->model('ApplicantDisablitiesModel','applicantdisabilities');
+		$data['applicantdisablities'] = $this->applicantdisabilities->Load_ApplicantDisablitiesModel_Masterlist();
+		// print_r($data);
 	        $this->load->view('layout/css');
 			$this->load->view('layout/top');
 			$this->load->view('layout/menu-manage');
 			$this->load->view('layout/right');
-			$this->load->view('ApplicantDisabilities');
+			$this->load->view('ApplicantDisabilities',$data);
 			$this->load->view('layout/js');	 
 				
 		}

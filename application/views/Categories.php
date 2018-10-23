@@ -44,14 +44,15 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
-                                                 <th>Is Active</th>
+                                                <th>Last Modified By</th>
+                                                <th>Last Modified At</th>
+                                                 <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                        if ($categories->num_rows() > 0) {
+                                            foreach ($categories->result() as $row) { ?>
                                             <tr>
                                                 <td>
                                                     <div class="checkbox-fade fade-in-primary">
@@ -64,135 +65,25 @@
                                                     </label>
                                                     </div>
                                                 </td>
-                                                <td>Kasambahay</td>
-                                                <td>Kasambahay</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                            <tr>
+                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
                                                 <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
+                                                    <?php 
+                                                    if ($row->isActive == '1') {
+                                                        echo '<label class="label label-primary">Active</label>';
+                                                    }
+                                                    else {
+                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                    }
+                                                    ?>
                                                 </td>
-                                            <td>OFW</td>
-                                                <td>Overseas Filipino Worker</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
                                             </tr>
-                                          <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                            <td>PWD</td>
-                                                <td>Person With Disabilities</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                            <td>Student</td>
-                                                <td>Student</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                            <td>Summer Job</td>
-                                                <td>Summer Job</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                        <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                            <td>Out-of-School Youth</td>
-                                                <td>Out-of-School Youth</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                         <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
-                                            <td>Local</td>
-                                                <td>Local</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>2011/04/25</td>
-                                                <td>Karl Adriane E. Novella</td>
-                                                <td>Quezon City</td>
-                                                 <td>Yes</td>
-                                            </tr>
-                                            </tr>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
                                         </tbody>
                                         <tfoot>
                                            

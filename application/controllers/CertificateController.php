@@ -22,11 +22,14 @@ class CertificateController extends CI_Controller {
 
 	public function Certificate()
 		{
+
+			$this->load->model('CertificateModel','certificatemodel');
+		$data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
 	        $this->load->view('layout/css');
 			$this->load->view('layout/top');
 			$this->load->view('layout/menu-app');
 			$this->load->view('layout/right');
-			$this->load->view('Certificate');
+			$this->load->view('Certificate',$data);
 			$this->load->view('layout/js');	 
 				
 		}

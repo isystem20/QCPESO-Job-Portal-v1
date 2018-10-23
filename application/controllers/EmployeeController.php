@@ -67,11 +67,13 @@ public function OverseasLocations()
 
 public function PreferredLocation()
 	{
+		$this->load->model('PreferredLocationModel','preferredlocationmodel');
+		$data['preferredlocation'] = $this->preferredlocationmodel->Load_PreferredLocationModel_Masterlist();
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('PreferredLocation');
+		$this->load->view('PreferredLocation',$data);
 		$this->load->view('layout/js');		
 }
 
@@ -96,12 +98,15 @@ public function EducationalCourses()
 		$this->load->view('EducationalCourses');
 		$this->load->view('layout/js');		
 }
-public function Categories() {
+public function Categories()
+ {
+ 	$this->load->model('CategoriesModel','categoriesmodel');
+		$data['categories'] = $this->categoriesmodel->Load_CategoriesModel_Masterlist();
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('Categories');
+		$this->load->view('Categories',$data);
 		$this->load->view('layout/js');		
 	}
 }
