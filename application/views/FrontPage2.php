@@ -108,6 +108,8 @@
                                                    <option>Student</option>
                                                    <option>Out-of-School Youth</option>
                                                    <option>Kasambahay</option>
+                                                   <option>PWD</option>
+
                                                </select>
                                            </div>
                                        </div>
@@ -814,6 +816,7 @@
                                                    <option>Student</option>
                                                    <option>Out-of-School Youth</option>
                                                    <option>Kasambahay</option>
+                                                   <option>PWD</option>
                                                </select>
                                            </div>
                                        </div>
