@@ -101,7 +101,7 @@ $route['translate_uri_dashes'] = FALSE;
             /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
         /* Jobs */ 
             /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
-            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobRegistration';  
+            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'PostController/JobPost';  
             /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
 
     /* REPORTS */
