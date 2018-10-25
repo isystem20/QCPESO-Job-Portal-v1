@@ -3,7 +3,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Browse Jobs</h4>
+                    <h4>Account Settings</h4>
                   
                 </div>
                 <div class="page-header-breadcrumb">

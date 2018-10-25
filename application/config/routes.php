@@ -59,14 +59,13 @@ $route['translate_uri_dashes'] = FALSE;
 
     /* Log in */                            $route['login'] = 'HomeController/index';
     /* Home (Profile) */                    $route['profile'] = 'LoggedUserController/UserHome';
-    /* Search */                            $route[''] = '';
+    /* Search */                            $route['search/jobs'] = 'LoggedUserController/SearchJobs';
         /* Job Details */
-    /* Saved Jobs */                        $route['saved-jobs'] = '';
-    /* My Applications */                   $route['applied-jobs'] = '';
-    /* My Alerts */                         $route['job-alerts'] = '';
-    /* Ask PESO */                          $route['askPESO'] = '';
-    /* Settings */                          $route['account-settings'] = '';
-
+    /* Saved Jobs */                        $route['saved-jobs'] = 'LoggedUserController/SavedJobs';
+    /* My Applications */                   $route['applied-jobs'] = 'LoggedUserController/UserApplications';
+    /* My Alerts */                         $route['job-alerts'] = 'LoggedUserController/UserAlerts';
+    /* Ask PESO */                          $route['askPESO'] = 'LoggedUserController/AskPeso';
+    /* Settings */                          $route['account-settings'] = 'LoggedUserController/Settings';
                                     
 
 

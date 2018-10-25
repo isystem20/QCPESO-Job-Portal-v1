@@ -10,12 +10,11 @@
         <div class="main-menu-content">
             <ul class="main-navigation">
                 <li class="more-details">
-                    <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
-                    <a href="#!"><i class="ti-settings"></i>Settings</a>
+                    <a href="profile"><i class="ti-user"></i>View Profile</a>
                     <a href="#!"><i class="ti-layout-sidebar-left"></i>Logout</a>
                 </li>
                 <li class="nav-item single-item">
-                    <a href="<?php echo base_url(); ?>ApplicantController/ApplicantResume">
+                    <a href="<?php echo base_url(); ?>profile">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main">Home</span>
                     </a>
@@ -31,7 +30,7 @@
                     </a>
 
                     <ul class="tree-1">
-                        <li><a href="<?php echo base_url(); ?>LoggedUserController/SearchJobs"> Job Details </a></li> 
+                        <li><a href="<?php echo base_url(); ?>search/jobs"> Job Details </a></li> 
                     </ul>
                 </li>
                 <li class="nav-item single-item">
