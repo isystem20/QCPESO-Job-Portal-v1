@@ -13,14 +13,14 @@
                             <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
-                        <li class="breadcrumb-item"><a href="#!">Disablities Masterlist</a>
+                        <li class="breadcrumb-item"><a href="#!">Disabilities Masterlist</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
 
- <<div class="page-body">
+ <div class="page-body">
                 <div class="row">
                     <div class="col-sm-12">
 
