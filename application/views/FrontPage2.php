@@ -45,7 +45,7 @@
             <div class="container-fluid">
                 <!-- Brand-->
                 <div class="inner-header">
-                    <a class="inner-brand" href="index-2.html">
+                    <a class="inner-brand" href="#">
                         <img src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" width="70">
                         Quezon City PESO
                     </a>
@@ -57,20 +57,21 @@
                             <li><a href="#home"><span class="menu-item-span">Home</span></a></li>
                             <li><a href="#about"><span class="menu-item-span">About</span></a></li>
                             <li><a href="#services"><span class="menu-item-span">Services</span></a></li>
-                            <li><a href="#jobs"><span class="menu-item-span">Jobs</span></a></li>
-                            <li><a href="#team"><span class="menu-item-span">Team</span></a></li>
-                            <li><a href="#blog"><span class="menu-item-span">News</span></a></li>
+                            <!-- <li><a href="#jobs"><span class="menu-item-span">Jobs</span></a></li> -->
+                            <li><a href="#startnow"><span class="menu-item-span">Start Now</span></a></li>
+                            <!-- <li><a href="#team"><span class="menu-item-span">Team</span></a></li> -->
+                            <!-- <li><a href="#blog"><span class="menu-item-span">News</span></a></li> -->
                             <li><a href="#quick-register"><span class="menu-item-span">Register</span></a></li>
                             <!-- <li><a href="start.html"><span class="menu-item-span">Demos</span></a></li> -->
                         </ul>
                     </div>
                 </div>
-                <div class="extra-nav">
+           <!--      <div class="extra-nav">
                     <ul>
                         <li><a class="off-canvas-open" href="#"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
                         <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </header>
         <!-- Header end-->
@@ -146,13 +147,13 @@
                             <div class="space" data-MY="60px"></div>
                         </div>
                     </div>
-<!--                     <div class="row">
+                     <div class="row">
                         <div class="col-md-12">
                             <center>
-                            <p><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/qc.jpg" alt=""></p>
+                            <p><img src="<?php echo base_url(); ?>themes/boomerang/assets/videos/qcpeso.mp4" alt=""></p>
                             </center>
                         </div>
-                    </div> -->
+                    </div> 
                     <div class="row">
                         <div class="col-md-12">
                             <div class="space" data-mY="30px"></div>
@@ -299,7 +300,7 @@
             <!-- Portfolio end-->
 
             <!-- Services-->
-            <section class="module" id="jobs">
+        <!--     <section class="module" id="jobs">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -370,13 +371,13 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Services end-->
 
             <!-- Alt Services-->
-            <section class="module bg-gray">
+            <section class="module bg-gray" id="startnow">
                 <div class="container">
-                    <div class="row align-items-center">
+                 <!--    <div class="row align-items-center">
                         <div class="col-lg-6"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/main/ipad.png" alt=""></div>
                         <div class="col-lg-5 offset-lg-1">
                             <h2>Flexible & Lightweight.</h2>
@@ -410,13 +411,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <!-- Alt Services end-->
 
             <!-- Team-->
-            <section class="module" id="team">
+     <!--        <section class="module" id="team">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 m-auto text-center">
@@ -556,11 +557,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Team end-->
 
             <!-- Testimonials-->
-            <section class="module parallax" data-background="<?php echo base_url(); ?>themes/boomerang/assets/images/module-12.jpg" data-overlay="0.5">
+<!--             <section class="module parallax" data-background="<?php echo base_url(); ?>themes/boomerang/assets/images/module-12.jpg" data-overlay="0.5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -609,7 +610,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Testimonials end-->
 
             <!-- Clients-->
@@ -617,31 +618,31 @@
                 <div class="container">
                     <div class="space" data-MY="-60px"></div>
                     <div class="row">
-                        <div class="col-md-4 pricing-wrapper">
+                        <div class="col-md-6 pricing-wrapper">
                             <div class="pricing-header">
                                 <div class="pricing-icon"><i class="ti-slice"></i></div>
-                                <div class="pricing-title">Starter</div>
+                                <div class="pricing-title">Are you looking for</div>
                             </div>
-                            <div class="pricing-price">Free
+                            <div class="pricing-price">Job?
                             </div>
                             <div class="pricing-body">
-                                <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
+                                <p>What are the requirements?<br>How to apply?<br>Need assistance to find job?</p>
                             </div>
-                            <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#">Download</a></div>
+                            <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#">Read More</a></div>
                         </div>
-                        <div class="col-md-4 pricing-wrapper pricing-popular">
+                        <div class="col-md-6 pricing-wrapper pricing-popular">
                             <div class="pricing-header">
                                 <div class="pricing-icon"><i class="ti-pin-alt"></i></div>
-                                <div class="pricing-title">Standard</div>
+                                <div class="pricing-title">Is your company</div>
                             </div>
-                            <div class="pricing-price"><span>$</span>45
+                            <div class="pricing-price">Hiring?
                             </div>
                             <div class="pricing-body">
-                                <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
+                                <p>How to register?<br>What are the requirements?<br>How to post jobs?</p>
                             </div>
-                            <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#">Download</a></div>
+                            <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#">Read More</a></div>
                         </div>
-                        <div class="col-md-4 pricing-wrapper pricing-popular">
+       <!--                  <div class="col-md-4 pricing-wrapper pricing-popular">
                             <div class="pricing-header">
                                 <div class="pricing-icon"><i class="ti-marker-alt"></i></div>
                                 <div class="pricing-title">Professional</div>
@@ -652,7 +653,7 @@
                                 <p>Map where your photos<br>were taken and discover local<br>points of interest.</p>
                             </div>
                             <div class="pricing-footer"><a class="btn btn-circle btn-brand" href="#">Download</a></div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                         <div class="col-md-10 m-auto">
@@ -672,12 +673,12 @@
             <!-- Clients end-->
 
             <!-- Posts-->
-            <section class="module" id="blog">
+   <!--          <section class="module" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 m-auto text-center">
-                            <h1>Latest articles.</h1>
-                            <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                            <h1>Lastest News</h1>
+                            <p class="lead">See the latest news and articles regarding PESO.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -687,12 +688,12 @@
                     </div>
                     <div class="row row-post-masonry">
                         <div class="col-md-4 post-item">
-                            <!-- Post-->
+                      
                             <article class="post">
                                 <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/blog/1.jpg" alt=""></a></div>
                                 <div class="post-wrapper">
                                     <div class="post-header">
-                                        <h2 class="post-title"><a href="blog-single.html">Bluetooth Speaker</a></h2>
+                                        <h2 class="post-title"><a href="blog-single.html">Sample News</a></h2>
                                     </div>
                                     <div class="post-content">
                                         <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
@@ -700,10 +701,10 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Post end-->
+                        
                         </div>
                         <div class="col-md-4 post-item">
-                            <!-- Post-->
+                     
                             <article class="post">
                                 <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/blog/3.jpg" alt=""></a></div>
                                 <div class="post-wrapper">
@@ -716,10 +717,10 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Post end-->
+                  
                         </div>
                         <div class="col-md-4 post-item">
-                            <!-- Post-->
+                       
                             <article class="post">
                                 <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/blog/5.jpg" alt=""></a></div>
                                 <div class="post-wrapper">
@@ -732,11 +733,11 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- Post end-->
+                   
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- Posts end-->
 
             <!-- Form-->
@@ -906,8 +907,8 @@
                                         <p>Quezon City Public Employment Service Office</p>
                                         <p>
                                             Location: 4th Floor, Civic Center Building A, City Hall Compound<br>
-                                            E-mail: support@theme.com<br>
-                                            Phone: 8 800 123 4567<br>
+                                            E-mail: isystem20@gmail.com<br>
+                                            Phone: +63123453456<br>
                                         </p>
                                         <ul class="social-icons">
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -918,7 +919,7 @@
                                     </div>
                                 </aside>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <!-- Recent entries widget-->
                                 <aside class="widget widget-recent-entries">
                                     <div class="widget-title">
@@ -931,7 +932,7 @@
                                     </ul>
                                 </aside>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <!-- Twitter widget-->
                                 <aside class="widget twitter-feed-widget">
                                     <div class="widget-title">
@@ -940,11 +941,10 @@
                                     <div class="twitter-feed" data-twitter="345170787868762112" data-number="1"></div>
                                 </aside>
                             </div>
-                            <div class="col-md-3">
-                                <!-- Recent works-->
+                <!--             <div class="col-md-3">
                                 <aside class="widget widget-recent-works">
                                     <div class="widget-title">
-                                        <h6>Portfolio</h6>
+                                        <h6>Related Links</h6>
                                     </div>
                                     <ul>
                                         <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/widgets/1.jpg" alt=""></a></li>
@@ -955,7 +955,7 @@
                                         <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/widgets/6.jpg" alt=""></a></li>
                                     </ul>
                                 </aside>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -975,18 +975,18 @@
         </div>
         <!-- Wrapper end-->
         <!-- Off canvas-->
-        <div class="off-canvas-sidebar">
+   <!--      <div class="off-canvas-sidebar">
             <div class="off-canvas-sidebar-wrapper">
                 <div class="off-canvas-header"><a class="off-canvas-close" href="#"><span class="ti-close"></span></a></div>
                 <div class="off-canvas-content">
-                    <!-- Text widget-->
+            
                     <aside class="widget widget-text">
                         <div class="textwidget">
                             <p class="text-center"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/logo-light-2.png" alt="" width="80px"></p>
                             <p class="text-center">See how users experience your website in realtime to see changes.</p>
                         </div>
                     </aside>
-                    <!-- Recent portfolio widget-->
+         
                     <aside class="widget widget-recent-works">
                         <ul>
                             <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/widgets/1.jpg" alt=""></a></li>
@@ -1000,7 +1000,7 @@
                             <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/widgets/9.jpg" alt=""></a></li>
                         </ul>
                     </aside>
-                    <!-- Social Icons-->
+               
                     <ul class="social-icons text-center">
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -1009,7 +1009,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Off canvas end-->
 
         <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>

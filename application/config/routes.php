@@ -94,7 +94,7 @@ $route['translate_uri_dashes'] = FALSE;
         /* Applicants */ 
             /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
             /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
-            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'ApplicationController/ApplicationMasterList';
+            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'JobApplicationController/ApplicationMasterList';
         /* Establishment */ 
             /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
