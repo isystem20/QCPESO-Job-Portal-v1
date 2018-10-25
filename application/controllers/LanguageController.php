@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class LicenseController extends CI_Controller {
+class LanguageController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class LicenseController extends CI_Controller {
 	 */
 
 
-	public function LicenseList()
+	public function LanguageList()
 		{
 
 
@@ -30,7 +30,7 @@ class LicenseController extends CI_Controller {
 			$this->load->view('layout/top');
 			$this->load->view('layout/menu-manage');
 			$this->load->view('layout/right');
-			$this->load->view('LicenseList',$data);
+			$this->load->view('LanguageList',$data);
 			$this->load->view('layout/js');	 
 		}
 

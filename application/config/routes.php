@@ -78,7 +78,7 @@ $route['translate_uri_dashes'] = FALSE;
         /* User Masterlist */               $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
         /* Manage Groups */                 $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
         /* Maintenance */
-            /* Language */                  $route['manage/maintenance/languages'] = '';
+            /* Language */                  $route['manage/maintenance/languages'] = 'LanguageController/LanguageList';
             /* Licenses */                  $route['manage/maintenance/licenses'] = 'LicenseController/LicenseList';
             /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/CertificatesMasterlist';
             /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/DisabilitiesMasterlist';

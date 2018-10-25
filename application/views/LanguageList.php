@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>License List</h4>
+                    <h4>Language List</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -15,7 +15,7 @@
                             </a>
                         </li>
                         
-                        <li class="breadcrumb-item"><a href="#!">License List</a>
+                        <li class="breadcrumb-item"><a href="#!">Language List</a>
                         </li>
                     </ul>
                 </div>
