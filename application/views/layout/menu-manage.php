@@ -103,7 +103,7 @@
                         <span data-i18n="nav.basic-components.main">Establishment</span>
                     </a>
                 <ul class="tree-1">
-                        <li><a href="<?php echo base_url(); ?>employers/add" data-i18n="nav.json-form.simple-form">Add New</a></li>
+                        <li><a href="<?php echo base_url(); ?>manage/do/establishments/add" data-i18n="nav.json-form.simple-form">Add New</a></li>
                         <li><a href="<?php echo base_url(); ?>manage/do/establishments/view-list" data-i18n="nav.json-form.clubs-view">View List</a></li>
 
                         <li><a href="<?php echo base_url(); ?>manage/do/establishments/pending-accreditation">Pending Accreditation</a></li>
