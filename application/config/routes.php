@@ -105,13 +105,13 @@ $route['translate_uri_dashes'] = FALSE;
             /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
 
     /* REPORTS */
-        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/ApplicantReport'; 
-        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/EstablishmentReports'; 
-        /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/ReferralReports'; 
-        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'AccreditationController/SuccessfulHires'; 
-        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'AccreditationController/Feedbacks'; 
-        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'AccreditationController/EstablishmentRatings'; 
-        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'AccreditationController/SurverSummary'; 
+        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'ReportController/ApplicantReport'; 
+        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'ReportController/EstablishmentReports'; 
+        /* Referral Reports */              $route['manage/reports/referrals'] = 'ReportController/ReferralReports'; 
+        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'ReportController/SuccessfulHires'; 
+        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'ReportController/Feedbacks'; 
+        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'ReportController/EstablishmentRatings'; 
+        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'ReportController/SurverSummary'; 
 
 
 
