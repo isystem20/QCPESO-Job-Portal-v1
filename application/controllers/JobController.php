@@ -27,4 +27,26 @@ class JobController extends CI_Controller {
 		$this->load->view('JobRegistration');
 		$this->load->view('layout/js');			
 	}
+
+	public function JobMasterlist() {
+		$data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('JobMasterlist');
+		$this->load->view('layout/js', $data);	
+	}
+
+	public function PendingJobMasterlist() {
+		$data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('JobMasterlistPending');
+		$this->load->view('layout/js', $data);	
+	}
+
+
 }
