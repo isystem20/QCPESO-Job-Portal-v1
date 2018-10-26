@@ -80,7 +80,7 @@
         <div class="wrapper">
             <!-- Hero-->
             <!-- <section class="module-cover parallax fullscreen text-center" id="home" data-background="<?php echo base_url(); ?>themes/boomerang/assets/images/module-2.jpg" data-jarallax-video="https://www.youtube.com/watch?v=3eVWQHRDtws" data-overlay="0.6"> -->
-            <section class="module-cover parallax2 fullscreen text-center" id="home" data-background="<?php echo base_url(); ?>themes/boomerang/assets/images/module-2.jpg" data-jarallax-video="mp4:<?php echo base_url(); ?>themes/boomerang/assets/videos/banner.mp4,webm:assets/video/video.webm,ogv:assets/video/video.ogv" data-overlay="0.1">                
+            <section class="module-cover parallax2 fullscreen text-center" id="home" data-background="<?php echo base_url(); ?>themes/boomerang/assets/images/module-2.jpg" data-jarallax-video="mp4:<?php echo base_url(); ?>themes/boomerang/assets/videos/banner_v2.mp4,webm:assets/video/video.webm,ogv:assets/video/video.ogv" data-overlay="0.1">                
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12" style="color:#fff !important;">
@@ -248,7 +248,7 @@
                         <div class="grid-sizer"></div>
                         <div class="portfolio-item localos">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/employment.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/referral-pic.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Referrals for Local and Overseas Employment</h6><span class="portfolio-item-subtitle serif">We have many available jobs to refer from our accredited companies and agencies for local and overseas employment</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -256,7 +256,7 @@
                         </div>
                         <div class="portfolio-item others">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/pwd.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/pwd-pic.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Tulong Alalay sa Taong May Kapansanan (TULAY 2000)</h6><span class="portfolio-item-subtitle serif">Aims to provided assistance and opportunities to the persons with disabilities (PWD) to get employed</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -264,7 +264,7 @@
                         </div>
                         <div class="portfolio-item employers">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/employers.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/recruitment-pic.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Recruitment Assistance for Employers</h6><span class="portfolio-item-subtitle serif">Provide assistance and recommendations for their manpower needs and referrals of potential applicants</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -272,7 +272,7 @@
                         </div>
                         <div class="portfolio-item others">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/summer.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/summerjob-pic.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Summer/Christmas Vacation Jobs for Students</h6><span class="portfolio-item-subtitle serif">An Act to Help Poor But Deserving Students Pursue Their Education by Encouraging Their Employment During Summer and/or Christmas Vacations, through Incentives Granted To Employers</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -280,7 +280,7 @@
                         </div>
                         <div class="portfolio-item others">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/outofschool.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/youth.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Out of School Youth Jobs</h6><span class="portfolio-item-subtitle serif">Its objective is to expose the youth to actual work situations to provide them with opportunities to appreciate work and develop proper work ethics.</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -288,7 +288,7 @@
                         </div>
                         <div class="portfolio-item others localos employers">
                             <div class="portfolio-item-wrapper">
-                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/jobfairs.jpg" alt=""></div>
+                                <div class="portfolio-item-img"><img src="<?php echo base_url(); ?>themes/boomerang/assets/images/jobfair-pic.jpg" alt=""></div>
                                 <div class="portfolio-item-caption">
                                     <h6 class="portfolio-item-title">Job Fairs</h6><span class="portfolio-item-subtitle serif">This program provides a venue for the instant matching of job seekers and job openings. It reduces the job search costs of job seekers as well as the recruitment costs of employers.</span>
                                 </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
