@@ -4,7 +4,7 @@
 
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Disablities Masterlist</h4>
+                    <h4>Disabilities Types</h4>
 
                 </div>
                 <div class="page-header-breadcrumb">
@@ -13,14 +13,14 @@
                             <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
-                        <li class="breadcrumb-item"><a href="#!">Disablities Masterlist</a>
+                        <li class="breadcrumb-item"><a href="#!">Disabilities Types</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
 
- <<div class="page-body">
+ <div class="page-body">
                 <div class="row">
                     <div class="col-sm-12">
 
@@ -85,6 +85,10 @@
                                             }
                                         }
                                         ?>
+<<<<<<< HEAD
+=======
+                      
+>>>>>>> cbd2e2822ca2b193a49f9ad4a6aa39a6dbf33df7
                             </table>
                         </div>
                     </div>

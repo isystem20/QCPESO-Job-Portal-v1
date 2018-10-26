@@ -59,14 +59,13 @@ $route['translate_uri_dashes'] = FALSE;
 
     /* Log in */                            $route['login'] = 'HomeController/index';
     /* Home (Profile) */                    $route['profile'] = 'LoggedUserController/UserHome';
-    /* Search */                            $route[''] = '';
+    /* Search */                            $route['search/jobs'] = 'LoggedUserController/SearchJobs';
         /* Job Details */
-    /* Saved Jobs */                        $route['saved-jobs'] = '';
-    /* My Applications */                   $route['applied-jobs'] = '';
-    /* My Alerts */                         $route['job-alerts'] = '';
-    /* Ask PESO */                          $route['askPESO'] = '';
-    /* Settings */                          $route['account-settings'] = '';
-
+    /* Saved Jobs */                        $route['saved-jobs'] = 'LoggedUserController/SavedJobs';
+    /* My Applications */                   $route['applied-jobs'] = 'LoggedUserController/UserApplications';
+    /* My Alerts */                         $route['job-alerts'] = 'LoggedUserController/UserAlerts';
+    /* Ask PESO */                          $route['askPESO'] = 'LoggedUserController/AskPeso';
+    /* Settings */                          $route['account-settings'] = 'LoggedUserController/Settings';
                                     
 
 
@@ -78,8 +77,8 @@ $route['translate_uri_dashes'] = FALSE;
         /* User Masterlist */               $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
         /* Manage Groups */                 $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
         /* Maintenance */
-            /* Language */                  $route['manage/maintenance/languages'] = '';
-            /* Licenses */                  $route['manage/maintenance/licenses'] = '';
+            /* Language */                  $route['manage/maintenance/languages'] = 'LanguageController/LanguageList';
+            /* Licenses */                  $route['manage/maintenance/licenses'] = 'LicenseController/LicenseList';
             /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/CertificatesMasterlist';
             /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/DisabilitiesMasterlist';
             
@@ -94,31 +93,31 @@ $route['translate_uri_dashes'] = FALSE;
         /* Applicants */ 
             /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
             /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
-            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'ApplicationController/ApplicationMasterList';
+            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'JobApplicationController/ApplicationMasterList';
         /* Establishment */ 
             /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
             /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
         /* Jobs */ 
             /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
-            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobRegistration';  
-            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
+            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobMasterlist';  
+            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/PendingJobMasterlist';      
 
     /* REPORTS */
-        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'AccreditationController/ApplicantReport'; 
-        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'AccreditationController/EstablishmentReports'; 
-        /* Referral Reports */              $route['manage/reports/referrals'] = 'AccreditationController/ReferralReports'; 
-        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'AccreditationController/SuccessfulHires'; 
-        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'AccreditationController/Feedbacks'; 
-        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'AccreditationController/EstablishmentRatings'; 
-        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'AccreditationController/SurverSummary'; 
+        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'ReportController/ApplicantReport'; 
+        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'ReportController/EstablishmentReports'; 
+        /* Referral Reports */              $route['manage/reports/referrals'] = 'ReportController/ReferralReports'; 
+        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'ReportController/SuccessfulHires'; 
+        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'ReportController/Feedbacks'; 
+        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'ReportController/EstablishmentRatings'; 
+        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'ReportController/SurverSummary'; 
 
 
 
 
 
 
-$route['manage/do/jobs/view-list'] = 'PostController/JobPost';
+// $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
 
 
 

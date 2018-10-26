@@ -12,9 +12,7 @@
                         <li class="breadcrumb-item">
                             <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
-                            </a>
-                        </li>
-                        
+                            </a>                      
                         <li class="breadcrumb-item"><a href="#!">Certificates Masterlist</a>
                         </li>
                     </ul>
@@ -43,7 +41,7 @@
                                 <div class="dt-responsive table-responsive">
                                     <table id="scr-vtr-dynamic" class="table table-striped table-bordered nowrap">
                                         <thead>
-                                 <tr>
+                                            <tr>
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
@@ -90,11 +88,11 @@
                                         }
                                         ?>
 
-                                    </tfoot>
                             </table>
                         </div>
                     </div>
                 </div>
+                    
                 </tr>
                 </tfoot>
                 </table>

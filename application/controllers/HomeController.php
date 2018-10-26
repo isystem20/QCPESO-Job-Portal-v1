@@ -51,7 +51,7 @@ class HomeController extends CI_Controller {
 
 	}
 
-	public function Index()
+	public function FrontPage()
 		{
 			$this->load->view('layout/css');
 			$this->load->view('layout/top_navbar_frontpage');
@@ -59,4 +59,14 @@ class HomeController extends CI_Controller {
 			$this->load->view('layout/js');	
 			
 		}
+	public function index()
+		{
+			// $this->load->view('layout/css');
+			// $this->load->view('layout/top_navbar_frontpage');
+			$this->load->view('FrontPage2');
+			// $this->load->view('layout/js');	
+			
+		}
+
+
 }
