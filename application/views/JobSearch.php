@@ -44,7 +44,7 @@
 </form>
 &nbsp &nbsp
 <select>
-	<option selected>Types of Job</option>
+	<option selected>Type of Job</option>
 	<option>Information Technology</option>
 	<option>Accounting</option>
 	<option>Bussiness</option>
@@ -56,11 +56,12 @@
 		<img src="" width="100" height="100" border="0">
 		(Company Name)
 			<br>Location/Address:</br> 
-				Job Position:<br>
-					Job Description:</br><br>
-						Contact Persons:</br>
-										</td>		
+				Job Position:
+					<br>Job Description:</br>
+						Website:<br>
+							Contact Persons:</br>
 
+										</td>
 </table>
 <br>
 <table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
@@ -68,10 +69,11 @@
 		<img src="" width="100" height="100" border="0">
 		(Company Name)
 			<br>Location/Address:</br> 
-				Job Position:<br>
-					Job Description:</br><br>
-						Contact Persons:</br>
-										</td>				
+				Job Position:
+					<br>Job Description:</br>
+						Website:<br>
+							Contact Persons:</br>
+										</td>			
 </table>
 </br>
 <table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
@@ -79,9 +81,10 @@
 		<img src="" width="100" height="100" border="0">
 		(Company Name)
 			<br>Location/Address:</br> 
-				Job Position:<br>
-					Job Description:</br><br>
-						Contact Persons:</br>
+				Job Position:
+					<br>Job Description:</br>
+						Website:<br>
+							Contact Persons:</br>
 										</td>
 </table>
 </div>

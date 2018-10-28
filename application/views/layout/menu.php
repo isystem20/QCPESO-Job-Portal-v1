@@ -128,7 +128,7 @@
                     </a>
                 </li>
                 <li class="nav-item single-item">
-<<<<<<< HEAD
+
                     <a href="<?php echo base_url(); ?>PostController/JobPost">
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Job Details</span>
@@ -136,9 +136,9 @@
                 </li>
                 <li class="nav-item single-item">
                     <a href="widget.html">
-=======
+
                    <a href="<?php echo base_url(); ?>EmployeeController/EducationalCourses">
->>>>>>> 054f62e8d6c1e86fc2650d0af0cbdb7dffdfbc14
+
                         <i class="ti-view-grid"></i>
                         <span data-i18n="nav.widget.main"> Education Courses</span>
                     </a>
