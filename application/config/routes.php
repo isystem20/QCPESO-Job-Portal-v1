@@ -53,18 +53,77 @@ $route['default_controller'] = 'HomeController';
 $route['404_override'] = 'SiteErrorController/Error404';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['profile'] = 'Home/profile';
+
+/* Applicant View */
 
 
-$route['changelog'] = 'HomeController/Changelog';
-$route['dashboard'] = 'HomeController/Dashboard';
-$route['applicants'] = 'ApplicantController/ApplicantMasterlist';
-$route['applicants/add'] = 'ApplicantController/ApplicantRegistration';
-$route['job-applications'] = 'ApplicationController/ApplicantionMasterlist';
-$route['login'] = 'HomeController/index';
-$route['admin/login'] = 'HomeController/AdminEmployeeLogin';
-$route['employees'] = 'EmployeeController/EmployeeMasterlist';
-$route['employees/add'] = 'EmployeeController/EmployeeRegistration';
-$route['employers'] = 'EmployerController/EmployerMasterlist';
-$route['employers/add'] = 'EmployerController/EmployerRegistration';
-$route['jobposts/view'] = 'PostController/JobPost';
+    /* Log in */                            $route['login'] = 'HomeController/index';
+    /* Home (Profile) */                    $route['profile'] = 'LoggedUserController/UserHome';
+    /* Search */                            $route['search/jobs'] = 'LoggedUserController/SearchJobs';
+        /* Job Details */
+    /* Saved Jobs */                        $route['saved-jobs'] = 'LoggedUserController/SavedJobs';
+    /* My Applications */                   $route['applied-jobs'] = 'LoggedUserController/UserApplications';
+    /* My Alerts */                         $route['job-alerts'] = 'LoggedUserController/UserAlerts';
+    /* Ask PESO */                          $route['askPESO'] = 'LoggedUserController/AskPeso';
+    /* Settings */                          $route['account-settings'] = 'LoggedUserController/Settings';
+                                    
+
+
+/* Management View */
+
+/* Log in */                                $route['manage/login'] = 'HomeController/AdminEmployeeLogin';
+    /* Dashboard */                         $route['manage'] = 'HomeController/Dashboard';
+    /* MANAGE */                        
+        /* User Masterlist */               $route['manage/users-masterlist'] = 'UserController/UserMasterlist';
+        /* Manage Groups */                 $route['manage/user-groups'] = 'GroupController/GroupMasterlist';
+        /* Maintenance */
+            /* Language */                  $route['manage/maintenance/languages'] = 'LanguageController/LanguageList';
+            /* Licenses */                  $route['manage/maintenance/licenses'] = 'LicenseController/LicenseList';
+            /* Certificates */              $route['manage/maintenance/certificates'] = 'CertificateController/CertificatesMasterlist';
+            /* Disabilities */              $route['manage/maintenance/disabilities'] = 'ApplicantController/DisabilitiesMasterlist';
+            
+            /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'EmployeeController/PreferredLocation';
+            /* Job titles */                $route['manage/maintenance/job-titles'] = 'EmployeeController/JobTitles';
+            /* Categories */                $route['manage/maintenance/applicant-categories'] = 'EmployeeController/Categories';
+        /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'RnrController/ReviewAndRatings';
+        /* Surveys */                       $route['manage/surveys'] = 'SurveyController/Survey';
+
+
+    /* TRANSACTIONS */
+        /* Applicants */ 
+            /* Add walk-in */               $route['manage/do/applicants/add'] = 'ApplicantController/ApplicantRegistration';
+            /* View List */                 $route['manage/do/applicants/view-list'] = 'ApplicantController/ApplicantMasterlist';
+            /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'JobApplicationController/ApplicationMasterList';
+        /* Establishment */ 
+            /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
+            /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+            /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
+        /* Jobs */ 
+            /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
+            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobMasterlist';  
+            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/PendingJobMasterlist';      
+
+    /* REPORTS */
+        /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'ReportController/ApplicantReport'; 
+        /* Establishments Masterlist */     $route['manage/reports/establishments'] = 'ReportController/EstablishmentReports'; 
+        /* Referral Reports */              $route['manage/reports/referrals'] = 'ReportController/ReferralReports'; 
+        /* Successful Hires */              $route['manage/reports/successful-hires'] = 'ReportController/SuccessfulHires'; 
+        /* Feedbacks */                     $route['manage/reports/feedbacks'] = 'ReportController/Feedbacks'; 
+        /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'ReportController/EstablishmentRatings'; 
+        /* Survey Summary */                $route['manage/reports/survey-summary'] = 'ReportController/SurverSummary'; 
+
+
+
+
+
+
+// $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
+
+
+
+
+
+
+/* Developers */
+                                            $route['changelog'] = 'HomeController/Changelog';
+

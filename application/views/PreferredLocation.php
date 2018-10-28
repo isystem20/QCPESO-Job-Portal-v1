@@ -9,7 +9,7 @@
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="<?php echo base_url(); ?>">
+                            <a href="<?php echo base_url(); ?>dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
@@ -44,14 +44,15 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
-                                                 <th>Is Active</th>
+                                                <th>Last Modified By</th>
+                                                <th>Last Modified At</th>
+                                                 <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <?php
+                                        if ($preferredlocation->num_rows() > 0) {
+                                            foreach ($preferredlocation->result() as $row) { ?>
                                             <tr>
                                                 <td>
                                                     <div class="checkbox-fade fade-in-primary">
@@ -64,37 +65,25 @@
                                                     </label>
                                                     </div>
                                                 </td>
-                                                <td>Marvin Simplicio</td>
-                                                <td>Manila</td>
-                                                <td>Johnson Villaruel</td>
-                                                <td>Sampaloc</td>
-                                                <td>Marky Shelo</td>
-                                                <td>Sampaloc</td>
-                                                 <td>Active</td>
-                                            </tr>
-                                             <tr>
+                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
                                                 <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
+                                                    <?php 
+                                                    if ($row->isActive == '1') {
+                                                        echo '<label class="label label-primary">Active</label>';
+                                                    }
+                                                    else {
+                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                    }
+                                                    ?>
                                                 </td>
-                                                <td>Christian Burgos</td>
-                                                <td>Payatas</td>
-                                                <td>Raimond Venancio</td>
-                                                <td>Bulacan</td>
-                                                <td>Benedict Ramos</td>
-                                                <td>Bulacan</td>
-                                                 <td>Offline</td>
                                             </tr>
-                                            <tr>
-
-                                                
+                                        <?php
+                                            }
+                                        }
+                                        ?>
 
 
     <style type="text/css">

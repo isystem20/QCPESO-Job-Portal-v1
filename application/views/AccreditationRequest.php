@@ -9,11 +9,11 @@
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="<?php echo base_url(); ?>">
+                            <a href="<?php echo base_url(); ?>dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Request</a>
+                        <li class="breadcrumb-item"><a href="#!">Accreditation Request</a>
                         </li>
                     </ul>
                 </div>
@@ -29,7 +29,7 @@
                         		<button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-ui-add"></i>Add</button>
                         		<button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-edit"></i>Edit</button>
                         		<button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-ui-delete"></i>Delete</button>
-                        		<button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-edit"></i>Security Access</button>                      		                        		                          	
+                        		                  		                        		                          	
                                 <!-- <h5>Scroll - Vertical, Dynamic Height</h5> -->
                                 <div class="card-header-right">
                                 	<!-- <input type="checkbox" class="js-single" checked /> -->
@@ -70,6 +70,7 @@
                                                 <td>7</td>
                                                 <td>2011/04/25</td>
                                                 <td>Local</td>
+                                                 <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -129,6 +130,7 @@
                                                 <td>22</td>
                                                 <td>1996/03/29</td>
                                                 <td>Local</td>
+                                                 <td>Pending</td>
                                             </tr>
                                             <tr>
                                             	<td>
@@ -191,16 +193,7 @@
                                                 <td>Pending</td>
                                             </tr>
                                         
-                                            <tr>
-                                           <th>#</th>
-                                                <th>Company Name</th>
-                                                <th>TIN</th>
-                                                <th>Establishment Type</th>
-                                                <th>Age</th>
-                                                <th>StartDate</th>
-                                                <th>Industry Type</th>
-                                                <th>Status</th>
-                                            </tr>
+                                            
                                         </tfoot>
                                     </table>
                                 </div>

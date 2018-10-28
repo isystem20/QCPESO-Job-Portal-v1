@@ -22,7 +22,7 @@ class ApplicantController extends CI_Controller {
 		$data = array('tables' => TRUE);
         $this->load->view('layout/css', $data);
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('ApplicantMasterlist');
 		$this->load->view('layout/js', $data);	
@@ -31,45 +31,55 @@ class ApplicantController extends CI_Controller {
 
 	public function ApplicantRegistration()
 {
+	
 $this->load->view('layout/css');
 $this->load->view('layout/top');
-$this->load->view('layout/menu');
+$this->load->view('layout/menu-manage');
 $this->load->view('layout/right');
 $this->load->view('ApplicantRegistration');
 $this->load->view('layout/js');
 }
 
-	public function ApplicantDisabilities()
+	public function DisabilitiesMasterlist()
 		{
-	        $this->load->view('layout/css');
-			$this->load->view('layout/top');
-			$this->load->view('layout/menu');
-			$this->load->view('layout/right');
-			$this->load->view('ApplicantDisabilities');
-			$this->load->view('layout/js');	 
-				
+
+		$this->load->model('ApplicantDisablitiesModel','applicantdisabilities');
+		$data['applicantdisablities'] = $this->applicantdisabilities->Load_ApplicantDisablitiesModel_Masterlist();
+		$layout = array('tables' => TRUE, );
+        $this->load->view('layout/css',$layout);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('DisabilitiesMasterlist',$data);
+		$this->load->view('layout/js',$layout);	 
+			
+
 		}
-	public function Certificate()
-		{
-	        $this->load->view('layout/css');
-			$this->load->view('layout/top');
-			$this->load->view('layout/menu');
-			$this->load->view('layout/right');
-			$this->load->view('Certificate');
-			$this->load->view('layout/js');	 
-				
-		}
+	
 public function KasambahayJoblist()
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-app');
 		$this->load->view('layout/right');
 		$this->load->view('KasambahayJoblist');
 		$this->load->view('layout/js');		
 		
 	}
+
+		public function EditApplicantProfile()
+	{
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-app');
+		$this->load->view('layout/right');
+		$this->load->view('EditApplicantProfile');
+		$this->load->view('layout/js');		
 		
+	}
+
+
+
 }
 
 /* End of file welcome.php */
