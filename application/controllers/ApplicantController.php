@@ -19,9 +19,17 @@ class ApplicantController extends CI_Controller {
 	 */
 	public function ApplicantMasterlist()
 	{
+		
 		$data = array('tables' => TRUE);
+<<<<<<< HEAD
 		$this->load->model('ApplicantModel','appmodel');
 		$data['applicants'] = $this->appmodel->LoadApplicantList();
+=======
+
+		$this->load->model('ApplicantModel','AppModel');
+		$data['applicants'] = $this->AppModel->LoadApplicantList();
+
+>>>>>>> 112abf1ea0581356f82a30184ddcfe54f79c03a7
 		// print_r($data);
 		// die();
         $this->load->view('layout/css', $data);
