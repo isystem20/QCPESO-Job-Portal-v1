@@ -20,19 +20,32 @@ class LicenseController extends CI_Controller {
 */
 
 
-public function LicenseList()
-{
+    public function LicenseList()
+    {
 
+	
+        
+        $data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('pages/users/UserMasterlist');
+		$this->load->view('layout/js', $data);	
+	
+    }
 
-$this->load->model('LicenseModel','licensemodel');
-$data['license'] = $this->licensemodel->Load_LicenseModel_Masterlist();
-$this->load->view('layout/css');
-$this->load->view('layout/top');
-$this->load->view('layout/menu-manage');
-$this->load->view('layout/right');
-$this->load->view('LicenseList',$data);
-$this->load->view('layout/js');	
-}
+    	public function UserMasterlist()
+	{
+		$data = array('tables' => TRUE, );
+		$this->load->view('layout/css', $data);
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('pages/users/UserMasterlist');
+		$this->load->view('layout/js', $data);		
 
+	}
+    
 
 }

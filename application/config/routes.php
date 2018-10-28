@@ -59,14 +59,13 @@ $route['translate_uri_dashes'] = FALSE;
 
     /* Log in */                            $route['login'] = 'HomeController/index';
     /* Home (Profile) */                    $route['profile'] = 'LoggedUserController/UserHome';
-    /* Search */                            $route[''] = '';
+    /* Search */                            $route['search/jobs'] = 'LoggedUserController/SearchJobs';
         /* Job Details */
-    /* Saved Jobs */                        $route['saved-jobs'] = '';
-    /* My Applications */                   $route['applied-jobs'] = '';
-    /* My Alerts */                         $route['job-alerts'] = '';
-    /* Ask PESO */                          $route['askPESO'] = '';
-    /* Settings */                          $route['account-settings'] = '';
-
+    /* Saved Jobs */                        $route['saved-jobs'] = 'LoggedUserController/SavedJobs';
+    /* My Applications */                   $route['applied-jobs'] = 'LoggedUserController/UserApplications';
+    /* My Alerts */                         $route['job-alerts'] = 'LoggedUserController/UserAlerts';
+    /* Ask PESO */                          $route['askPESO'] = 'LoggedUserController/AskPeso';
+    /* Settings */                          $route['account-settings'] = 'LoggedUserController/Settings';
                                     
 
 
@@ -101,8 +100,8 @@ $route['translate_uri_dashes'] = FALSE;
             /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
         /* Jobs */ 
             /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
-            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'PostController/JobPost';  
-            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/JobRegistration';      
+            /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobMasterlist';  
+            /* Pending Job Posting */       $route['manage/do/jobs/pending-job-posts'] = 'JobController/PendingJobMasterlist';      
 
     /* REPORTS */
         /* Applicants Masterlist */         $route['manage/reports/applicants'] = 'ReportController/ApplicantReport'; 
@@ -118,7 +117,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 
-$route['manage/do/jobs/view-list'] = 'PostController/JobPost';
+// $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
 
 
 
