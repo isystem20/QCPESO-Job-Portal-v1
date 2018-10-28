@@ -21,13 +21,10 @@ class ApplicantController extends CI_Controller {
 	{
 		
 		$data = array('tables' => TRUE);
-<<<<<<< HEAD
-		$this->load->model('ApplicantModel','appmodel');
-		$data['applicants'] = $this->appmodel->LoadApplicantsList();
-=======
+
 		$this->load->model('ApplicantModel','AppModel');
 		$data['applicants'] = $this->AppModel->LoadApplicantList();
->>>>>>> 1631021f8115fefd885e7eb0db8def04a5fb6921
+
 		// print_r($data);
 		// die();
         $this->load->view('layout/css', $data);
