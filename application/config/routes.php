@@ -57,7 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 /* Applicant View */
 
 
-    /* Log in */                            $route['login'] = 'HomeController/index';
+    /* Log in */                            $route['login'] = 'HomeController/UserLogin';
     /* Home (Profile) */                    $route['profile'] = 'LoggedUserController/UserHome';
     /* Search */                            $route['search/jobs'] = 'LoggedUserController/SearchJobs';
         /* Job Details */
