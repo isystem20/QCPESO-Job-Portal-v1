@@ -5,6 +5,8 @@
 
 <div class="card">
 <div class="card-header">
+
+
 <h5>Applicant Registration</h5>
 
 <div class="card-header-right">
@@ -128,8 +130,6 @@
 </div>
 </div>
 </div>
-
-
 
 </body>
 
