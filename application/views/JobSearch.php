@@ -51,40 +51,39 @@
 	<option>Management</option>
 </select>
 <br>
-<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+<table border="1" border color="black" cellpadding="5" cellspacing="1" width="100%" height="500%">
 	<td>
-		<img src="" width="100" height="100" border="0">
-		(Company Name)
-			<br>Location/Address:</br> 
-				Job Position:
-					<br>Job Description:</br>
-						Website:<br>
-							Contact Persons:</br>
-
+		<img src="" width="125" height="125" border="0" align="left">
+		<h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Company Name)</h5>
+			<br>&emsp;Address:</br> 
+				&emsp;Job Position:
+					<br>&emsp;Job Description:</br>
+						&emsp;Website:<br>
+							&emsp;Contact Persons:</br>
 										</td>
 </table>
 <br>
-<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+<table border="1" border color="black" cellpadding="5" cellspacing="1" width="100%" height="500%">
 	<td>
-		<img src="" width="100" height="100" border="0">
-		(Company Name)
-			<br>Location/Address:</br> 
-				Job Position:
-					<br>Job Description:</br>
-						Website:<br>
-							Contact Persons:</br>
+		<img src="" width="125" height="125" border="0" align="left">
+		<h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Company Name)</h5>
+			<br>&emsp;Address:</br> 
+				&emsp;Job Position:
+					<br>&emsp;Job Description:</br>
+						&emsp;Website:<br>
+							&emsp;Contact Persons:</br>
 										</td>			
 </table>
 </br>
-<table border="1" border color="black" cellpadding="1" cellspacing="1" width="100%" height="500%">
+<table border="1" border color="black" cellpadding="5" cellspacing="1" width="100%" height="500%">
 	<td>
-		<img src="" width="100" height="100" border="0">
-		(Company Name)
-			<br>Location/Address:</br> 
-				Job Position:
-					<br>Job Description:</br>
-						Website:<br>
-							Contact Persons:</br>
+		<img src="" width="125" height="125" border="0" align="left">
+		<h5>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Company Name)</h5>
+			<br>&emsp;Address:</br> 
+				&emsp;Job Position:
+					<br>&emsp;Job Description:</br>
+						&emsp;Website:<br>
+							&emsp;Contact Persons:</br>
 										</td>
 </table>
 </div>
