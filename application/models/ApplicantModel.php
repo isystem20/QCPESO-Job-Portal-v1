@@ -8,6 +8,12 @@ class ApplicantModel extends CI_Model {
 =======
 <<<<<<< HEAD
 
+
+	//select * from tbl_applicants where isActive = 1
+	public function LoadApplicantsList() {
+=======
+<<<<<<< HEAD
+
 	//select*from tbl_applicants where isActive = 1
 	public function LoadApplicantsList(){
 	
@@ -25,7 +31,11 @@ class ApplicantModel extends CI_Model {
 <<<<<<< HEAD
 	}
 
+<<<<<<< HEAD
  }
+=======
+}
+>>>>>>> 282a1e2482634c04eeb0a9182f24e1ea1e5e54aa
 =======
 <<<<<<< HEAD
 	}

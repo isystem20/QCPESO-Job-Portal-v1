@@ -57,7 +57,7 @@
                             <li><a href="#home"><span class="menu-item-span">Home</span></a></li>
                             <li><a href="#about"><span class="menu-item-span">About</span></a></li>
                             <li><a href="#services"><span class="menu-item-span">Services</span></a></li>
-                            <!-- <li><a href="#jobs"><span class="menu-item-span">Jobs</span></a></li> -->
+                            <li><a href="#jobs"><span class="menu-item-span">Browse Jobs</span></a></li>
                             <li><a href="#startnow"><span class="menu-item-span">Start Now</span></a></li>
                             <!-- <li><a href="#team"><span class="menu-item-span">Team</span></a></li> -->
                             <!-- <li><a href="#blog"><span class="menu-item-span">News</span></a></li> -->
