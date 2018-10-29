@@ -17,7 +17,7 @@
                 <a class="mobile-search morphsearch-search" href="#">
                     <i class="ti-search"></i>
                 </a>
-                <a href="index-2.html">
+                <a href="#">
                     <img class="img-fluid" src="<?php echo base_url(); ?>themes/ltr/vertical-static/assets/images/qcpesologo.png" alt="Theme-Logo" />
                 </a>
                 <a class="mobile-options">

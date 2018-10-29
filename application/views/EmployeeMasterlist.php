@@ -1,9 +1,5 @@
-
+ 
     
-    
-    
-    
-
 <div class="main-body">
 <div class="page-wrapper">
 
@@ -15,7 +11,7 @@
 <div class="page-header-breadcrumb">
 <ul class="breadcrumb-title">
 <li class="breadcrumb-item">
-<a href="index-2.html">
+<a href="dashboard">
 <i class="icofont icofont-home"></i>
 </a>
 </li>
@@ -35,6 +31,12 @@
 <h5>Decription</h5>
 <span>This is the Masterlist of all active Employees  
 </span>
+<div class="card-header">
+ <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-ui-add"></i>Add Employee</button></a>
+ <button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-edit"></i>Edit</button>
+ <button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-ui-delete"></i>Delete</button>
+<button class="btn btn-info btn-outline-info"><i class="icofont icofont-upload"></i>Upload</button>  
+</div>
 <div class="card-header-right">
 <i class="icofont icofont-rounded-down"></i>
 <i class="icofont icofont-refresh"></i>

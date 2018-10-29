@@ -1277,7 +1277,7 @@ Header Fixed </a></li>
 <i class="icofont icofont-home"></i>
 </a>
 </li>
-<li class="breadcrumb-item"><a href="#!">Form Wizard</a>
+<li class="breadcrumb-item"><a href="#!">Employee Registration</a>
 </li>
 </ul>
 </div>

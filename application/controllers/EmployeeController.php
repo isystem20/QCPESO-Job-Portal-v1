@@ -20,9 +20,9 @@ class EmployeeController extends CI_Controller {
 	 */
 	public function EmployeeMasterlist()
 	{
-         $this->load->view('layout/css');
+        $this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('EmployeeMasterlist');
 		$this->load->view('layout/js');	
@@ -32,11 +32,14 @@ class EmployeeController extends CI_Controller {
 	public function EmployeeRegistration()
 	{
 
+<<<<<<< HEAD
 		$data = array('formwizard' => TRUE, );
 		$this->load->view('layout/css', $data);
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu');
 		$this->load->view('layout/right');
+=======
+>>>>>>> 0075f7e158e3e738fbb43e2168a5bae086132c3f
 		$this->load->view('EmployeeRegistration');
 		$this->load->view('layout/js', $data);	
 	}
@@ -45,7 +48,7 @@ class EmployeeController extends CI_Controller {
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('OverseasCondition');
 		$this->load->view('layout/js');		
@@ -55,7 +58,7 @@ public function OverseasDependents()
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('OverseasDependents');
 		$this->load->view('layout/js');		
@@ -63,9 +66,9 @@ public function OverseasDependents()
 
 public function OverseasLocations()
 	{
-		$this->load->view('layout/css');
+		$this->load->view('layout/css'); 	
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('OverseasLocations');
 		$this->load->view('layout/js');		
@@ -73,30 +76,46 @@ public function OverseasLocations()
 
 public function PreferredLocation()
 	{
+		$this->load->model('PreferredLocationModel','preferredlocationmodel');
+		$data['preferredlocation'] = $this->preferredlocationmodel->Load_PreferredLocationModel_Masterlist();
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('PreferredLocation');
+		$this->load->view('PreferredLocation',$data);
 		$this->load->view('layout/js');		
 }
 
 public function JobTitles()
 	{
+		$this->load->model('JobTitleModel','joblistmodel');
+		$data['joblist'] = $this->joblistmodel->Load_JobTitle_Masterlist();
+		// print_r($data);
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('JobTitles');
+		$this->load->view('JobTitles',$data);
 		$this->load->view('layout/js');		
 }
 public function EducationalCourses()
 	{
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('EducationalCourses');
 		$this->load->view('layout/js');		
 }
+public function Categories()
+ {
+ 	$this->load->model('CategoriesModel','categoriesmodel');
+		$data['categories'] = $this->categoriesmodel->Load_CategoriesModel_Masterlist();
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('Categories',$data);
+		$this->load->view('layout/js');		
+	}
 }

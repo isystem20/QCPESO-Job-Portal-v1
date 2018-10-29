@@ -11,13 +11,11 @@
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
                         <li class="breadcrumb-item">
-                            <a href="index-2.html">
+                            <a href="dashboard">
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Basic Initialization</a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#!">Advance Initialization</a>
+                        <li class="breadcrumb-item"><a href="#!">Masterlist of Employer</a>
                         </li>
                     </ul>
                 </div>
@@ -137,10 +135,6 @@
                                         <td>2003/07/25</td>
                                         <td>Overseas</td>
                                     </tr>
-
-
-
-
                                     </tr>
                                     </tfoot>
                             </table>

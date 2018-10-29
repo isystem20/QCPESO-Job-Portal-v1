@@ -19,11 +19,6 @@ class HomeController extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	public function index() {
-		$this->load->view('layout/css');
-		$this->load->view('UserLogin');
-		$this->load->view('layout/js');	
-	}
 
 	public function UserLogin() {
 		$this->load->view('layout/css');
@@ -40,12 +35,13 @@ class HomeController extends CI_Controller {
 
 	public function Dashboard()
 	{
-		$this->load->view('layout/css');
+		$layout = array('charts' => TRUE, );
+		$this->load->view('layout/css',$layout);
 		$this->load->view('layout/top');
-		$this->load->view('layout/menu');
+		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
 		$this->load->view('Dashboard');
-		$this->load->view('layout/js');	
+		$this->load->view('layout/js',$layout);	
 		
 	}
 
@@ -63,4 +59,14 @@ class HomeController extends CI_Controller {
 			$this->load->view('layout/js');	
 			
 		}
+	public function index()
+		{
+			// $this->load->view('layout/css');
+			// $this->load->view('layout/top_navbar_frontpage');
+			$this->load->view('FrontPage2');
+			// $this->load->view('layout/js');	
+			
+		}
+
+
 }

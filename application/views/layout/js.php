@@ -77,7 +77,11 @@
 
     <script type="text/javascript" src="<?php echo base_url();?>themes/ltr/vertical-static/assets/js/script.js"></script>
 
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.leftpane').css("height", $('.page-wrapper').height() + 56);
+        });
+    </script>
     <style type="text/css">
         .color-picker {
             display: none;
