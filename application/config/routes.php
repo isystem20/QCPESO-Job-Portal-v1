@@ -97,7 +97,7 @@ $route['translate_uri_dashes'] = FALSE;
         /* Establishment */ 
             /* Add new */                   $route['manage/do/establishments/add'] = 'EmployerController/EmployerRegistration';
             /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
-            /* Pending Accreditation */     $route['manage/do/jobs/pending-job-posts'] = 'AccreditationController/AccreditationRequest';   
+            /* Pending Accreditation */     $route['manage/do/establishments/pending-accreditation'] = 'AccreditationController/AccreditationRequest';   
         /* Jobs */ 
             /* Add new */                   $route['manage/do/jobs/add'] = 'JobController/JobRegistration';       
             /* View Jobs */                 $route['manage/do/jobs/view-list'] = 'JobController/JobMasterlist';  

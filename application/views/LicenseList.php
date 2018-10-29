@@ -56,6 +56,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            
                                         <?php
                                         if ($license->num_rows() > 0) {
                                             foreach ($license->result() as $row) { ?>

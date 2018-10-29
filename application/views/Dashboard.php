@@ -33,7 +33,7 @@
 											<i class="icofont icofont-eye-alt text-success"></i>
 										</div>
 										<div class="col-sm-8 text-center">
-											<h5>10k</h5>
+											<h5>10,000</h5>
 											<span>Visitors</span>
 										</div>
 									</div>
@@ -44,7 +44,7 @@
 											<i class="icofont icofont-ui-music text-danger"></i>
 										</div>
 										<div class="col-sm-8 text-center">
-											<h5>100%</h5>
+											<h5>12,000</h5>
 											<span>Jobs</span>
 										</div>
 									</div>
@@ -90,7 +90,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>1000</h5>
-											<span>Shares</span>
+											<span>Local</span>
 										</div>
 									</div>
 								</div>
@@ -101,7 +101,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>600</h5>
-											<span>Network</span>
+											<span>Overseas</span>
 										</div>
 									</div>
 								</div>
@@ -116,7 +116,7 @@
 										</div>
 										<div class="col-sm-8 text-center">
 											<h5>350</h5>
-											<span>Returns</span>
+											<span>PWDs</span>
 										</div>
 									</div>
 								</div>
@@ -126,8 +126,8 @@
 											<i class="icofont icofont-network-tower text-primary"></i>
 										</div>
 										<div class="col-sm-8 text-center">
-											<h5>100%</h5>
-											<span>Connections</span>
+											<h5>1,000</h5>
+											<span>Summer Jobs</span>
 										</div>
 									</div>
 								</div>
@@ -144,7 +144,7 @@
 								</div>
 								<div class="col-sm-9">
 									<h4>4000 +</h4>
-									<h6>Ratings Received</h6>
+									<h6>Succesful Hires</h6>
 								</div>
 							</div>
 						</div>
@@ -157,13 +157,13 @@
 								</div>
 								<div class="col-sm-9">
 									<h4>17</h4>
-									<h6>Achievements</h6>
+									<h6>Pending Accreditation</h6>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+		<!-- 		<div class="col-lg-6">
 					<div class="card">
 						<div class="card-block">
 							<div id="chartdiv"></div>
@@ -374,13 +374,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="card card-border-primary">
 								<div class="card-header">
-									<h5>John Doe </h5>
+									<h5>Company A </h5>
 									<div class="dropdown-secondary dropdown f-right">
 										<button class="btn btn-primary btn-mini dropdown-toggle waves-effect waves-light" type="button" id="dropdown6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overdue</button>
 										<div class="dropdown-menu" aria-labelledby="dropdown6" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
@@ -405,7 +405,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 									<div class="row">
 										<div class="col-sm-6">
 											<ul class="list list-unstyled">
-												<li>Invoice #: &nbsp;0028</li>
+												<li>Date of Accreditation</li>
 												<li>Issued on: 
 													<span class="text-semibold">2015/01/25</span>
 												</li>
@@ -413,9 +413,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 										</div>
 										<div class="col-sm-6">
 											<ul class="list list-unstyled text-right">
-												<li>$8,750</li>
-												<li>Method: 
-													<span class="text-semibold">Paypal</span>
+												<li></li>
+												<li>
+													<span class="text-semibold"></span>
 												</li>
 											</ul>
 										</div>
@@ -459,7 +459,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 						<div class="col-lg-12">
 							<div class="card card-border-primary">
 								<div class="card-header">
-									<h5>John Doe </h5>
+									<h5>Company B </h5>
 									<div class="dropdown-secondary dropdown f-right">
 										<button class="btn btn-primary btn-mini dropdown-toggle waves-effect waves-light" type="button" id="dropdown12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overdue</button>
 										<div class="dropdown-menu" aria-labelledby="dropdown12" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
@@ -484,7 +484,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 									<div class="row">
 										<div class="col-sm-6">
 											<ul class="list list-unstyled">
-												<li>Invoice #: &nbsp;0028</li>
+												<li>Date of Accreditation:</li>
 												<li>Issued on: 
 													<span class="text-semibold">2015/01/25</span>
 												</li>
@@ -492,9 +492,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 										</div>
 										<div class="col-sm-6">
 											<ul class="list list-unstyled text-right">
-												<li>$8,750</li>
-												<li>Method: 
-													<span class="text-semibold">Paypal</span>
+												<li></li>
+												<li> 
+													<span class="text-semibold"></span>
 												</li>
 											</ul>
 										</div>
@@ -549,7 +549,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8">
+<!-- 				<div class="col-lg-8">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="card table-1-card">
@@ -682,8 +682,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium offi
 								</div>
 								<div class="col-sm-8 text-center">
 									<h5>
-John Henry
-</h5>
+												John Henry
+												</h5>
 								</div>
 								<div class="col-sm-2 text-right">
 									<i class="icofont icofont-ui-edit"></i>
@@ -735,7 +735,7 @@ Cras sit amet nibh libero, in gravida nulla.Vel metus scelerisque ante
 									<input type="text" class="form-control" placeholder="Your Message">
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="col-md-6 col-xl-3">
 								<div class="card social-widget-card">
 									<div class="card-block-big bg-facebook">
