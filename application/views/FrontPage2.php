@@ -23,7 +23,9 @@
         <link href="<?php echo base_url(); ?>themes/boomerang/assets/css/plugins.min.css" rel="stylesheet">
         <!-- Template core CSS-->
         <link href="<?php echo base_url(); ?>themes/boomerang/assets/css/template.css" rel="stylesheet">
-<script src="https://apis.google.com/js/platform.js" async defer></script>  
+        
+<script src="https://apis.google.com/js/platform.js" async defer>
+    </script>  
 
 
     </head>
@@ -46,7 +48,7 @@
                 <!-- Brand-->
                 <div class="inner-header">
                     <a class="inner-brand" href="#">
-                        <img src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" width="70">
+                        <img src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" width="50">
                         Quezon City PESO
                     </a>
                 </div>
@@ -1021,6 +1023,8 @@
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
         <script src="<?php echo base_url(); ?>themes/boomerang/assets/js/custom/plugins.min.js"></script>
         <script src="<?php echo base_url(); ?>themes/boomerang/assets/js/custom/custom.min.js"></script>
+        
+    
     </body>
 <script type="text/javascript">
     
