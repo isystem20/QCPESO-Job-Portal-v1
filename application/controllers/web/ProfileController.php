@@ -21,10 +21,10 @@ class ProfileController extends CI_Controller {
 
 public function ShowProfile()
 	{
-        $this->load->view('web/Profile');
+
 		$this->load->view('layout/web/1_head');
 		$this->load->view('layout/web/2_preloader');
-		$this->load->view('layout/web/3_header');
+		$this->load->view('layout/web/3_header_login');
 		$this->load->view('web/Profile');
 		$this->load->view('layout/web/5_rightbar');
 		$this->load->view('layout/web/6_footer');

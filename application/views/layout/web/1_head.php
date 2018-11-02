@@ -19,4 +19,11 @@
         <link href="<?php echo base_url(); ?>themes/boomerang/assets/css/plugins.min.css" rel="stylesheet">
         <!-- Template core CSS-->
         <link href="<?php echo base_url(); ?>themes/boomerang/assets/css/template.css" rel="stylesheet">
+        
+        <meta name="google-signin-client_id" content="453639693637-8utkl362om0v1qad2jmgdbbhla6l9m5u.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>  
+
+
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     </head>
