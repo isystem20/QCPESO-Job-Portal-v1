@@ -9,23 +9,23 @@
         <meta name="author" content="">
         <title>Boomerang - Template</title>
         <!-- Favicons-->
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>themes/boomerang/
+        <link rel="shortcut icon" href="<?php echo base_url(); ?>themes/boomerang/assets
 /images/favicon.png">
-        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>themes/boomerang/
+        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>themes/boomerang/assets
 /images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>themes/boomerang/
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>themes/boomerang/assets
 /images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>themes/boomerang/
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>themes/boomerang/assets
 /images/apple-touch-icon-114x114.png">
         <!-- Web Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
         <link href="<?php echo base_url(); ?>themes/boomerang/
 /use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         <!-- Plugins-->
-        <link href="<?php echo base_url(); ?>themes/boomerang/
+        <link href="<?php echo base_url(); ?>themes/boomerang/assets
 /css/plugins.min.css" rel="stylesheet">
         <!-- Template core CSS-->
-        <link href="<?php echo base_url(); ?>themes/boomerang/
+        <link href="<?php echo base_url(); ?>themes/boomerang/assets
 /css/template.css" rel="stylesheet">
     </head>
     <body>
@@ -248,14 +248,7 @@
             <!-- Hero-->
             <section class="module-cover parallax text-center" data-background="<?php echo base_url(); ?>themes/boomerang/
 /images/module-20.jpg" data-overlay="0.5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Left Sidebar</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Quisque eget mi at eros venenatis</p>
-                        </div>
-                    </div>
-                </div>
+               
             </section>
             <!-- Hero end-->
 
@@ -496,17 +489,17 @@
                                         <h6>Portfolio</h6>
                                     </div>
                                     <ul>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/1.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/2.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/3.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/7.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/8.jpg" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                                        <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/6.jpg" alt=""></a></li>
                                     </ul>
                                 </aside>
@@ -537,7 +530,7 @@
                     <!-- Text widget-->
                     <aside class="widget widget-text">
                         <div class="textwidget">
-                            <p class="text-center"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <p class="text-center"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/logo-light-2.png" alt="" width="80px"></p>
                             <p class="text-center">See how users experience your website in realtime to see changes.</p>
                         </div>
@@ -545,23 +538,23 @@
                     <!-- Recent portfolio widget-->
                     <aside class="widget widget-recent-works">
                         <ul>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/1.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/2.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/3.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/4.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/5.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/6.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/7.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/8.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
+                            <li><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/assets
 /images/widgets/9.jpg" alt=""></a></li>
                         </ul>
                     </aside>
@@ -580,16 +573,16 @@
         <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
         <!-- Scripts-->
-        <script src="<?php echo base_url(); ?>themes/boomerang/
+        <script src="<?php echo base_url(); ?>themes/boomerang/assets
 /js/custom/jquery-3.2.1.min.js"></script>
-        <script src="<?php echo base_url(); ?>themes/boomerang/
+        <script src="<?php echo base_url(); ?>themes/boomerang/assets
 /js/custom/popper.min.js"></script>
-        <script src="<?php echo base_url(); ?>themes/boomerang/
+        <script src="<?php echo base_url(); ?>themes/boomerang/assets
 /js/bootstrap/bootstrap.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
-        <script src="<?php echo base_url(); ?>themes/boomerang/
+        <script src="<?php echo base_url(); ?>themes/boomerang/assets
 /js/custom/plugins.min.js"></script>
-        <script src="<?php echo base_url(); ?>themes/boomerang/
+        <script src="<?php echo base_url(); ?>themes/boomerang/assets
 /js/custom/custom.min.js"></script>
     </body>
 
