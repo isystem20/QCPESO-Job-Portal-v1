@@ -12,24 +12,27 @@
                     <div class="row">
                         <div class="col-lg-8 order-lg-2">
                             <div class="row row-post-masonry">
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
 /images/blog/1.jpg" alt=""></a></div>
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Bluetooth Speaker</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">Carpenter</a></h2>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>Perform an array of functions that may include receiving and processing incoming stock and materials, picking and filling orders from stock, packing and shipping orders, or managing, organizing and retrieving stock in the warehouse. <br>
+                                                  1. Candidate must possess at least Bachelor's/College Degree in any field. </br> <br>
+                                                  2. Atleast 1 Year(s) of working experience in the related field is required for this position.
+                                                 </br> </p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
                                     </article>
                                     <!-- Post end-->
                                 </div>
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
@@ -46,7 +49,7 @@
                                     </article>
                                     <!-- Post end-->
                                 </div>
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
@@ -63,7 +66,7 @@
                                     </article>
                                     <!-- Post end-->
                                 </div>
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
@@ -80,7 +83,7 @@
                                     </article>
                                     <!-- Post end-->
                                 </div>
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
@@ -97,7 +100,7 @@
                                     </article>
                                     <!-- Post end-->
                                 </div>
-                                <div class="col-md-6 post-item">
+                                <div class="col-md-12 post-item">
                                     <!-- Post-->
                                     <article class="post">
                                         <div class="post-preview"><a href="#"><img src="<?php echo base_url(); ?>themes/boomerang/
