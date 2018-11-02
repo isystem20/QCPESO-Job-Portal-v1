@@ -112,18 +112,13 @@ $route['translate_uri_dashes'] = FALSE;
         /* Establishment Ratings */         $route['manage/reports/establishment-ratings'] = 'admin/ReportController/EstablishmentRatings'; 
         /* Survey Summary */                $route['manage/reports/survey-summary'] = 'admin/ReportController/SurverSummary'; 
 
-
-
-
-
-
 // $route['manage/do/jobs/view-list'] = 'PostController/JobPost';
-
-
-
-
 
 
 /* Developers */
                                             $route['changelog'] = 'admin/HomeController/Changelog';
 
+
+
+
+$route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';

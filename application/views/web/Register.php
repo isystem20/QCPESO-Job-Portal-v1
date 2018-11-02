@@ -9,25 +9,24 @@
                                 <h6>Create a new account</h6>
                             </div>
                             <div class="m-b-20">
-                                <form method="post">
-
+                                <form method="post" action="<?php echo base_url(); ?>web/register/applicant" id="applicant-register-form">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="First name">
+                                        <input class="form-control" type="text" placeholder="First name" name="firstname">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Last name">
+                                        <input class="form-control" type="text" placeholder="Last name" name="lastname">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="E-mail">
+                                        <input class="form-control" type="email" placeholder="E-mail" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="Pasword">
+                                        <input class="form-control" type="password" placeholder="Pasword" name="password">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="Confirm password">
+                                        <input class="form-control" type="password" placeholder="Confirm password" name="password2">
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-block btn-round btn-brand" type="submit">Sign Up</button>
+                                        <button class="btn btn-block btn-round btn-brand" type="submit" id="applicant-register-btn">Sign Up</button>
                                     </div>
                                 </form>
                             </div>

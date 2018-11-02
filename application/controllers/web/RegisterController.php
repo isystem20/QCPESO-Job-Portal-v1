@@ -3,6 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class RegisterController extends CI_Controller {
 
+    function __construct() {
+        parent::__construct();
+        $this->load->model('web/AuthModel','auth');
+    }
+
 	public function register()
 	{
 		
@@ -16,8 +21,6 @@ class RegisterController extends CI_Controller {
 		
 	}
 	
-	
-	
 	public function VerifyEmail() {
 		$layout = array('transparentwrapper' => TRUE, );
 		$this->load->view('layout/web/1_head');
@@ -27,6 +30,33 @@ class RegisterController extends CI_Controller {
 		$this->load->view('layout/web/5_rightbar');
 		$this->load->view('layout/web/6_footer');	
 	}
+
+	//POST Function to create new applicant
+	public function CreateApplicant() {
+
+        $this->form_validation->set_rules('firstName', 'First Name', 'required');
+        $this->form_validation->set_rules('lastName', 'Last Name', 'required'); 
+        $this->form_validation->set_rules('emailAddress', 'Email', 'required|valid_email'); 
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]'); 
+        $this->form_validation->set_rules('password2', 'Confirm Password', 'required|matches[password]'); 
+
+        if ($this->form_validation->run() == FALSE){
+            $errors = validation_errors();
+            echo json_encode(['error'=>$errors]);
+        }
+        else{
+
+        	$postdata = $this->input->post();
+        	$inserted = $this->auth->RegisterApplicant($postdata);
+        	echo json_encode($postdata);
+
+
+        }
+
+
+
+	}
+
 
 
 }
