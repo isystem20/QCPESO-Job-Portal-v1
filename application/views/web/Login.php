@@ -5,8 +5,16 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 m-auto border">
 
-                        <div class="col-md-6" style="height: 50px; padding: 10px;">
-                           <div class="g-signin2" data-onsuccess="onSignIn" data-width=""></div>
+                        <div class="row"> 
+                            <div class="col-md-6" style="height: 50px; padding: 10px;">
+                               <div>
+                                   <button type="button" class="btn btn-primary">Facebook</button>
+                               </div>
+                            </div>
+
+                            <div class="col-md-6" style="height: 50px; padding: 10px;">
+                               <div class="g-signin2" data-onsuccess="onSignIn" data-width=""></div>
+                            </div>
                         </div>
                         <br>
                     
