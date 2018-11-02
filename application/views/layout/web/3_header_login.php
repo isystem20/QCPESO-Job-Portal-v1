@@ -233,7 +233,6 @@
                             <li><a href="#team"><span class="menu-item-span">Team</span></a></li>
                             <li><a href="#blog"><span class="menu-item-span">News</span></a></li>
                             <li><a href="#quick-register"><span class="menu-item-span">Register</span></a></li>
-                            <li><a href="start.html"><span class="menu-item-span">Demos</span></a></li>
                         </ul>
                     </div>
                 </div>
