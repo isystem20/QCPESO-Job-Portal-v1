@@ -1,6 +1,6 @@
 
         <!-- Header-->
-        <header class="header header-transparent">
+        <header class="header <?php if(!empty($transparentwrapper)) { echo 'header-transparent';} ?>">
             <div class="container-fluid">
                 <!-- Brand-->
                 <div class="inner-header">
