@@ -229,15 +229,13 @@
                             <li><a href="#about"><span class="menu-item-span">About</span></a></li>
                             <li><a href="#services"><span class="menu-item-span">Services</span></a></li>
                             <li><a href="#jobs"><span class="menu-item-span">Browse Jobs</span></a></li>
-                            <li><a href="#startnow"><span class="menu-item-span">Start Now</span></a></li>
-                            <li><a href="#team"><span class="menu-item-span">Team</span></a></li>
-                            <li><a href="#blog"><span class="menu-item-span">News</span></a></li>
+                            <li><a href="#blog"><span class="menu-item-span">News</span></a></li>                        
+                            <li><a href="#quick-register"><span class="menu-item-span">Login</span></a></li>
                             <li><a href="#quick-register"><span class="menu-item-span">Register</span></a></li>
-                            <li><a href="start.html"><span class="menu-item-span">Demos</span></a></li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="extra-nav">
                     <ul>
                         <li><a class="top-bar-cart" href="shop-cart-1.html"><span class="menu-item-span"><i class="ti-shopping-cart"></i><span>3</span></span></a></li>
