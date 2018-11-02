@@ -2,12 +2,15 @@
             <section class="module-cover parallax fullscreen text-center" data-background="assets/images/module-5.jpg" data-overlay="0.65" data-gradient="">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-lg-4 col-md-6 m-auto">
                             <div class="m-b-20">
+                                <br><br>
                                 <h6>Create a new account</h6>
                             </div>
                             <div class="m-b-20">
                                 <form method="post">
+
                                     <div class="form-group">
                                         <input class="form-control" type="text" placeholder="First name">
                                     </div>
