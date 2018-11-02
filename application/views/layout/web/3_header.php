@@ -236,7 +236,7 @@
                             <li><a href="<?php echo base_url(); ?>web/browsejobcontroller/browsejob"><span class="menu-item-span">Browse Jobs</span></a></li>
                             <li><a href="<?php echo base_url(); ?>web/newscontroller/news"><span class="menu-item-span">News</span></a></li>                        
                             <li><a href="<?php echo base_url(); ?>web/LoginController/Login"><span class="menu-item-span">Login</span></a></li>
-                            <li><a href="#quick-register"><span class="menu-item-span">Register</span></a></li>
+                            <li><a href="<?php echo base_url(); ?>web/RegisterController/Register"><span class="menu-item-span">Register</span></a></li>
                         </ul>
                     </div>
                 </div>
