@@ -234,19 +234,19 @@
                             <li><a href="<?php echo base_url(); ?>web/AboutController/about"><span class="menu-item-span">About</span></a></li>
                             <li><a href="<?php echo base_url(); ?>web/Servicescontroller/services"><span class="menu-item-span">Services</span></a></li>
                             <li><a href="<?php echo base_url(); ?>web/browsejobcontroller/browsejob"><span class="menu-item-span">Browse Jobs</span></a></li>
-                            <li><a href="#blog"><span class="menu-item-span">News</span></a></li>                        
+                            <li><a href="<?php echo base_url(); ?>web/newscontroller/news"><span class="menu-item-span">News</span></a></li>                        
                             <li><a href="<?php echo base_url(); ?>web/LoginController/Login"><span class="menu-item-span">Login</span></a></li>
                             <li><a href="#quick-register"><span class="menu-item-span">Register</span></a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="extra-nav">
+       <!--          <div class="extra-nav">
                     <ul>
                         <li><a class="top-bar-cart" href="shop-cart-1.html"><span class="menu-item-span"><i class="ti-shopping-cart"></i><span>3</span></span></a></li>
                         <li><a class="off-canvas-open" href="#"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
                         <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span class="menu-item-span"><i class="ti-menu"></i></span></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </header>
