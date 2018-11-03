@@ -19,6 +19,7 @@
                             </ul>
                         </li>
                         <li class="nav-devider"></li>
+<<<<<<< HEAD
                         <li class="nav-small-cap">PERSONAL</li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-themecolor pull-right">4</span></span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -27,7 +28,12 @@
                                 <li><a href="index3.html">Demographical</a></li>
                                 <li><a href="index4.html">Modern</a></li>
                             </ul>
+=======
+                        
+                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+>>>>>>> 956b19574fbba51fd030c4446adb008780e5fd26
                         </li>
+                        <li class="nav-small-cap">MANAGE</li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Apps</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-calendar.html">Calendar</a></li>
