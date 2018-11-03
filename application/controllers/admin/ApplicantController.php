@@ -36,16 +36,16 @@ $this->load->view('layout/js');
 
 	public function DisabilitiesMasterlist()
 		{
-
-		$this->load->model('ApplicantDisablitiesModel','applicantdisabilities');
-		$data['applicantdisablities'] = $this->applicantdisabilities->Load_ApplicantDisablitiesModel_Masterlist();
 		$layout = array('tables' => TRUE, );
-        $this->load->view('layout/css',$layout);
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('DisabilitiesMasterlist',$data);
-		$this->load->view('layout/js',$layout);	 
+		$this->load->model('admin/ApplicantDisablitiesModel','applicantdisability');
+		$data['applicantdisablities'] = $this->applicantdisability->Load_ApplicantDisablitiesModel_Masterlist();
+			
+		$this->load->view('layout/admin/1_css');
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/maintenance/DisabilitiesMasterlist',$data);
+		$this->load->view('layout/admin/6_js',$layout);	 
 			
 
 		}
