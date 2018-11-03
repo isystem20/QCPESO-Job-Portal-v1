@@ -51,7 +51,7 @@
                                 if ($usermasterlist->num_rows() > 0 ) {
                                     foreach ($usermasterlist->result() as $row) { ?>
                                 <tr>
-
+                                    <td></td>
                                     <td><?php echo $row->LoginName; ?></td>
                                     <td><?php echo $row->UserType; ?></td>
                                     <td><?php echo $row->Email; ?></td> 
