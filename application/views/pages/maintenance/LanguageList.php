@@ -1,5 +1,5 @@
-
-        <div class="page-wrapper">
+    
+ <div class="page-wrapper">
             
             <!-- ============================================================== -->
             <!-- Container fluid  -->
@@ -10,13 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">User Masterlist</h3>
+                    <h3 class="text-themecolor">Language List</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">pages</li>
-                        <li class="breadcrumb-item active">Table basic</li>
+                        <li class="breadcrumb-item active">Language List</li>
                     </ol>
                 </div>
                 <div>
@@ -30,62 +30,37 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+         
+                <div class="row">
+                    <div class="col-sm-12">
+
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Description:</h4>
-                                <h6 class="card-subtitle">This is the Masterlist of all Users.</h6>
-                                <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+
+                            
+                            <div class="card-block">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="simpletable" class="table table-striped table-bordered nowrap">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Login Name</th>
-                                                <th>Usertype</th>
-                                                <th>Email Address</th>
-                                                 <th>Status</th>
-                                            
+                                                <th>Description</th>
+                                                <th>Modified By ID</th>
+                                                <th>Modified At</th>  
+                                                <th>Status</th>    
                                             </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                if ($usermasterlist->num_rows() > 0 ) {
-                                    foreach ($usermasterlist->result() as $row) { ?>
-                                <tr>
-                                    <td></td>
-                                    <td><?php echo $row->LoginName; ?></td>
-                                    <td><?php echo $row->UserType; ?></td>
-                                    <td><?php echo $row->Email; ?></td> 
-                                    <td>
-                                        <?php 
-                                        if ($row->Active == '1' ) {
-                                            echo '<label class="label
-                                                label-success">Active</label>';
-                                        }
-                                        else {
-                                            echo '<label class="label
-                                                label-default">Inactive</label>';
-                                        }
-                                        ?>
-                                    </td>
-                                </tr>
-                                <?php
-                                    }
-                                }
-                                ?>
-                                        </tbody>
+                                        </thead>                                    
                                     </table>
                                 </div>
                             </div>
                         </div>
- 
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+     <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">

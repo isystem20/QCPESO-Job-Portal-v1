@@ -10,14 +10,14 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">License list Maintenance</h3>
+                    <h3 class="text-themecolor">Certificates Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Manage</li>
                         <li class="breadcrumb-item active">Maintenance</li>
-                        <li class="breadcrumb-item active">License list</li>
+                        <li class="breadcrumb-item active">Certificates Masterlist</li>
 
                     </ol>
                 </div>
@@ -37,46 +37,41 @@
 
                         <div class="card">
                             <div class="card-body">
-<<<<<<< HEAD
-                                <h4 class="card-title">Data Export
-</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
-=======
-                                <h4 class="card-title">License list</h4>
-                                <h6 class="card-subtitle">Masterlist of All License list</h6>
->>>>>>> 5dc28dadb2cc7442385a6cdfe8be2f656df63274
+                                <h4 class="card-title">Certificates</h4>
+                                <h6 class="card-subtitle">Masterlist of All Certificates</h6>
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Eligibility Title</th>
                                                 <th>Description</th>
-                                                 <th>Modified By </th>
-                                                 <th>Modified At </th>
-                                                 <th>Status</th>
+                                                <th>Modified By</th>
+                                                <th>Modified At</th>                                   
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
-                                             <tr>    
+                                            <tr>
                                                 <th>Name</th>
                                                 <th>Eligibility Title</th>
                                                 <th>Description</th>
-                                                 <th>Modified By </th>
-                                                 <th>Modified At </th>
-                                                 <th>Status</th>
+                                                <th>Modified By</th>
+                                                <th>Modified At</th>                                   
+                                                <th>Status</th>
                                             </tr>
-                                        </tfoot>   
-                                        <tbody>
-                                         <?php
-                                        if ($license->num_rows() > 0) {
-                                            foreach ($license->result() as $row) { ?>
+                                        </tfoot>
+                                            <tbody>
+                                                <?php
+                                        if ($certificate->num_rows() > 0) {
+                                            foreach ($certificate->result() as $row) { ?>
                                             <tr>
+                                                
                                                 <td><?php echo $row->name; ?></td>
-                                                <td><?php echo $row->eligibilityTitle; ?></td>
-                                                 <td><?php echo $row->description; ?></td>
-                                                    <td><?php echo $row->modifiedById; ?></td>
-                                                     <td><?php echo $row->modifiedAt; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                 <td><?php echo $row->eligibilityTitle; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
                                                 <td>
                                                     <?php 
                                                     if ($row->isActive == '1') {
@@ -92,21 +87,14 @@
                                             }
                                         }
                                         ?>
-                                        </tbody>
-                                        <tfoot>
-                                           
-                                        </tfoot>
+                                            </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-    </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -130,3 +118,5 @@
             <!-- End footer -->
             <!-- ============================================================== -->
         </div>
+
+        
