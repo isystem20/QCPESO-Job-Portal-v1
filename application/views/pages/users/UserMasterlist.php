@@ -15,8 +15,8 @@
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">pages</li>
-                        <li class="breadcrumb-item active">Table basic</li>
+                        <li class="breadcrumb-item">Manage</li>
+                        <li class="breadcrumb-item active">UserMasterlist</li>
                     </ol>
                 </div>
                 <div>
@@ -33,7 +33,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Description:</h4>
-                                <h6 class="card-subtitle">This is the Masterlist of all Users.</h6>
+                                <h6 class="card-subtitle">This is the Masterlist of all users.</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
