@@ -21,13 +21,13 @@ class ApplicantController extends CI_Controller {
 	{
 		
 		$data = array('tables' => TRUE);
-<<<<<<< HEAD
+
 		$this->load->model('ApplicantModel','appmodel');
 		$data['applicants'] = $this->appmodel->LoadApplicantsList();
 		// print_r($data);
 		// die();
 		$this->load->view('layout/css', $data);
-=======
+
 
 		$this->load->model('ApplicantModel','AppModel');
 		$data['applicants'] = $this->AppModel->LoadApplicantList();
@@ -35,7 +35,7 @@ class ApplicantController extends CI_Controller {
 		// print_r($data);
 		// die();
         $this->load->view('layout/css', $data);
->>>>>>> 112abf1ea0581356f82a30184ddcfe54f79c03a7
+
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
