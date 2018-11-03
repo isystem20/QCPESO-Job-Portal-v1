@@ -10,13 +10,14 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">User Masterlist</h3>
+                    <h3 class="text-themecolor">Job Titles Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">UserMasterlist</li>
+                        <li class="breadcrumb-item active">Job Titles</li>
+
                     </ol>
                 </div>
                 <div>
@@ -30,62 +31,68 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Description:</h4>
-                                <h6 class="card-subtitle">This is the Masterlist of all users.</h6>
+                                <h4 class="card-title">Job Titles</h4>
+                                <h6 class="card-subtitle">Masterlist of All Available Jobs</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Login Name</th>
-                                                <th>Usertype</th>
-                                                <th>Email Address</th>
-                                                 <th>Status</th>
-                                            
+                                                <th>Description</th>
+                                                <th>Modifiedby</th>
+                                                <th>Modifiedat</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Modifiedby</th>
+                                                <th>Modifiedat</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
                                         <tbody>
-                                            <?php
-                                if ($usermasterlist->num_rows() > 0 ) {
-                                    foreach ($usermasterlist->result() as $row) { ?>
-                                <tr>
-                                    <td></td>
-                                    <td><?php echo $row->LoginName; ?></td>
-                                    <td><?php echo $row->UserType; ?></td>
-                                    <td><?php echo $row->Email; ?></td> 
-                                    <td>
-                                        <?php 
-                                        if ($row->Active == '1' ) {
-                                            echo '<label class="label
-                                                label-success">Active</label>';
-                                        }
-                                        else {
-                                            echo '<label class="label
-                                                label-default">Inactive</label>';
+                                             <?php
+                                        if ($applicantdisablities->num_rows() > 0) {
+                                            foreach ($applicantdisablities->result() as $row) { ?>
+                                            <tr>
+                                              
+                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
+                                                <td>
+                                                    <?php 
+                                                    if ($row->isActive == '1') {
+                                                        echo '<label class="label label-primary">Active</label>';
+                                                    }
+                                                    else {
+                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                    }
+                                                    ?>
+                                                </td>
+                                            </tr>
+                                        <?php
+                                            }
                                         }
                                         ?>
-                                    </td>
-                                </tr>
-                                <?php
-                                    }
-                                }
-                                ?>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
- 
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
+                    
+                     
+                    </div>
+                </div>
+                 <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">
@@ -135,18 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+  
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+ 
         </div>

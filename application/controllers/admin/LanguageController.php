@@ -26,12 +26,13 @@ class LanguageController extends CI_Controller {
 			$layout = array('tables' => TRUE, );
 			$this->load->model('admin/CertificateModel','certificatemodel');
 			$data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
-	        $this->load->view('layout/css');
-			$this->load->view('layout/top');
-			$this->load->view('layout/menu-manage');
-			$this->load->view('layout/right');
-			$this->load->view('LanguageList',$data);
-			$this->load->view('layout/js',$layout);	 
+
+			$this->load->view('layout/admin/1_css');
+			$this->load->view('layout/admin/2_preloader');
+			$this->load->view('layout/admin/3_topbar');
+			$this->load->view('layout/admin/4_leftsidebar');
+			$this->load->view('pages/maintenance/LanguageList');
+			$this->load->view('layout/admin/6_js',$layout);		
 		}
 
 
