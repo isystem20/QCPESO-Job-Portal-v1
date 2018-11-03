@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AccreditationController extends CI_Controller {
+class AccreditationController extends Staff_Controller {
 
 	/**
 	 * Index Page for this controller.

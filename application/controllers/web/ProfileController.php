@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProfileController extends CI_Controller {
+class ProfileController extends Applicant_Controller {
 
 	/**
 	 * Index Page for this controller.
