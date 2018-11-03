@@ -10,13 +10,15 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Maintenance</h3>
+                    <h3 class="text-themecolor">Job Titles Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Manage</li>
+                        <li class="breadcrumb-item active">Maintenance</li>
                         <li class="breadcrumb-item active">Job Titles</li>
+
                     </ol>
                 </div>
                 <div>
@@ -42,11 +44,10 @@
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Description</th>
+                                                <th>Modified By</th>
+                                                <th>Modified At</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
