@@ -122,3 +122,13 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';
+$route['web/login/applicant'] = 'web/LoginController/authenticate';
+
+
+$route['web/logout'] = 'WebController/logout';
+
+
+
+//ERRORS
+
+$route['403'] = 'admin/SiteErrorController/Error403';

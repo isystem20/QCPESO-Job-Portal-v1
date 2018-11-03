@@ -46,10 +46,14 @@ class RegisterController extends CI_Controller {
         }
         else{
 
-        	$postdata = $this->input->post();
+        	$postdata = $this->input->post(); 
         	$inserted = $this->auth->RegisterApplicant($postdata);
-        	echo json_encode($postdata);
-
+        	if ($inserted == TRUE) {
+         		echo json_encode(['success'=>TRUE]);       		
+        	}
+        	else {
+        		echo json_encode(['error'=>'Registration Failed']);
+        	}
 
         }
 

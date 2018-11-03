@@ -37,7 +37,12 @@
         <header class="header <?php if(!empty($transparentwrapper)) { echo 'header-transparent';} ?>">
             <div class="container-fluid">
                 <!-- Brand-->
-                <div class="inner-header"><a class="inner-brand" href="index-2.html">Boomerang</a></div>
+                <div class="inner-header">
+                    <a class="inner-brand" href="#">
+                        <img src="<?php echo base_url();?>themes/ltr/vertical-static/assets/images/auth/qcpeso.png" width="50">
+                        Quezon City PESO
+                    </a>
+                </div>
                 <!-- Navigation-->
         <!--         <div class="inner-navigation collapse">
                     <div class="inner-nav">
@@ -231,7 +236,7 @@
                             <li><a href="#jobs"><span class="menu-item-span">My Applicants</span></a></li>
                             <li><a href="#startnow"><span class="menu-item-span">My Alerts</span></a></li>
                             <li><a href="#team"><span class="menu-item-span">Notifications</span></a></li>
-                            <li><a href="#blog"><span class="menu-item-span">Logout</span></a></li>
+                            <li><a href="<?php echo base_url(); ?>web/logout"><span class="menu-item-span">Logout</span></a></li>
                         </ul>
                     </div>
                 </div>
