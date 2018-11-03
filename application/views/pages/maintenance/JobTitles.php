@@ -42,7 +42,6 @@
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
@@ -53,7 +52,6 @@
                                         <tbody>
                                          <tfoot>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
@@ -68,17 +66,6 @@
                                         if ($joblist->num_rows() > 0) {
                                             foreach ($joblist->result() as $row) { ?>
                                             <tr>
-                                                <td>
-                                                    <div class="checkbox-fade fade-in-primary">
-                                                    <label>
-                                                    <input type="checkbox" id="checkbox" name="Language" value="HTML">
-                                                    <span class="cr">
-                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span>
-                                                    <span></span>
-                                                    </label>
-                                                    </div>
-                                                </td>
                                                 <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->description; ?></td>
                                                 <td><?php echo $row->modifiedById?></td>
