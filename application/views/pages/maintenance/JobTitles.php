@@ -42,6 +42,7 @@
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
+                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
@@ -52,6 +53,7 @@
                                         <tbody>
                                          <tfoot>
                                             <tr>
+                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
