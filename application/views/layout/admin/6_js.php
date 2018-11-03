@@ -1,10 +1,6 @@
 
     </div>
 
-<<<<<<< HEAD
-    <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap popper Core JavaScript -->
-=======
     <?php
     if (!empty($charts)) { ?>
 
@@ -37,9 +33,7 @@
 
     <?php
     if (!empty($tables)) { ?>
-    <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
->>>>>>> 956b19574fbba51fd030c4446adb008780e5fd26
+    
     <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
@@ -48,9 +42,9 @@
     <script src="<?php echo base_url(); ?>themes/admin-pro/minimal/js/waves.js"></script>
     <!--Menu sidebar -->
     <script src="<?php echo base_url(); ?>themes/admin-pro/minimal/js/sidebarmenu.js"></script>
-<<<<<<< HEAD
+
     <!--Custom JavaScript -->
-    <script src="<?php echo base_url(); ?>themes/admin-pro/minimal/js/custom.min.js"></script>
+    
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
@@ -68,7 +62,7 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
-=======
+
     <!--stickey kit -->
     <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <script src="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -144,7 +138,11 @@
 
 
 
+<<<<<<< HEAD
 >>>>>>> 956b19574fbba51fd030c4446adb008780e5fd26
+=======
+
+>>>>>>> eb78044c3d1062dac125ed2c096490087adf385f
 </body>
 
 </html>
