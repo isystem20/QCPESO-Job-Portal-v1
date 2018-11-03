@@ -50,12 +50,12 @@
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Company Name</th>
+                                                <th>Acronym</th>
+                                                <th>TIN</th>
+                                                <th>Permitted Issued Date</th>
+                                                <th>Establishment Type</th>
+                                                <th>Industry Type</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>

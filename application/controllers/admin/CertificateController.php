@@ -23,15 +23,17 @@ class CertificateController extends CI_Controller {
 	public function CertificatesMasterlist()
 		{
 
+	$this->load->model('admin/CertificateModel','certificatemodel');
+        $layout = array('tables' => TRUE, );
+        $data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
 
-			$this->load->model('admin/CertificateModel','certificatemodel');
-		$data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
-	        $this->load->view('layout/css');
-			$this->load->view('layout/top');
-			$this->load->view('layout/menu-manage');
-			$this->load->view('layout/right');
-			$this->load->view('CertificatesMasterlist',$data);
-			$this->load->view('layout/js');	 
+		$layout = array('tables' => TRUE, );
+		$this->load->view('layout/admin/1_css');
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/maintenance/CertificatesMasterlist',$data);
+		$this->load->view('layout/admin/6_js',$layout);	
 		}
 
 

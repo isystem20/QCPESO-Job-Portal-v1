@@ -26,8 +26,8 @@ class EmployerController extends CI_Controller {
 		$this->load->view('layout/admin/2_preloader');
 		$this->load->view('layout/admin/3_topbar');
 		$this->load->view('layout/admin/4_leftsidebar');
-		$this->load->view('pages/maintenancce/EmployerMasterlist');
-		$this->load->view('layout/admin/6_js',$layout);		
+		$this->load->view('pages/users/EmployerMasterlist');
+		$this->load->view('layout/admin/6_js');		
 		
 	}
 	
