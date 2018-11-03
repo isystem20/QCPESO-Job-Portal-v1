@@ -8,18 +8,19 @@ class ApplicantController extends CI_Controller {
 		
 		$data = array('tables' => TRUE);
 
-		$this->load->model('ApplicantModel','appmodel');
+		$this->load->model('admin/ApplicantModel','appmodel');
 		$data['applicants'] = $this->appmodel->LoadApplicantsList();
-		// print_r($data);
-		// die();
-	
-        $this->load->view('layout/css', $data);
+		$layout =array('tables' =>TRUE,);
+     
 
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('ApplicantMasterlist',$data);
-		$this->load->view('layout/js', $data);	
+		$this->load->view('layout/admin/1_css',$data);
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+
+		$this->load->view('pages/maintenance/ApplicantMasterlist',$data);
+		$this->load->view('layout/admin/6_js',$layout);	
+		//$this->load->view('layout/js', $data);	
 			
 	}
 

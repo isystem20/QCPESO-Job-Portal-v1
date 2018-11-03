@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function Load_LicenseModel_Masterlist() {
 			$this->db->select('*');
-			$this->db->from('tbl_applicants_licenses');
+			$this->db->from('tbl_license_list');
 			return $this->db->get();
 		}
 
