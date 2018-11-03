@@ -174,7 +174,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                    <p>© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#">2theme</a></p>
+                                    <p>© 2018 QCPESO, All Rights Reserved. Design with love by <a href="#">SIGMA++</a></p>
                                 </div>
                             </div>
                         </div>
