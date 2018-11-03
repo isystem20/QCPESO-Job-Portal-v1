@@ -20,7 +20,7 @@
                         </li>
                         <li class="nav-devider"></li>
                         
-                        <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
+                        <li> <a class="waves-effect waves-dark" href="<?php echo base_url(); ?>manage/" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
                         <li class="nav-small-cap">MANAGE</li>
                         <li> <a class="waves-effect waves-dark" href="<?php echo base_url(); ?>manage/users-masterlist" aria-expanded="false"><i class="mdi mdi-gauge"></i><span>Users</span></a>
