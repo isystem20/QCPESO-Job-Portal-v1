@@ -11,7 +11,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Preferred Locations</li>
+                        <li class="breadcrumb-item active">Preferred Locations Maintenance</li>
                     </ol>
                 </div>
                 <div>
@@ -23,32 +23,26 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Preferred Locations Available for the Applicants</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                <h4 class="card-title">Preferred Locations</h4>
+                                <h6 class="card-subtitle">Preferred Locations Available for the Applicants</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
                                                 <th>Modified By</th>
                                                 <th>Modified At</th>
-                                                <th>Active</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
                                                 <th>Modified By</th>
                                                 <th>Modified At</th>
-                                                <th>Active</th>
+                                                <th>Status</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
@@ -57,14 +51,12 @@
                                             foreach ($preferredlocation->result() as $row) { ?>
                                             <tr>
                                                
-                                                <td><?php echo $row->id; ?></td>
+                                                
                                                 <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->description; ?></td>
-                                                <td><?php echo $row->createdById?></td>
-                                                 <td><?php echo $row->createdAt?></td>
                                                 <td><?php echo $row->modifiedById?></td>
                                                 <td><?php echo $row->modifiedAt?></td>
-                                                <td>
+                                                <td>    
                                                     <?php 
                                                     if ($row->isActive == '1') {
                                                         echo '<label class="label label-primary">Active</label>';

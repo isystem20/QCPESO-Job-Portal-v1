@@ -10,13 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">User Masterlist</h3>
+                    <h3 class="text-themecolor">Applicant Masterlist</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">UserMasterlist</li>
+                        <li class="breadcrumb-item">pages</li>
+                        <li class="breadcrumb-item active">Applicant Masterlist</li>
                     </ol>
                 </div>
                 <div>
@@ -30,34 +30,48 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Description:</h4>
-                                <h6 class="card-subtitle">This is the Masterlist of all users.</h6>
+                                <h4 class="card-title">Data Export</h4>
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
+                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Login Name</th>
-                                                <th>Usertype</th>
+                                                <th>Contact No.</th>
                                                 <th>Email Address</th>
-                                                 <th>Status</th>
-                                            
+                                                <th>Preferred Jobs</th>
+                                                <th>Educational Attainment</th>
+                                                <th>Active</th>
                                             </tr>
                                         </thead>
+                                        <tfoot>
+                                            <tr>
+                                                 <th>Name</th>
+                                                <th>Contact No.</th>
+                                                <th>Email Address</th>
+                                                <th>Preferred Jobs</th>
+                                                <th>Educational Attainment</th>
+                                                <th>Active</th>
+                                            </tr>
+                                        </tfoot>
                                         <tbody>
-                                            <?php
-                                if ($usermasterlist->num_rows() > 0 ) {
-                                    foreach ($usermasterlist->result() as $row) { ?>
+                                           <?php
+                                if ($applicants->num_rows() > 0 ) {
+                                    foreach ($applicants->result() as $row) { ?>
                                 <tr>
-                                    <td></td>
-                                    <td><?php echo $row->LoginName; ?></td>
-                                    <td><?php echo $row->UserType; ?></td>
-                                    <td><?php echo $row->Email; ?></td> 
+
+                                    <td><?php echo $row->firstName.' '.$row->lastName; ?></td>
+                                    <td><?php echo $row->mobileNum; ?></td>
+                                    <td><?php echo $row->emailAddress; ?></td>
+                                    <td><?php echo $row->preferredJobs; ?></td>
+                                    <td><?php echo $row->lastSchoolLevel; ?></td>
                                     <td>
                                         <?php 
-                                        if ($row->Active == '1' ) {
+                                        if ($row->isActive == '1' ) {
                                             echo '<label class="label
                                                 label-success">Active</label>';
                                         }
@@ -75,9 +89,11 @@
                                         </tbody>
                                     </table>
                                 </div>
+                        
                             </div>
                         </div>
- 
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
