@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2018 at 12:24 PM
+-- Generation Time: Nov 03, 2018 at 10:43 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -78,8 +78,15 @@ CREATE TABLE `tbl_applicants` (
   `modifiedById` varchar(50) NOT NULL,
   `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `remarks` text NOT NULL,
-  `isActive` tinyint(1) NOT NULL
+  `isActive` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_applicants`
+--
+
+INSERT INTO `tbl_applicants` (`Id`, `lastName`, `firstName`, `middleName`, `suffix`, `houseNum`, `streetName`, `subdivisionName`, `barangayId`, `cityId`, `provinceId`, `birthDate`, `birthPlace`, `age`, `gender`, `civilStatus`, `landlineNum`, `mobileNum`, `emailAddress`, `employmentStatus`, `preferredJobs`, `preferredWorkLocations`, `disability`, `disabilityOthers`, `languageSpoken`, `languageRead`, `languageWritten`, `dialect`, `isCurrentlyStudying`, `lastSchoolLevel`, `nonStudentReason`, `preferredTrainingCourse`, `isOFW`, `isKasambahay`, `versionNum`, `photoPath`, `tagline`, `TIN`, `SSS`, `PHILHEALTH`, `PAGIBIG`, `isMigrated`, `createdById`, `createdAt`, `modifiedById`, `modifiedAt`, `remarks`, `isActive`) VALUES
+('95a1b048-c8b2-4425-9dd5-e0fab21942cd', 'CARPIO', 'JOHN', '', '', '', '', '', 0, 0, 0, '0000-00-00', '', 0, '', '', '', '', 'isystem20@gmail.com', '', '', '', '', '', '', '', '', '', 0, '', '', '', 0, 0, 0, '', '', '', '', '', '', 0, '95a1b048-c8b2-4425-9dd5-e0fab21942cd', '2018-11-03 13:13:23', '95a1b048-c8b2-4425-9dd5-e0fab21942cd', '2018-11-03 13:13:23', '', 1);
 
 -- --------------------------------------------------------
 
@@ -522,6 +529,14 @@ CREATE TABLE `tbl_jobs_list` (
   `isActive` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tbl_jobs_list`
+--
+
+INSERT INTO `tbl_jobs_list` (`id`, `name`, `description`, `createdById`, `createdAt`, `modifiedById`, `modifiedAt`, `isActive`) VALUES
+(1, 'Software Engineer', '', 'ADMIN', '2018-10-22 17:21:21', 'ADMIN', '2018-10-22 17:21:21', 1),
+(2, 'Network Engineer', 'Sample Desc', 'ADMIN', '2018-10-22 17:21:21', 'ADMIN', '2018-10-22 17:21:21', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -556,6 +571,42 @@ CREATE TABLE `tbl_school_course_list` (
   `modifiedAt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `isActive` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_security_users`
+--
+
+CREATE TABLE `tbl_security_users` (
+  `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `LoginName` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `PasswordHash` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Active` tinyint(1) DEFAULT '1',
+  `Remarks` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `SecurityUserLevelId` int(11) NOT NULL COMMENT '1- Applicant, 2- Employer, 3-OfficeStaff, 4-Manager, 5-admin',
+  `PasswordNeverExpires` tinyint(1) NOT NULL,
+  `UserCantChangePassword` tinyint(1) NOT NULL,
+  `UserChangePasswordNextLogon` tinyint(1) NOT NULL,
+  `PasswordDate` date NOT NULL,
+  `CreatedById` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ModifiedById` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `CreatedAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `ModifiedAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `VersionNo` int(11) NOT NULL DEFAULT '1',
+  `UserType` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `PeopleId` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ActivationCode` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `tbl_security_users`
+--
+
+INSERT INTO `tbl_security_users` (`id`, `LoginName`, `PasswordHash`, `Active`, `Remarks`, `SecurityUserLevelId`, `PasswordNeverExpires`, `UserCantChangePassword`, `UserChangePasswordNextLogon`, `PasswordDate`, `CreatedById`, `ModifiedById`, `CreatedAt`, `ModifiedAt`, `VersionNo`, `UserType`, `PeopleId`, `Email`, `ActivationCode`, `remember_token`) VALUES
+('8a79df19-e698-4f3f-9121-ba657e190fc2', 'isystem20@gmail.com', 'c8fcb5fff5b493581ad15cef3d9a9c171e02d92d8d5a3adec233f54f03bfd8847445417fcbe156ce2b930df46a71bb1ee679daefcd2da59858bd7d42b597ffef', 1, '', 0, 0, 0, 0, '0000-00-00', '95a1b048-c8b2-4425-9dd5-e0fab21942cd', '95a1b048-c8b2-4425-9dd5-e0fab21942cd', '2018-11-03 05:13:23', '2018-11-03 05:13:23', 1, 'APPLICANT', '95a1b048-c8b2-4425-9dd5-e0fab21942cd', 'isystem20@gmail.com', '730509', NULL);
 
 --
 -- Indexes for dumped tables
@@ -706,6 +757,13 @@ ALTER TABLE `tbl_school_course_list`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_security_users`
+--
+ALTER TABLE `tbl_security_users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `tbl_sys_securityusers_loginname_unique` (`LoginName`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -839,7 +897,7 @@ ALTER TABLE `tbl_establistments_categories`
 -- AUTO_INCREMENT for table `tbl_jobs_list`
 --
 ALTER TABLE `tbl_jobs_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_license_list`

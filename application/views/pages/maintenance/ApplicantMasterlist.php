@@ -1,93 +1,106 @@
 
         <div class="page-wrapper">
             
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
             <div class="container-fluid">
-            
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Preferred Locations</h3>
+                    <h3 class="text-themecolor">Table basic</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Preferred Locations</li>
+                        <li class="breadcrumb-item">pages</li>
+                        <li class="breadcrumb-item active">Applicant Masterlist</li>
                     </ol>
                 </div>
                 <div>
                     <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                 </div>
             </div>
-
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Preferred Locations Available for the Applicants</h4>
+                                <h4 class="card-title">Data Export</h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>ID</th>
                                                 <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                <th>Contact No.</th>
+                                                <th>Email Address</th>
+                                                <th>Preferred Jobs</th>
+                                                <th>Educational Attainment</th>
                                                 <th>Active</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Created By</th>
-                                                <th>Created At</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                 <th>Name</th>
+                                                <th>Contact No.</th>
+                                                <th>Email Address</th>
+                                                <th>Preferred Jobs</th>
+                                                <th>Educational Attainment</th>
                                                 <th>Active</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
-                                         <?php
-                                        if ($preferredlocation->num_rows() > 0) {
-                                            foreach ($preferredlocation->result() as $row) { ?>
-                                            <tr>
-                                               
-                                                <td><?php echo $row->id; ?></td>
-                                                <td><?php echo $row->name; ?></td>
-                                                <td><?php echo $row->description; ?></td>
-                                                <td><?php echo $row->createdById?></td>
-                                                 <td><?php echo $row->createdAt?></td>
-                                                <td><?php echo $row->modifiedById?></td>
-                                                <td><?php echo $row->modifiedAt?></td>
-                                                <td>
-                                                    <?php 
-                                                    if ($row->isActive == '1') {
-                                                        echo '<label class="label label-primary">Active</label>';
-                                                    }
-                                                    else {
-                                                        echo '<label class="label label-danger">Inactive</label>';
-                                                    }
-                                                    ?>
-                                                </td>
-                                            </tr>
-                                        <?php
-                                            }
+                                           <?php
+                                if ($applicants->num_rows() > 0 ) {
+                                    foreach ($applicants->result() as $row) { ?>
+                                <tr>
+
+                                    <td><?php echo $row->firstName.' '.$row->lastName; ?></td>
+                                    <td><?php echo $row->mobileNum; ?></td>
+                                    <td><?php echo $row->emailAddress; ?></td>
+                                    <td><?php echo $row->preferredJobs; ?></td>
+                                    <td><?php echo $row->lastSchoolLevel; ?></td>
+                                    <td>
+                                        <?php 
+                                        if ($row->isActive == '1' ) {
+                                            echo '<label class="label
+                                                label-success">Active</label>';
+                                        }
+                                        else {
+                                            echo '<label class="label
+                                                label-default">Inactive</label>';
                                         }
                                         ?>
-                                   
+                                    </td>
+                                </tr>
+                                <?php
+                                    }
+                                }
+                                ?>
                                         </tbody>
                                     </table>
                                 </div>
+                        
                             </div>
                         </div>
                     </div>
                 </div>
-             
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
                 <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
@@ -138,7 +151,18 @@
                         </div>
                     </div>
                 </div>
-  
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
- 
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
