@@ -24,7 +24,7 @@ class CertificateController extends CI_Controller {
 		{
 
 
-			$this->load->model('CertificateModel','certificatemodel');
+			$this->load->model('admin/CertificateModel','certificatemodel');
 		$data['certificate'] = $this->certificatemodel->Load_CertificateModel_Masterlist();
 	        $this->load->view('layout/css');
 			$this->load->view('layout/top');
