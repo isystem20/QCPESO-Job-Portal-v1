@@ -39,8 +39,7 @@
                                 <h6 class="card-subtitle">Data table example</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
-                                        <thead>
-
+                                    
 
 
                                         <thead>
