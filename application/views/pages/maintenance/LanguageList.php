@@ -1,86 +1,66 @@
-
-        <div class="page-wrapper">
+    
+ <div class="page-wrapper">
             
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
             <div class="container-fluid">
-            
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Preferred Locations</h3>
+                    <h3 class="text-themecolor">Language List</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Preferred Locations Maintenance</li>
+                        <li class="breadcrumb-item">pages</li>
+                        <li class="breadcrumb-item active">Language List</li>
                     </ol>
                 </div>
                 <div>
                     <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                 </div>
             </div>
-
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+         
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-sm-12">
+
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Preferred Locations</h4>
-                                <h6 class="card-subtitle">Preferred Locations Available for the Applicants</h6>
-                                <div class="table-responsive m-t-40">
-                                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+
+                            
+                            <div class="card-block">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="simpletable" class="table table-striped table-bordered nowrap">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
-                                                <th>Status</th>
+                                                <th>Modified By ID</th>
+                                                <th>Modified At</th>  
+                                                <th>Status</th>    
                                             </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                         <?php
-                                        if ($preferredlocation->num_rows() > 0) {
-                                            foreach ($preferredlocation->result() as $row) { ?>
-                                            <tr>
-                                               
-                                                
-                                                <td><?php echo $row->name; ?></td>
-                                                <td><?php echo $row->description; ?></td>
-                                                <td><?php echo $row->modifiedById?></td>
-                                                <td><?php echo $row->modifiedAt?></td>
-                                                <td>    
-                                                    <?php 
-                                                    if ($row->isActive == '1') {
-                                                        echo '<label class="label label-primary">Active</label>';
-                                                    }
-                                                    else {
-                                                        echo '<label class="label label-danger">Inactive</label>';
-                                                    }
-                                                    ?>
-                                                </td>
-                                            </tr>
-                                        <?php
-                                            }
-                                        }
-                                        ?>
-                                   
-                                        </tbody>
+                                        </thead>                                    
                                     </table>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-             
-                <div class="right-sidebar">
+            </div>
+    </div>
+
+
+     <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">
@@ -130,7 +110,18 @@
                         </div>
                     </div>
                 </div>
-  
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
- 
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
