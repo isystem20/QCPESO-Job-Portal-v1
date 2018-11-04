@@ -40,9 +40,7 @@
                                 <div class="table-responsive m-t-40">
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
-                                            
                                                <tr>
-                                                
                                                 <th>Name</th>
                                                 <th>Eligibility Title</th>
                                                 <th>Description</th>
@@ -51,8 +49,16 @@
                                                  <th>Status</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            
+                                        <tfoot>
+                                             <tr>    
+                                                <th>Name</th>
+                                                <th>Eligibility Title</th>
+                                                <th>Description</th>
+                                                 <th>Modified By </th>
+                                                 <th>Modified At </th>
+                                                 <th>Status</th>
+                                            </tr>
+                                        </tfoot>    
                                         <?php
                                         if ($license->num_rows() > 0) {
                                             foreach ($license->result() as $row) { ?>
