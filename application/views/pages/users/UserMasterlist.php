@@ -1,95 +1,152 @@
-    <div class="main-body">
-        <div class="page-wrapper">
 
-            <div class="page-header">
-                <div class="page-header-title">
-                    <h4>User Accounts Masterlist Maintenance</h4>
-                    <span>Masterlist of System Users and Login Credentials</span>
+        <div class="page-wrapper">
+            
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor">User Masterlist</h3>
                 </div>
-                <div class="page-header-breadcrumb">
-                    <ul class="breadcrumb-title">
-                        <li class="breadcrumb-item">
-                            <a href="<?php echo base_url(); ?>dashboard">
-                                <i class="icofont icofont-home"></i>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item"><a href="#!">User Masterlist</a>
-                        </li>
-                 </ul>
+                <div class="col-md-7 align-self-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item">Manage</li>
+                        <li class="breadcrumb-item active">UserMasterlist</li>
+                    </ol>
+                </div>
+                <div>
+                    <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                 </div>
             </div>
-
-            <div class="page-body">
-                <div class="row">
-                    <div class="col-sm-12">
-
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
                         <div class="card">
-
-                            <div class="card-header">
-                        		<button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-ui-add"></i>Add</button>
-                        		<button class="btn btn-inverse btn-outline-inverse"><i class="icofont icofont-edit"></i>Edit</button>
-                        		<button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-ui-delete"></i>Delete</button>
-                        		<button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-edit"></i>Security Access</button>                      		                        		                          	
-                                <!-- <h5>Scroll - Vertical, Dynamic Height</h5> -->
-                                <div class="card-header-right">
-                                	<!-- <input type="checkbox" class="js-single" checked /> -->
-									<button class="btn btn-info btn-outline-info"><i class="icofont icofont-upload"></i>Upload</button>  
-                                </div>
-                            </div>
-                            <div class="card-block">
-                                <div class="dt-responsive table-responsive">
-                                    <table id="scr-vtr-dynamic" class="table table-striped table-bordered nowrap">
+                            <div class="card-body">
+                                <h4 class="card-title">Description:</h4>
+                                <h6 class="card-subtitle">This is the Masterlist of all users.</h6>
+                                <div class="table-responsive m-t-40">
+                                    <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                            	<th>#</th>
-                                                <th>Last Name</th>
-                                                <th>First Name</th>
-                                                <th>Department</th>
-                                                <th>Line Manager</th>
-                                                <th>Access Level</th>
-                                                <th>Last Login</th>
+                                                <th>Name</th>
+                                                <th>Login Name</th>
+                                                <th>Usertype</th>
+                                                <th>Email Address</th>
+                                                 <th>Status</th>
+                                            
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                            	<td>
-													<div class="checkbox-fade fade-in-primary">
-													<label>
-													<input type="checkbox" id="checkbox" name="Language" value="HTML">
-													<span class="cr">
-													<i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-													</span>
-													<span></span>
-													</label>
-													</div>
-                                            	</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                                <td>Tiger Nixon</td>
-                                            </tr>
-
-
+                                            <?php
+                                if ($usermasterlist->num_rows() > 0 ) {
+                                    foreach ($usermasterlist->result() as $row) { ?>
+                                <tr>
+                                    <td></td>
+                                    <td><?php echo $row->LoginName; ?></td>
+                                    <td><?php echo $row->UserType; ?></td>
+                                    <td><?php echo $row->Email; ?></td> 
+                                    <td>
+                                        <?php 
+                                        if ($row->Active == '1' ) {
+                                            echo '<label class="label
+                                                label-success">Active</label>';
+                                        }
+                                        else {
+                                            echo '<label class="label
+                                                label-default">Inactive</label>';
+                                        }
+                                        ?>
+                                    </td>
+                                </tr>
+                                <?php
+                                    }
+                                }
+                                ?>
                                         </tbody>
-                                       
                                     </table>
                                 </div>
                             </div>
                         </div>
-
+ 
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <div class="right-sidebar">
+                    <div class="slimscrollright">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme working">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
-
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
-    </div>
-
-
-    <style type="text/css">
-    	.card-header-right {
-			background-color: transparent !important;
-		    padding: 15px 20px !important;
-    	}
-    </style>

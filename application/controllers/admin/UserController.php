@@ -20,17 +20,17 @@ class UserController extends CI_Controller {
 	 */
 
 
-	public function UserMasterlist()
-	{
-		$data = array('tables' => TRUE, );
-		$this->load->view('layout/css', $data);
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('pages/users/UserMasterlist');
-		$this->load->view('layout/js', $data);		
-
+	public function UserMasterlist() {
+		$this->load->model('admin/UserMasterlistModel','usermasterlistmodel');
+		$data['usermasterlist'] = $this->usermasterlistmodel->Load_UserMasterlistModel_Masterlist();
+		$layout = array('tables' => TRUE, );
+		$this->load->view('layout/admin/1_css');
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/users/UserMasterlist',$data);
+		$this->load->view('layout/admin/6_js',$layout);		
 	}
 
-
+	
 }

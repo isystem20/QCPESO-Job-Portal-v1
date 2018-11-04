@@ -1,5 +1,5 @@
         <div class="wrapper">
-            <section class="module-cover parallax fullscreen text-center" data-background="assets/images/module-5.jpg" data-overlay="0.65" data-gradient="">
+            <section class="module-cover parallax fullscreen text-center" data-background="<?php echo base_url(); ?>themes/ltr/vertical-static/assets/images/module-5.jpg" data-overlay="0.65" data-gradient="">
                 <div class="container">
                    
                     <div class="row">
@@ -20,18 +20,18 @@
                     
 
                             <div class="m-b-20">
-                                <h6>Sign into your account</h6>
+                                <h6>Sign into your account</h6> 
                             </div>
                             <div class="m-b-20">
-                                <form method="post">
+                                <form method="post" id="login-form" action="<?php echo base_url(); ?>web/login/applicant">
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Email">
+                                        <input class="form-control" name="email" type="email" placeholder="Email">
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="Pasword">
+                                        <input class="form-control" name="password" type="password" placeholder="Password">
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-block btn-round btn-brand" type="submit">Login</button>
+                                        <button class="btn btn-block btn-round btn-brand" id="login-btn" type="submit">Login</button>
                                     </div>
                                 </form>
                             </div>

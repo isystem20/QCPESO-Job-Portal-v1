@@ -168,6 +168,9 @@
                     </a>
                     <ul class="tree-1">
                         <li><a href="<?php echo base_url(); ?>employers/add" data-i18n="nav.json-form.simple-form">Register New</a></li>
+                        <li><a href="<?php echo base_url(); ?>EmployeeController/EmployeeRegistration" data-i18n="nav.json-form.simple-form">Employee Registration</a></li>
+                        
+
                         <li><a href="<?php echo base_url(); ?>employers" data-i18n="nav.json-form.clubs-view">View List</a></li>
                         <li><a href="json-forms/customer-form.html" data-i18n="nav.json-form.customer-form">Pending Accreditation</a></li>
                     </ul>

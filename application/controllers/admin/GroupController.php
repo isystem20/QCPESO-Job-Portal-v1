@@ -21,12 +21,13 @@ class GroupController extends CI_Controller {
 
 
 	public function GroupMasterlist() {
-		$this->load->view('layout/css');
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('ManageGroups');
-		$this->load->view('layout/js');		
+		$layout = array('tables' => TRUE, );
+		$this->load->view('layout/admin/1_css');
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/users/GroupMasterlist');
+		$this->load->view('layout/admin/6_js',$layout);		
 	}
 
 	

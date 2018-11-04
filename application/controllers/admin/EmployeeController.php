@@ -67,27 +67,35 @@ public function OverseasLocations()
 
 public function PreferredLocation()
 	{
-		$this->load->model('PreferredLocationModel','preferredlocationmodel');
+		$layout = array('tables' => TRUE, );
+		$this->load->model('admin/PreferredLocationModel','preferredlocationmodel');
 		$data['preferredlocation'] = $this->preferredlocationmodel->Load_PreferredLocationModel_Masterlist();
-		$this->load->view('layout/css');
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('PreferredLocation',$data);
-		$this->load->view('layout/js');		
+		$this->load->view('layout/admin/1_css');
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/maintenance/PreferredLocations',$data);
+		$this->load->view('layout/admin/6_js',$layout);
+		
+
+	
+				
 }
 
 public function JobTitles()
 	{
-		$this->load->model('JobTitleModel','joblistmodel');
-		$data['joblist'] = $this->joblistmodel->Load_JobTitle_Masterlist();
-		// print_r($data);
-		$this->load->view('layout/css');
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('JobTitles',$data);
-		$this->load->view('layout/js');		
+    
+    	$this->load->model('admin/JobTitleModel','jobtitlemodel');
+        $layout = array('tables' => TRUE, );
+        $data['joblist'] = $this->jobtitlemodel->Load_JobTitle_Masterlist();
+
+		$this->load->view('layout/admin/1_css',$layout);
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/maintenance/JobTitles', $data);
+		$this->load->view('layout/admin/6_js',$layout);
+	
 }
 public function EducationalCourses()
 	{

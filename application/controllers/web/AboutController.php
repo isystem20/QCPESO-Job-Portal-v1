@@ -6,7 +6,7 @@ class AboutController extends CI_Controller {
 public function About()
 	{
 
-		$layout = array('transparentwrapper' => TRUE, );
+		$layout = array('transparentwrapper' => TRUE,);
 		$this->load->view('layout/web/1_head');
 		$this->load->view('layout/web/2_preloader');
 		$this->load->view('layout/web/3_header');
