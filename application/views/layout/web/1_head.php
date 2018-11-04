@@ -22,8 +22,15 @@
         
         <meta name="google-signin-client_id" content="453639693637-8utkl362om0v1qad2jmgdbbhla6l9m5u.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/platform.js" async defer></script>  
-
-
-
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/bower_components/pnotify/dist/pnotify.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/bower_components/pnotify/dist/pnotify.brighttheme.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/bower_components/pnotify/dist/pnotify.buttons.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/bower_components/pnotify/dist/pnotify.history.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/bower_components/pnotify/dist/pnotify.mobile.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/ltr/vertical-static/assets/pages/pnotify/notify.css">
+
+
+
     </head>

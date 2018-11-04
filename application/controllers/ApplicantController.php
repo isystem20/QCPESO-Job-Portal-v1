@@ -12,7 +12,18 @@ class ApplicantController extends CI_Controller {
 		$data['applicants'] = $this->appmodel->LoadApplicantsList();
 		// print_r($data);
 		// die();
+<<<<<<< HEAD
+		$this->load->view('layout/css', $data);
+
+
+		$this->load->model('ApplicantModel','AppModel');
+		$data['applicants'] = $this->AppModel->LoadApplicantList();
+
+		// print_r($data);
+		// die();
+=======
 	
+>>>>>>> 1b239c88bdb60582f085eee938bc01eb5d8aa730
         $this->load->view('layout/css', $data);
 
 		$this->load->view('layout/top');
