@@ -10,13 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Preferred Location Maintenance</h3>
+                    <h3 class="text-themecolor">Job Titles Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Preferred Locations</li>
+                        <li class="breadcrumb-item active">Job Titles</li>
 
                     </ol>
                 </div>
@@ -36,16 +36,16 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Preferred Locations</h4>
-                                <h6 class="card-subtitle">Masterlist of All Preferred Locations</h6>
+                                <h4 class="card-title">Job Titles</h4>
+                                <h6 class="card-subtitle">Masterlist of All Available Jobs</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                <th>Modifiedby</th>
+                                                <th>Modifiedat</th>
                                                 <th>Status</th>
                                             </tr>
                                         </thead>
@@ -53,23 +53,22 @@
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
-                                                <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                <th>Modifiedby</th>
+                                                <th>Modifiedat</th>
                                                 <th>Status</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
-                                         <?php
-                                        if ($preferredlocation->num_rows() > 0) {
-                                            foreach ($preferredlocation->result() as $row) { ?>
+                                             <?php
+                                        if ($applicantdisablities->num_rows() > 0) {
+                                            foreach ($applicantdisablities->result() as $row) { ?>
                                             <tr>
-                                               
-                                                
+                                              
                                                 <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->description; ?></td>
                                                 <td><?php echo $row->modifiedById?></td>
                                                 <td><?php echo $row->modifiedAt?></td>
-                                                <td>    
+                                                <td>
                                                     <?php 
                                                     if ($row->isActive == '1') {
                                                         echo '<label class="label label-primary">Active</label>';
@@ -84,15 +83,13 @@
                                             }
                                         }
                                         ?>
-                                   
-                                        </tbody>
-
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    
+                     
                     </div>
                 </div>
                  <div class="right-sidebar">
@@ -149,4 +146,3 @@
             </div>
  
         </div>
-
