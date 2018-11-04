@@ -37,14 +37,14 @@
 
                         <div class="card">
                             <div class="card-body">
-<<<<<<< HEAD
+
                                 <h4 class="card-title">Data Export
 </h4>
                                 <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
-=======
+
                                 <h4 class="card-title">License list</h4>
                                 <h6 class="card-subtitle">Masterlist of All License list</h6>
->>>>>>> 5dc28dadb2cc7442385a6cdfe8be2f656df63274
+
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
