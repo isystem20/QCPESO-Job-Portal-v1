@@ -28,9 +28,8 @@ class UserController extends CI_Controller {
 		$this->load->view('layout/admin/2_preloader');
 		$this->load->view('layout/admin/3_topbar');
 		$this->load->view('layout/admin/4_leftsidebar');
-		$this->load->view('pages/users/UserMasterlist',$data);
+		$this->load->view('pages/users/UserMasterlist',$dataL);
 		$this->load->view('layout/admin/6_js',$layout);		
 	}
 
-	
 }
