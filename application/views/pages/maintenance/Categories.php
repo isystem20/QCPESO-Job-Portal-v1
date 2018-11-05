@@ -49,15 +49,41 @@
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tfoot>
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Modified By</th>
+                                                <th>Last Modified</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
+                                        </tfoot>
+                                        <tbody>
+                                        <?php
+                                        if ($categories->num_rows() > 0) {
+                                            foreach ($categories->result() as $row) { ?>
+                                            <tr>
+                                                <td><?php echo $row->name; ?></td>
+                                                <td><?php echo $row->description; ?></td>
+                                                <td><?php echo $row->modifiedById?></td>
+                                                <td><?php echo $row->modifiedAt?></td>
+                                                <td>
+                                                    <?php 
+                                                    if ($row->isActive == '1') {
+                                                        echo '<label class="label label-primary">Active</label>';
+                                                    }
+                                                    else {
+                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                    }
+                                                    ?>
+                                                </td>
+                                                <td>For Action</td>
+                                            </tr>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
                                         </tbody>
                                     </table>
                                 </div>
