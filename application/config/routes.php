@@ -56,8 +56,13 @@ $route['translate_uri_dashes'] = FALSE;
 
 /* Applicant View */
 
+$route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';
+$route['web/login/applicant'] = 'web/LoginController/authenticate';
+$route['web/logout'] = 'WebController/logout';
 
-    /* Log in */                            $route['login'] = 'admin/HomeController/UserLogin';
+
+
+    /* Log in */                            $route['login'] = 'web/LoginController/Login';
     /* Home (Profile) */                    $route['profile'] = 'admin/LoggedUserController/UserHome';
     /* Search */                            $route['search/jobs'] = 'admin/LoggedUserController/SearchJobs';
         /* Job Details */
@@ -121,11 +126,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 
-$route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';
-$route['web/login/applicant'] = 'web/LoginController/authenticate';
 
 
-$route['web/logout'] = 'WebController/logout';
 
 
 

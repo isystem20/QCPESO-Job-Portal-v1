@@ -10,14 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">License list Maintenance</h3>
+                    <h3 class="text-themecolor">Licenses</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Maintenance</li>
-                        <li class="breadcrumb-item active">License list</li>
+                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item active">Licenses</li>
 
                     </ol>
                 </div>
@@ -37,13 +36,8 @@
 
                         <div class="card">
                             <div class="card-body">
-
-                                <h4 class="card-title">Data Export
-</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
-
-                                <h4 class="card-title">License list</h4>
-                                <h6 class="card-subtitle">Masterlist of All License list</h6>
+                                <h4 class="card-title">Licenses list</h4>
+                                <h6 class="card-subtitle">Masterlist of All Licenses</h6>
 
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">

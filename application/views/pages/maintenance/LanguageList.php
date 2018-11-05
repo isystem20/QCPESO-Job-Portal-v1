@@ -10,14 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Language List</h3>
+                    <h3 class="text-themecolor">Languages</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Manage</li>
-                        <li class="breadcrumb-item active">Language List</li>
-
+                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item active">Languages</li>
                     </ol>
                 </div>
                 <div>
@@ -36,7 +35,7 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Language List</h4>
+                                <h4 class="card-title">Language</h4>
                                 <h6 class="card-subtitle">List of Languages</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
