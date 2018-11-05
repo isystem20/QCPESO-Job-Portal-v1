@@ -4,8 +4,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>We have been helping<br> build brands</h1>
-                            <p>Experienced and Friendly.</p>
+                            <h1>Special Services <br>of PESO</h1>
                         </div>
                     </div>
                 </div>
@@ -17,8 +16,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-9 m-auto text-center">
-                            <h1>Digital Design.</h1>
-                            <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                            <h1>SERVICES</h1>
+                            <p class="lead">Quezon City PESO provides services for people looking for jobs and companies that have manpower needs.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -39,229 +38,71 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="number-box">
-                                <h6 class="number-box-header"><span class="number-box-number">01</span><span class="number-box-title">Development</span></h6>
+                                <h6 class="number-box-header"><span class="number-box-number">01</span><span class="number-box-title">Jobs Fairs</span></h6>
                                 <div class="number-box-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                    <p>these shall be conducted periodically all over the country to bring together in one venue job seekers and employers for immediate matching.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="number-box">
-                                <h6 class="number-box-header"><span class="number-box-number">02</span><span class="number-box-title">Branding</span></h6>
+                                <h6 class="number-box-header"><span class="number-box-number">02</span><span class="number-box-title">Livelihood and Self-employment
+                                Bazaars</span></h6>
                                 <div class="number-box-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                    <p>these will give clients information on the array of livelihood programs they choose to avail of particularly in the rural areas.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="number-box">
-                                <h6 class="number-box-header"><span class="number-box-number">03</span><span class="number-box-title">Web Design</span></h6>
+                                <h6 class="number-box-header"><span class="number-box-number">03</span><span class="number-box-title">Work Appreciation Program</span></h6>
                                 <div class="number-box-content">
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                    <p>this program aims to develop the values of work appreciation and ethics by exposing the young to actual work situations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="number-box">
+                                <h6 class="number-box-header"><span class="number-box-number">04</span><span class="number-box-title">Workers Hiring for Infrastructure Projects</span></h6>
+                                <div class="number-box-content">
+                                    <p>this program is in pursuance of Republic Act No. 6685 which requires construction companies, including the Department of Public Works and Highways and contractor for government-funded infrastructure projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="number-box">
+                                <h6 class="number-box-header"><span class="number-box-number">05</span><span class="number-box-title">Special Program for Employment of Students and Out-of-School Youth</span></h6>
+                                <div class="number-box-content">
+                                    <p>this program shall endeavor to provide employment to deserving students and out-of-school youths during summer and/or Christmas vacations.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="number-box">
+                                <h6 class="number-box-header"><span class="number-box-number">06</span><span class="number-box-title">Special Credit Assistance for Placed Overseas Workers</span></h6>
+                                <div class="number-box-content">
+                                    <p>this type of assistance will enable poor but qualified applicants to avail of opportunities for overseas employment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="number-box">
+                                <h6 class="number-box-header"><span class="number-box-number">07</span><span class="number-box-title">Other Programs</span></h6>
+                                <div class="number-box-content">
+                                    <p>developed by DOLE to enhance provision of employment assistance to PESO clients, particularly for special groups of disadvantaged workers such as persons with disabilities (PWDs) and displaced workers.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>\
             <!-- About end-->
 
             <!-- Progress Bars-->
-            <section class="module divider-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-9 m-auto text-center">
-                            <h1>Special Treats.</h1>
-                            <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="space" data-MY="60px"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>Web Development<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>User Experience<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>Front-End Framework<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>Great Support<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>Fully Responsive<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="progress-item">
-                                <div class="progress-title">
-                                    <h6>Trendy Design<span class="float-right"><span class="progress-number"></span>%</span>
-                                    </h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-brand" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="space" data-MY="40px"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Progress Bars end-->
-
-            <!-- Services-->
-            <section class="module bg-gray p-t-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-11 m-auto">
-                            <div class="space" data-MY="-65px"></div>
-                            <p><img src="assets/images/main/iphone-5.png" alt=""></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="space" data-MY="40px"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="icon-box text-center">
-                                <div class="icon-box-icon"><span class="ti-layout"></span></div>
-                                <div class="icon-box-title">
-                                    <h6>Visual Composer</h6>
-                                </div>
-                                <div class="icon-box-content">
-                                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
-                                </div>
-                                <div class="icon-box-link"><a href="#">Read more</a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="icon-box text-center">
-                                <div class="icon-box-icon"><span class="ti-cup"></span></div>
-                                <div class="icon-box-title">
-                                    <h6>Revolution Slider</h6>
-                                </div>
-                                <div class="icon-box-content">
-                                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
-                                </div>
-                                <div class="icon-box-link"><a href="#">Read more</a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="icon-box text-center">
-                                <div class="icon-box-icon"><span class="ti-harddrives"></span></div>
-                                <div class="icon-box-title">
-                                    <h6>User Experience</h6>
-                                </div>
-                                <div class="icon-box-content">
-                                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
-                                </div>
-                                <div class="icon-box-link"><a href="#">Read more</a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="icon-box text-center">
-                                <div class="icon-box-icon"><span class="ti-desktop"></span></div>
-                                <div class="icon-box-title">
-                                    <h6>Fully Responsive</h6>
-                                </div>
-                                <div class="icon-box-content">
-                                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam lorem ipsum amet.</p>
-                                </div>
-                                <div class="icon-box-link"><a href="#">Read more</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Services end-->
-
-            <!-- Features-->
-            <section class="module">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-9 m-auto text-center">
-                            <h1>Why work with us?</h1>
-                            <p class="lead">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="space" data-MY="60px"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <div class="feature-thumb"><img src="assets/images/features/1.jpg" alt=""></div>
-                                <div class="feature-content">
-                                    <h6>Web Design</h6>
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p><a class="feature-link" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <div class="feature-thumb"><img src="assets/images/features/2.jpg" alt=""></div>
-                                <div class="feature-content">
-                                    <h6>Plugin Development</h6>
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p><a class="feature-link" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature">
-                                <div class="feature-thumb"><img src="assets/images/features/3.jpg" alt=""></div>
-                                <div class="feature-content">
-                                    <h6>Theme Development</h6>
-                                    <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p><a class="feature-link" href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        
             <!-- Features end-->
 
             <!-- Footer-->
@@ -276,11 +117,11 @@
                                         <h6>About Us</h6>
                                     </div>
                                     <div class="textwidget">
-                                        <p>Map where your photos were taken and discover local points of interest. Map where your photos.</p>
+                                        <p>Quezon City Public Employment Service Office.</p>
                                         <p>
-                                            Location: 12 London Avenue, Suite 18<br>
-                                            E-mail: support@theme.com<br>
-                                            Phone: 8 800 123 4567<br>
+                                            Location: 4th Floor, Civic Center Building A, City Hall Compound<br>
+                                            E-mail: isystem20@gmail.com<br>
+                                            Phone: +63123453456<br>
                                         </p>
                                         <ul class="social-icons">
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -337,7 +178,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                    <p>© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#">2theme</a></p>
+                                    <p>© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#">Sigma</a></p>
                                 </div>
                             </div>
                         </div>
