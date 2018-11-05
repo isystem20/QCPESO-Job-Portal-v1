@@ -1,6 +1,6 @@
 
 
-<body class="fix-header fix-sidebar card-no-border">
+<body class="<?php if(empty($login)){echo 'fix-header fix-sidebar card-no-border';}  ?>">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
