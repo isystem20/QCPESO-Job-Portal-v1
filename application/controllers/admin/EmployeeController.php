@@ -106,15 +106,5 @@ public function EducationalCourses()
 		$this->load->view('EducationalCourses');
 		$this->load->view('layout/js');		
 }
-public function Categories()
- {
- 	$this->load->model('CategoriesModel','categoriesmodel');
-		$data['categories'] = $this->categoriesmodel->Load_CategoriesModel_Masterlist();
-		$this->load->view('layout/css');
-		$this->load->view('layout/top');
-		$this->load->view('layout/menu-manage');
-		$this->load->view('layout/right');
-		$this->load->view('Categories',$data);
-		$this->load->view('layout/js');		
-	}
+
 }
