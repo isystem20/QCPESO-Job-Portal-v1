@@ -1,4 +1,3 @@
-
         <div class="page-wrapper">
             
             <!-- ============================================================== -->
@@ -10,14 +9,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Job Titles</h3>
+                    <h3 class="text-themecolor">Job Title</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
                         <li class="breadcrumb-item">Maintenance</li>
                         <li class="breadcrumb-item active">Job Titles</li>
-
                     </ol>
                 </div>
                 <div>
@@ -36,8 +34,9 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Job Titles</h4>
-                                <h6 class="card-subtitle">Masterlist of All Available Jobs</h6>
+                                <button type="button" id="add-btn" class="btn waves-effect waves-light btn-success">Add</button>
+
+
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -45,25 +44,22 @@
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                <th>Last Modified</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                         <tfoot>
+                                        <tfoot>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
-                                                <th>Modified At</th>
+                                                <th>Last Modified</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
-
-
                                         <?php
                                         if ($joblist->num_rows() > 0) {
                                             foreach ($joblist->result() as $row) { ?>
@@ -88,16 +84,21 @@
                                             }
                                         }
                                         ?>
-
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
-                 <div class="right-sidebar">
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">
@@ -147,7 +148,20 @@
                         </div>
                     </div>
                 </div>
-  
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
- 
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
+
+

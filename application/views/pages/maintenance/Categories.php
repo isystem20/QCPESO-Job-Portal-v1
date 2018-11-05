@@ -188,8 +188,8 @@
                     <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control">
-                            <option>Active (Activate now)</option>
-                            <option>Inactive (Register but activate later)</option>
+                            <option value="1">Active (Activate now)</option>
+                            <option value="0">Inactive (Register but activate later)</option>
                         </select>
                     </div>
 

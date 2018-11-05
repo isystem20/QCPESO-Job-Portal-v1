@@ -88,7 +88,7 @@ $route['web/logout'] = 'WebController/logout';
             /* Disabilities */              $route['manage/maintenance/disabilities'] = 'admin/ApplicantController/DisabilitiesMasterlist';
             
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'admin/EmployeeController/PreferredLocation';
-            /* Job titles */                $route['manage/maintenance/job-titles'] = 'admin/EmployeeController/JobTitles';
+            /* Job titles */                $route['manage/maintenance/job-titles'] = 'admin/JobTitlesController/JobTitles';
             /* Categories */                $route['manage/maintenance/applicant-categories'] = 'admin/CategoriesController/Categories';
         /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'admin/RnrController/ReviewAndRatings';
         /* Surveys */                       $route['manage/surveys'] = 'admin/SurveyController/Survey';
