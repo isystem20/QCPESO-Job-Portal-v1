@@ -1,16 +1,16 @@
-    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?php echo base_url(); ?>themes/admin-pro/assets/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
-                <form class="form-horizontal form-material" id="loginform" action="https://wrappixel.com/demos/admin-templates/admin-pro/minimal/index.html">
-                    <a href="javascript:void(0)" class="text-center db"><img src="../assets/images/logo-icon.png" alt="Home" /><br/><img src="../assets/images/logo-text.png" alt="Home" /></a>
+                <form class="form-horizontal form-material" id="loginform" autocomplete="nope" action="https://wrappixel.com/demos/admin-templates/admin-pro/minimal/index.html">
+                    <a href="javascript:void(0)" class="text-center db"><img src="<?php echo base_url(); ?>themes/admin-pro/assets/images/logo-icon.png" alt="Home" /><br/><img src="<?php echo base_url(); ?>themes/admin-pro/assets/images/logo-text.png" alt="Home" /></a>
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
-                            <input class="form-control" type="text" required="" placeholder="Username">
+                            <input class="form-control" type="email" required="" autocomplete="off" spellcheck="false" placeholder="Username">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control" type="password" required="" placeholder="Password">
+                            <input class="form-control" type="password" autocomplete="off" required="" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group row">

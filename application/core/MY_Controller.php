@@ -41,8 +41,10 @@ class Applicant_Controller extends MY_Controller {
 
         $userid = $this->session->userdata('userid');
         $usertype = $this->session->userdata('usertype');
-        if (empty($userid) || $usertype == 'APPLICANT') {
+        if (!empty($userid) && $usertype == 'APPLICANT') {
             return redirect(base_url().'403');
+        }elseif (empty($userid)) {
+            return redirect(base_url().'web/login/applicant');
         }
         
     }
@@ -93,7 +95,14 @@ class Admin_Controller extends MY_Controller {
     {
         parent::__construct();
 
-        //Initialization code that affects Member controllers. I.E. redirect and die if not logged in
+        // $userid = $this->session->userdata('userid');
+        // $usertype = $this->session->userdata('usertype');
+        // if (!empty($userid) && $usertype == 'ADMIN') {
+        //     return redirect(base_url().'403');
+        // }elseif (empty($userid)) {
+        //     return redirect(base_url().'admin/login');
+        // }
+
     }
 
 }

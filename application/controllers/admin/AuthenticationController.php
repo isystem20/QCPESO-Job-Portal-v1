@@ -6,11 +6,11 @@ class AuthenticationController extends CI_Controller {
 
 	public function LoginPage()
 	{
-		
-		$this->load->view('layout/admin/1_css',$data);
-		$this->load->view('layout/admin/2_preloader');
+		$layout = array('login' => TRUE, );
+		$this->load->view('layout/admin/1_css',$layout);
+		$this->load->view('layout/admin/2_preloader',$layout);
 		$this->load->view('auth/LoginPage');
-		$this->load->view('layout/admin/6_js',$layout);	
+		$this->load->view('layout/admin/6_js');	
 	}
 
 

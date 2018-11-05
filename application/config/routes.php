@@ -138,3 +138,7 @@ $route['403'] = 'admin/SiteErrorController/Error403';
 
 
 $route['admin/register/categories'] = 'admin/CategoriesController/Create';
+
+$route['admin/login'] = 'admin/AuthenticationController/LoginPage';
+
+
