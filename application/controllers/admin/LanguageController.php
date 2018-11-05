@@ -22,7 +22,6 @@ class LanguageController extends CI_Controller {
 
 	public function LanguageList()
 		{
-			$data = array('tables' => TRUE );
 
 			$this->load->model('admin/LanguageModel','languagemodel');
 			$data['language'] = $this->languagemodel->Load_LanguageModel();

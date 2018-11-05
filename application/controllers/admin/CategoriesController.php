@@ -33,7 +33,7 @@ class CategoriesController extends CI_Controller {
         }
         else {
         	$postdata = $this->input->post();
-
+ 
 
 
         	echo json_encode(['success'=>TRUE]);
