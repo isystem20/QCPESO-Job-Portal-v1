@@ -34,9 +34,6 @@ class CategoriesController extends CI_Controller {
         else {
         	$postdata = $this->input->post();
         	$inserted = $this->categmod->Add($postdata);
-
-
-
         	echo json_encode(['success'=>TRUE]);
 
 

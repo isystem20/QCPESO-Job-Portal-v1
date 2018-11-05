@@ -3,6 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	class CategoriesModel extends CI_Model {
 
+		 function __construct() {
+        parent::__construct();
+        $this->load->model('admin/CategoriesModel','categmod');
+    }
+
 		public function LoadCategoryMasterlist() {
 			$this->db->select('*');
 			$this->db->from('tbl_applicants_categories');
