@@ -47,6 +47,7 @@
                                                 <th>Modified By</th>
                                                 <th>Modified At</th>
                                                 <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -57,6 +58,7 @@
                                                 <th>Modified By</th>
                                                 <th>Modified At</th>
                                                 <th>Status</th>
+                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
@@ -80,6 +82,7 @@
                                                     }
                                                     ?>
                                                 </td>
+                                                <td>For Action</td>
                                             </tr>
                                         <?php
                                             }
