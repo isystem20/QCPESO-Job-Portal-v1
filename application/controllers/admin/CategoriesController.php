@@ -10,6 +10,8 @@ class CategoriesController extends CI_Controller {
 
 	public function Categories()
 	{
+
+		
 		$data['categories'] = $this->categmod->LoadCategoryMasterlist();
 		$layout = array('tables'=>TRUE);
 		$this->load->view('layout/admin/1_css');
