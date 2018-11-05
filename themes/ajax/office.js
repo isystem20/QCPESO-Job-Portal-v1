@@ -12,7 +12,7 @@ $(document).ready(function() {
         var newURL = $(this).attr('action');      //Get the form action attribute value.
         var newData  = {
                 'name' : $('input[name=name]').val(),     //List of data you want to post
-                'description' : $('textarea[name=description]').text(),
+                'description' : $('textarea[name=description]').val(),
                 'status' : $('select[name=status]').val(),
             }
           $.ajax({

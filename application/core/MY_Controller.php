@@ -95,13 +95,13 @@ class Admin_Controller extends MY_Controller {
     {
         parent::__construct();
 
-        $userid = $this->session->userdata('userid');
-        $usertype = $this->session->userdata('usertype');
-        if (!empty($userid) && $usertype == 'ADMIN') {
-            return redirect(base_url().'403');
-        }elseif (empty($userid)) {
-            return redirect(base_url().'admin/login');
-        }
+        // $userid = $this->session->userdata('userid');
+        // $usertype = $this->session->userdata('usertype');
+        // if (!empty($userid) && $usertype == 'ADMIN') {
+        //     return redirect(base_url().'403');
+        // }elseif (empty($userid)) {
+        //     return redirect(base_url().'admin/login');
+        // }
 
     }
 
