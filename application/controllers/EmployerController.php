@@ -21,13 +21,13 @@ class EmployerController extends CI_Controller {
 
 	public function EmployerMasterlist()
 	{
-	
+		$data = array('tables' => TRUE, );
 		$this->load->view('layout/admin/1_css');
 		$this->load->view('layout/admin/2_preloader');
 		$this->load->view('layout/admin/3_topbar');
 		$this->load->view('layout/admin/4_leftsidebar');
 		$this->load->view('pages/users/EmployerMasterlist');
-		$this->load->view('layout/admin/6_js');		
+		$this->load->view('layout/admin/6_js', $data);		
 		
 	}
 	
