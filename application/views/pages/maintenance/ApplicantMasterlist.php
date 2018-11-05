@@ -15,7 +15,7 @@
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">pages</li>
+                        <li class="breadcrumb-item">Maintenance</li>
                         <li class="breadcrumb-item active">Applicant Masterlist</li>
                     </ol>
                 </div>
@@ -35,8 +35,8 @@
                      
                           <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Data Table</h4>
-                                <h6 class="card-subtitle">Data table example</h6>
+                                <h4 class="card-title">Description:</h4>
+                                <h6 class="card-subtitle">Masterlist of all Applicants</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                     

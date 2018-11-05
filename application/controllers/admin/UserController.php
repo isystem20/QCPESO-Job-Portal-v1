@@ -32,5 +32,4 @@ class UserController extends CI_Controller {
 		$this->load->view('layout/admin/6_js',$layout);		
 	}
 
-	
 }

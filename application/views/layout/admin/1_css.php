@@ -11,8 +11,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Admin Pro Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>themes/admin-pro/assets/assets/images/favicon.png">
+    <title>QC PESO</title>
+
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
@@ -38,5 +40,6 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
 
+    <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
 
 </head>
