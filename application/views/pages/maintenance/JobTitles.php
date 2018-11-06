@@ -165,3 +165,45 @@
         </div>
 
 
+
+
+
+<!-- sample modal content -->
+<div id="add-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add New Job Title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="add-form" action="<?php echo base_url(); ?>admin/register/categories" method="POST">
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Name: </label>
+                        <input type="text" name="name" class="form-control" placeholder="Job Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Description:</label>
+                        <textarea name="description" class="form-control" placeholder="Short description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Status</label>
+                        <select name="status" class="form-control">
+                            <option value="1">Active (Activate now)</option>
+                            <option value="0">Inactive (Register but activate later)</option>
+                        </select>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                <button type="submit" id="add-submit" class="btn btn-info waves-effect waves-light">Save changes</button>
+            </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- /.modal -->
+
+

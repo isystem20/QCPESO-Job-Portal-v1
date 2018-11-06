@@ -9,7 +9,7 @@ class JobTitlesController extends CI_Controller {
     	
 	
     	$this->load->model('admin/JobTitleModel','jobtitlemodel');
-        $data['joblist'] = $this->jobtitlemodel->Load_JobTitle_Masterlist();
+        $data['joblist'] = $this->jobtitlemodel->Load_JobTitles_Masterlist();
 		$layout = array('tables' => TRUE, );
 
 
