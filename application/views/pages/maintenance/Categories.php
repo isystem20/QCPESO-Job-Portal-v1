@@ -9,13 +9,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Job Title</h3>
+                    <h3 class="text-themecolor">Applicant Categories</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Maintenance</li>
-                        <li class="breadcrumb-item active">Job Titles</li>
+                        <li class="breadcrumb-item">Maintenenace</li>
+                        <li class="breadcrumb-item active">Categories</li>
                     </ol>
                 </div>
                 <div>
@@ -35,8 +35,6 @@
                         <div class="card">
                             <div class="card-body">
                                 <button type="button" id="add-btn" class="btn waves-effect waves-light btn-success">Add</button>
-
-
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -61,8 +59,8 @@
                                         </tfoot>
                                         <tbody>
                                         <?php
-                                        if ($joblist->num_rows() > 0) {
-                                            foreach ($joblist->result() as $row) { ?>
+                                        if ($categories->num_rows() > 0) {
+                                            foreach ($categories->result() as $row) { ?>
                                             <tr>
                                                 <td><?php echo $row->name; ?></td>
                                                 <td><?php echo $row->description; ?></td>
@@ -74,11 +72,16 @@
                                                         echo '<label class="label label-primary">Active</label>';
                                                     }
                                                     else {
-                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                        echo '<label class="label label-inverse">Inactive</label>';
                                                     }
                                                     ?>
                                                 </td>
-                                                <td>For Action</td>
+                                                <td>
+                                                    <!-- <button type="button" class="btn waves-effect waves-light btn-outline-info btn-xs"><i class="fas fa-info"></i></button> -->
+                                                    <i class="fas fa-info text-info"></i>
+                                                    <i class="far fa-edit text-success"></i>
+                                                    <i class="fas fa-trash text-danger"></i>                                                    
+                                                </td>
                                             </tr>
                                         <?php
                                             }
@@ -167,20 +170,19 @@
 
 
 
-
 <!-- sample modal content -->
 <div id="add-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add New Job Title</h4>
+                <h4 class="modal-title">Add New Category</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
                 <form id="add-form" action="<?php echo base_url(); ?>admin/register/categories" method="POST">
                     <div class="form-group">
                         <label for="recipient-name" class="control-label">Name: </label>
-                        <input type="text" name="name" class="form-control" placeholder="Job Title">
+                        <input type="text" name="name" class="form-control" placeholder="A unique name for this category">
                     </div>
                     <div class="form-group">
                         <label for="message-text" class="control-label">Description:</label>
@@ -205,5 +207,3 @@
     </div>
 </div>
 <!-- /.modal -->
-
-

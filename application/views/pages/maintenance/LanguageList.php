@@ -1,5 +1,5 @@
-    
- <div class="page-wrapper">
+
+        <div class="page-wrapper">
             
             <!-- ============================================================== -->
             <!-- Container fluid  -->
@@ -10,13 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Language List</h3>
+                    <h3 class="text-themecolor">Languages</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">pages</li>
-                        <li class="breadcrumb-item active">Language List</li>
+                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item active">Languages</li>
                     </ol>
                 </div>
                 <div>
@@ -30,17 +30,16 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-         
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-12">
 
                         <div class="card">
-
-                            
-                            <div class="card-block">
-                                <div class="dt-responsive table-responsive">
-                                    <table id="simpletable" class="table table-striped table-bordered nowrap">
-                                        <thead>
+                            <div class="card-body">
+                                <h4 class="card-title">Language</h4>
+                                <h6 class="card-subtitle">List of Languages</h6>
+                                <div class="table-responsive m-t-40">
+                                    <table id="myTable" class="table table-bordered table-striped">
+                                       <thead>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
@@ -48,19 +47,53 @@
                                                 <th>Modified At</th>  
                                                 <th>Status</th>    
                                             </tr>
-                                        </thead>                                    
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Modified By ID</th>
+                                                <th>Modified At</th>  
+                                                <th>Status</th>    
+                                            </tr>
+                                        </tfoot>          
+                                        <tbody>
+                                              <?php
+                                if ($language->num_rows() > 0 ) {
+                                    foreach ($language->result() as $row) { ?>
+                                <tr>
+
+                                    <td><?php echo $row->name.' '.$row->name; ?></td>
+                                    <td><?php echo $row->description; ?></td>
+                                    <td><?php echo $row->modifiedById; ?></td>
+                                    <td><?php echo $row->modifiedAt; ?></td>                                    
+                                    <td>
+                                        <?php 
+                                        if ($row->isActive == '1' ) {
+                                            echo '<label class="label
+                                                label-success">Active</label>';
+                                        }
+                                        else {
+                                            echo '<label class="label
+                                                label-default">Inactive</label>';
+                                        }
+                                        ?>
+                                    </td>
+                                </tr>
+                                <?php
+                                    }
+                                }
+                                ?>
+
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-
+                        </div>
                     </div>
                 </div>
-            </div>
-    </div>
-
-
-     <div class="right-sidebar">
+                 <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">
@@ -110,18 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+  
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+ 
         </div>
