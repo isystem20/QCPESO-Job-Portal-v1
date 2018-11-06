@@ -8,10 +8,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $this->load->model('admin/CategoriesModel','categmod');
     }
 
-		public function LoadCategoryMasterlist() {
+		public function LoadCategoryMasterlist($id = null) {
 			$this->db->select('*');
 			$this->db->from('tbl_applicants_categories');
-			return $this->db->get();
+			if (!empty($id)) {
+				$this->db->where('id',$id);
+				return $this->db->get()->result();
+
+			}else {
+				return $this->db->get();
+			}
+			
 		}
 
 
@@ -29,9 +36,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$this->db->set('isActive',"'".$data['status']."'",FALSE);
 
 			$this->db->insert('tbl_applicants_categories');
-			return true;
+
+			$id = $this->db->insert_id();
+
+			if ($id > 0) {
+				$inserted = $this->LoadCategoryMasterlist($id);
+				return $inserted;
+			}
+			else {
+				return FALSE;
+			}
 
 
+			
 		}
 
 

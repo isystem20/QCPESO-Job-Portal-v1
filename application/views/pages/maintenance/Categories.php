@@ -74,11 +74,16 @@
                                                         echo '<label class="label label-primary">Active</label>';
                                                     }
                                                     else {
-                                                        echo '<label class="label label-danger">Inactive</label>';
+                                                        echo '<label class="label label-inverse">Inactive</label>';
                                                     }
                                                     ?>
                                                 </td>
-                                                <td>For Action</td>
+                                                <td>
+                                                    <!-- <button type="button" class="btn waves-effect waves-light btn-outline-info btn-xs"><i class="fas fa-info"></i></button> -->
+                                                    <i class="fas fa-info text-info"></i>
+                                                    <i class="far fa-edit text-success"></i>
+                                                    <i class="fas fa-trash text-danger"></i>                                                    
+                                                </td>
                                             </tr>
                                         <?php
                                             }

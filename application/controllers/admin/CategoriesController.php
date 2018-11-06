@@ -24,7 +24,12 @@ class CategoriesController extends CI_Controller {
 
 	public function Create() {
 
-		$this->form_validation->set_rules('name','Name','required|is_unique[tbl_applicants_categories.name]');
+		$this->form_validation->set_rules('name','Name','required|is_unique[tbl_applicants_categories.name]',
+		        array(
+                'required'      => 'You have not provided %s.',
+                'is_unique'     => 'This %s already exists.'
+        		)
+		    );
 
 
   		if ($this->form_validation->run() == FALSE){
@@ -34,7 +39,14 @@ class CategoriesController extends CI_Controller {
         else {
         	$postdata = $this->input->post();
         	$inserted = $this->categmod->Add($postdata);
-        	echo json_encode(['success'=>TRUE]);
+
+        	if ($inserted != FALSE) {
+	        	$json = json_encode($inserted);       		
+        		echo $json;
+        	}
+        	else {
+        		echo json_encode(['error'=>'Update Unsuccessful.']);
+        	}
 
 
         }
