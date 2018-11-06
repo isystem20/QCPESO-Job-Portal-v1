@@ -49,7 +49,7 @@
                                                 <th>Email Address</th>
                                                 <th>Preferred Jobs</th>
                                                 <th>Educational Attainment</th>
-                                                <th>Active</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
@@ -59,7 +59,7 @@
                                                 <th>Email Address</th>
                                                 <th>Preferred Jobs</th>
                                                 <th>Educational Attainment</th>
-                                                <th>Active</th>
+                                                <th>Status</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
