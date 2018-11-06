@@ -4,8 +4,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>Left Sidebar</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Quisque eget mi at eros venenatis</p>
+                            <h2>Articles</h2>
                         </div>
                     </div>
                 </div>
@@ -26,15 +25,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Bluetooth Speaker</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">Build Build Build | Jobs Jobs Jobs</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>August 07, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>TRABAHO BA KAMO? See you at the Build Build Build x Jobs Jobs Jobs Fair on August 12. SUBUKANG MAG APPLY ONLINE sa http://www.build.gov.ph/Home/Jobs.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -49,15 +46,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">JOBS JOBS JOBS: Construction sector posts 4M jobs</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>August 03, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>The Department of Labor and Employment (DOLE) reported a year-on-year increase of 468,000 jobs generated in the construction sector based on a Labor Force Survey conducted by the Philippine Statistics Authority in April 2018.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -72,15 +67,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">BLE and regional implementers strengthen strategies for optimum delivery of DOLE programs through SPES, GIP and PESO</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>The Bureau of Local Employment (BLE), in cooperation with DOLE NCR, successfully conducted this year’s Workshop and Capacity Development Training on the SPESIMO, GIP and the Revised SBP Manual for the DOLE Regional Implementers from 19-23 March and 2-6 April 2018.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -95,15 +88,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">BLE and the LGUs of Luzon towards nation-wide PESO institutionalization</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>In line with the Bureau of Local Employment's (BLE's) long-term goal of permanently establishing and institutionalizing all of the PESOs nationwide, the Bureau has once again put its maximum effort and resources for the Training on PESO Institutionalization of the second batch of Local Chief Executives (LCEs) and PESO Managers last 10-12 April 2018 at Royce Hotel, Pampanga.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -118,15 +109,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Bluetooth Speaker</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">More displaced college workers find reemployment through the K to 12 DOLE AMP</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>A total of 606 beneficiaries were given aid by the Department of Labor and Employment (DOLE) through the K to 12 DOLE Adjustment Measures Program (AMP) by the end of last year.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -141,15 +130,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Minimalist Chandelier</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">Baking for better lives through JobStart: Ariel Amadhay</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>Ariel Amadhay, 24, from Alimodian, Iloilo, is living with his partner and their baby. He quit his Aeronautics Technician course due to financial problems. With a family of his own, Ariel finds it overwhelmingly difficult to be jobless and to rely on his parents for his own family's needs.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -164,15 +151,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Standard Shape</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">Baking for better lives through JobStart: Ramie Losaria</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>Ramie M. Losaria, 19, from Lambunao, Iloilo, studied caregiving to follow the footsteps of his mother. But due to financial constraints, he had to quit and stay at home to look after his 105-year-old grandmother and two nephews.</p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -187,15 +172,13 @@
                                     <div class="col-md-7">
                                         <div class="post-wrapper">
                                             <div class="post-header">
-                                                <h2 class="post-title"><a href="blog-single.html">Street Fashion</a></h2>
+                                                <h2 class="post-title"><a href="blog-single.html">Baking for better lives through JobStart: Joseph Baltar</a></h2>
                                                 <ul class="post-meta">
-                                                    <li>November 18, 2016</li>
-                                                    <li><a href="#">Branding</a>, <a href="#">Design</a></li>
-                                                    <li><a href="#">3 Comments</a></li>
+                                                    <li>June 09, 2018</li>
                                                 </ul>
                                             </div>
                                             <div class="post-content">
-                                                <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                                                <p>For Tibiao Bakery Human Resource Officer Aylin Ami, the JobStart Program is a blessing. Not only does it address their manpower needs and save them from training costs, it also allows them to be a program partner in helping at-risk youth in Iloilo Province. Supervising the JobStart trainees, Aylin could tell the advantages of undergoing Life Skills Training. </p>
                                                 <p><a href="#">Read more</a></p>
                                             </div>
                                         </div>
@@ -301,11 +284,12 @@
                                         <h6>About Us</h6>
                                     </div>
                                     <div class="textwidget">
-                                        <p>Map where your photos were taken and discover local points of interest. Map where your photos.</p>
+                                        <p>Quezon City Public Employment Service Office</p>
                                         <p>
-                                            Location: 12 London Avenue, Suite 18<br>
-                                            E-mail: support@theme.com<br>
-                                            Phone: 8 800 123 4567<br>
+                                            Location: 4th Floor, Civic Center <br>
+                                            Building A, City Hall Compound<br>
+                                            E-mail: isystem20@gmail.com<br>
+                                            Phone: +63123453456<br>
                                         </p>
                                         <ul class="social-icons">
                                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -362,7 +346,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
-                                    <p>© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#">2theme</a></p>
+                                    <p>© 2018 Quezon City PESO, All Rights Reserved. Design with love by <a href="#">Sigma</a></p>
                                 </div>
                             </div>
                         </div>
