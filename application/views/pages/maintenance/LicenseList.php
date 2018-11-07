@@ -38,9 +38,7 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <h4 class="card-title">Data Export
-</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                            
 
                                 <h4 class="card-title">License list</h4>
                                 <h6 class="card-subtitle">Masterlist of All License list</h6>
