@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function Load_CategoriesModel_Masterlist() {
 			$this->db->select('*');
-			$this->db->from('tbl_establistments_categories');
+			$this->db->from('tbl_applicants_categories');
 			return $this->db->get();
 
 		}
