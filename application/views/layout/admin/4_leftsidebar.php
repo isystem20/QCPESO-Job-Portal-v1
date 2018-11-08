@@ -19,19 +19,8 @@
                             </ul>
                         </li>
                         <li class="nav-devider"></li>
-
-                        <li class="nav-small-cap">PERSONAL</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span class="label label-rouded label-themecolor pull-right">4</span></span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Minimal </a></li>
-                                <li><a href="index2.html">Analytical</a></li>
-                                <li><a href="index3.html">Demographical</a></li>
-                                <li><a href="index4.html">Modern</a></li>
-                            </ul>
-
                         
-
-
+                        <li> <a class="waves-effect waves-dark" href="<?php echo base_url(); ?>manage/" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
                         <li class="nav-small-cap">MANAGE</li>
                         <li> <a class="waves-effect waves-dark" href="<?php echo base_url(); ?>manage/users-masterlist" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Users</span></a>

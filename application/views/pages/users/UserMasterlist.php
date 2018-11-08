@@ -32,8 +32,8 @@
                 <!-- ============================================================== -->
                         <div class="card">
                             <div class="card-body">
-                                <button type="button" class="btn waves-effect waves-light btn-success">Add User</button>
-                                </h6>
+                                <h4 class="card-title">Description:</h4>
+                                <h6 class="card-subtitle">This is the Masterlist of all users.</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -42,8 +42,7 @@
                                                 <th>Login Name</th>
                                                 <th>Usertype</th>
                                                 <th>Email Address</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                 <th>Status</th>
                                             
                                             </tr>
                                         </thead>
@@ -67,14 +66,6 @@
                                                 label-default">Inactive</label>';
                                         }
                                         ?>
-                                    </td>
-                                    <td>
-                                        - For Action
-
-
-
-
-
                                     </td>
                                 </tr>
                                 <?php

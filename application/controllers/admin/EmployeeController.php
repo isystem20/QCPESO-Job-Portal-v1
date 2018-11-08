@@ -82,6 +82,21 @@ public function PreferredLocation()
 				
 }
 
+public function JobTitles()
+	{
+    
+    	$this->load->model('admin/JobTitleModel','jobtitlemodel');
+        $layout = array('tables' => TRUE, );
+        $data['joblist'] = $this->jobtitlemodel->Load_JobTitle_Masterlist();
+
+		$this->load->view('layout/admin/1_css',$layout);
+		$this->load->view('layout/admin/2_preloader');
+		$this->load->view('layout/admin/3_topbar');
+		$this->load->view('layout/admin/4_leftsidebar');
+		$this->load->view('pages/maintenance/JobTitles', $data);
+		$this->load->view('layout/admin/6_js',$layout);
+	
+}
 public function EducationalCourses()
 	{
 		$this->load->view('layout/css');
@@ -91,5 +106,15 @@ public function EducationalCourses()
 		$this->load->view('EducationalCourses');
 		$this->load->view('layout/js');		
 }
-
+public function Categories()
+ {
+ 	$this->load->model('CategoriesModel','categoriesmodel');
+		$data['categories'] = $this->categoriesmodel->Load_CategoriesModel_Masterlist();
+		$this->load->view('layout/css');
+		$this->load->view('layout/top');
+		$this->load->view('layout/menu-manage');
+		$this->load->view('layout/right');
+		$this->load->view('Categories',$data);
+		$this->load->view('layout/js');		
+	}
 }

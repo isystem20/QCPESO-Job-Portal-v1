@@ -10,13 +10,13 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Disabilitites</h3>
+                    <h3 class="text-themecolor">Job Titles Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Maintenance</li>
-                        <li class="breadcrumb-item active">Disabilities</li>
+                        <li class="breadcrumb-item">Manage</li>
+                        <li class="breadcrumb-item active">Job Titles</li>
 
                     </ol>
                 </div>
@@ -36,8 +36,8 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Disabilities</h4>
-                                <h6 class="card-subtitle">Masterlist of All Disabilities</h6>
+                                <h4 class="card-title">Job Titles</h4>
+                                <h6 class="card-subtitle">Masterlist of All Available Jobs</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>

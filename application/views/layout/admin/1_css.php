@@ -11,10 +11,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>themes/admin-pro/assets/assets/images/favicon.png">
-    <title>QC PESO</title>
-
+    <title>Admin Pro Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
@@ -36,16 +34,9 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <?php
-    if (!empty($login)) { ?>
-    <!-- page css -->
-    <link href="<?php echo base_url(); ?>themes/admin-pro/minimal/css/pages/login-register-lock.css" rel="stylesheet">
-    <?php
-        }
-    ?>
+
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
 
-    <link href="<?php echo base_url(); ?>themes/admin-pro/assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
 
 </head>

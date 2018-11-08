@@ -1,3 +1,4 @@
+
         <div class="page-wrapper">
             
             <!-- ============================================================== -->
@@ -9,13 +10,14 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Job Title</h3>
+                    <h3 class="text-themecolor">Job Titles Maintenance</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item">Manage</li>
                         <li class="breadcrumb-item active">Job Titles</li>
+
                     </ol>
                 </div>
                 <div>
@@ -34,9 +36,8 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <button type="button" id="add-btn" class="btn waves-effect waves-light btn-success">Add</button>
-
-
+                                <h4 class="card-title">Job Titles</h4>
+                                <h6 class="card-subtitle">Masterlist of All Available Jobs</h6>
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
@@ -44,22 +45,23 @@
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
-                                                <th>Last Modified</th>
+                                                <th>Modified At</th>
                                                 <th>Status</th>
-                                                <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tfoot>
+                                        <tbody>
+                                         <tfoot>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Description</th>
                                                 <th>Modified By</th>
-                                                <th>Last Modified</th>
+                                                <th>Modified At</th>
                                                 <th>Status</th>
-                                                <th>Action</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
+
+
                                         <?php
                                         if ($joblist->num_rows() > 0) {
                                             foreach ($joblist->result() as $row) { ?>
@@ -78,27 +80,21 @@
                                                     }
                                                     ?>
                                                 </td>
-                                                <td>For Action</td>
                                             </tr>
                                         <?php
                                             }
                                         }
                                         ?>
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
+                 <div class="right-sidebar">
                     <div class="slimscrollright">
                         <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
                         <div class="r-panel-body">
@@ -148,62 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+  
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer"> © 2018 Admin Pro by wrappixel.com </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+ 
         </div>
-
-
-
-
-
-<!-- sample modal content -->
-<div id="add-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Add New Job Title</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-                <form id="add-form" action="<?php echo base_url(); ?>admin/register/categories" method="POST">
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">Name: </label>
-                        <input type="text" name="name" class="form-control" placeholder="Job Title">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="control-label">Description:</label>
-                        <textarea name="description" class="form-control" placeholder="Short description"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Status</label>
-                        <select name="status" class="form-control">
-                            <option value="1">Active (Activate now)</option>
-                            <option value="0">Inactive (Register but activate later)</option>
-                        </select>
-                    </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
-                <button type="submit" id="add-submit" class="btn btn-info waves-effect waves-light">Save changes</button>
-            </div>
-            </form>
-
-        </div>
-    </div>
-</div>
-<!-- /.modal -->
-
-

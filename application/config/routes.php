@@ -56,13 +56,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 /* Applicant View */
 
-$route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';
-$route['web/login/applicant'] = 'web/LoginController/authenticate';
-$route['web/logout'] = 'WebController/logout';
 
-
-
-    /* Log in */                            $route['login'] = 'web/LoginController/Login';
+    /* Log in */                            $route['login'] = 'admin/HomeController/UserLogin';
     /* Home (Profile) */                    $route['profile'] = 'admin/LoggedUserController/UserHome';
     /* Search */                            $route['search/jobs'] = 'admin/LoggedUserController/SearchJobs';
         /* Job Details */
@@ -88,8 +83,8 @@ $route['web/logout'] = 'WebController/logout';
             /* Disabilities */              $route['manage/maintenance/disabilities'] = 'admin/ApplicantController/DisabilitiesMasterlist';
             
             /* Preferred Locations */       $route['manage/maintenance/preferred-locations'] = 'admin/EmployeeController/PreferredLocation';
-            /* Job titles */                $route['manage/maintenance/job-titles'] = 'admin/JobTitlesController/JobTitles';
-            /* Categories */                $route['manage/maintenance/applicant-categories'] = 'admin/CategoriesController/Categories';
+            /* Job titles */                $route['manage/maintenance/job-titles'] = 'admin/EmployeeController/JobTitles';
+            /* Categories */                $route['manage/maintenance/applicant-categories'] = 'admin/EmployeeController/Categories';
         /* Reviews and Ratings */           $route['manage/reviews-and-ratings'] = 'admin/RnrController/ReviewAndRatings';
         /* Surveys */                       $route['manage/surveys'] = 'admin/SurveyController/Survey';
 
@@ -101,7 +96,7 @@ $route['web/logout'] = 'WebController/logout';
             /* Job Applications */          $route['manage/do/applicants/job-applications'] = 'admin/JobApplicationController/ApplicationMasterList';
         /* Establishment */ 
             /* Add new */                   $route['manage/do/establishments/add'] = 'admin/EmployerController/EmployerRegistration';
-            /* View List */                 $route['manage/do/establishments/view-list'] = 'EmployerController/EmployerMasterlist';
+            /* View List */                 $route['manage/do/establishments/view-list'] = 'admin/EmployerController/EmployerMasterlist';
             /* Pending Accreditation */     $route['manage/do/establishments/pending-accreditation'] = 'admin/AccreditationController/AccreditationRequest';   
         /* Jobs */ 
             /* Add new */                   $route['manage/do/jobs/add'] = 'admin/JobController/JobRegistration';       
@@ -126,19 +121,15 @@ $route['web/logout'] = 'WebController/logout';
 
 
 
+$route['web/register/applicant'] = 'web/RegisterController/CreateApplicant';
+$route['web/login/applicant'] = 'web/LoginController/authenticate';
 
 
+$route['web/logout'] = 'WebController/logout';
 
 
 
 //ERRORS
 
 $route['403'] = 'admin/SiteErrorController/Error403';
-
-
-
-$route['admin/register/categories'] = 'admin/CategoriesController/Create';
-
-$route['admin/login'] = 'admin/AuthenticationController/LoginPage';
-
 $route['admin/login/auth'] = 'admin/AuthenticationController/AuthenticateAdmin';
