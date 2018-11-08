@@ -141,4 +141,4 @@ $route['admin/register/categories'] = 'admin/CategoriesController/Create';
 
 $route['admin/login'] = 'admin/AuthenticationController/LoginPage';
 
-
+$route['admin/login/auth'] = 'admin/AuthenticationController/AuthenticateAdmin';

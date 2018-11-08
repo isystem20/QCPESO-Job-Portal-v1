@@ -1,16 +1,18 @@
     <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?php echo base_url(); ?>themes/admin-pro/assets/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
-                <form class="form-horizontal form-material" id="loginform" autocomplete="nope" action="https://wrappixel.com/demos/admin-templates/admin-pro/minimal/index.html">
+
+                <form class="form-horizontal form-material" id="loginform" autocomplete="nope" action="<?php echo base_url(); ?>admin/login/auth">
+
                     <a href="javascript:void(0)" class="text-center db"><img src="<?php echo base_url(); ?>themes/admin-pro/assets/images/logo-icon.png" alt="Home" /><br/><img src="<?php echo base_url(); ?>themes/admin-pro/assets/images/logo-text.png" alt="Home" /></a>
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
-                            <input class="form-control" type="email" required="" autocomplete="off" spellcheck="false" placeholder="Username">
+                            <input class="form-control" type="email" name="email" required="" autocomplete="off" spellcheck="false" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control" type="password" autocomplete="off" required="" placeholder="Password">
+                            <input class="form-control" type="password" name="password" autocomplete="off" required="" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -23,7 +25,7 @@
                     </div>
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Log In</button>
+                            <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit" id="login-btn">Log In</button>
                         </div>
                     </div>
                     <div class="row">
