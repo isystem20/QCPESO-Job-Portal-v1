@@ -108,13 +108,13 @@ public function EducationalCourses()
 }
 public function Categories()
  {
- 	$this->load->model('CategoriesModel','categoriesmodel');
+ 	$this->load->model('admin/CategoriesModel','categoriesmodel');
 		$data['categories'] = $this->categoriesmodel->Load_CategoriesModel_Masterlist();
 		$this->load->view('layout/css');
 		$this->load->view('layout/top');
 		$this->load->view('layout/menu-manage');
 		$this->load->view('layout/right');
-		$this->load->view('Categories',$data);
+		$this->load->view('pages/maintenance/Categories',$data);
 		$this->load->view('layout/js');		
 	}
 }
